@@ -1,7 +1,7 @@
 ---
 layout: page
 title: TestGadget v4 (GTK)
-permalink: /test-gadget/test-gadget-v4
+permalink: /language/reference/versioning/test-gadget/test-gadget-v4/
 exclude: true
 ---
 ```
@@ -307,5 +307,6 @@ namespace TOATg
 // TODO: Fix reworded "," with "and" and "or"
 ```
 
+<br>
 ### Links
-[Back](/versioning/)
+[Back](/language/reference/versioning/)

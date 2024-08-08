@@ -1,10 +1,10 @@
 ---
 layout: page
 title: Warnings
-permalink: /v094/warnings/
+permalink: /language/reference/versioning/v094/warnings/
 exclude: true
 ---
-_Warnings to keep in mind in Describe Compiler v0.9.4_
+<br>_Warnings to keep in mind in Describe Compiler v0.9.4_
 
 ### Grammar tests
 
@@ -14,3 +14,7 @@ This will result in errors in testing</span>
 ```
 directives ->> delimiter-mode <<bi>>;;
 ```
+
+<br>
+### Links
+[Back](/language/reference/versioning/v094/compiler094/)

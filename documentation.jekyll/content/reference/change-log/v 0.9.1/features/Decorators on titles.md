@@ -1,10 +1,10 @@
 ---
 layout: page
 title: Decorators on titles
-permalink: /v091/features/feature-5
+permalink: /language/reference/versioning/v091/features/feature-5/
 exclude: true
 ---
-_FEATURE: Decorators on titles_
+<br>_FEATURE: Decorators on titles_
 
 Decorators not working on title items (items that have productions).
 
@@ -17,3 +17,8 @@ shopska salad (385) {color|green} ->
 	450g tomatoes (158),
 	75g sirene (198);
 ```
+
+
+<br>
+### Links
+[Back](/language/reference/versioning/v091/compiler091/)

@@ -52,5 +52,5 @@ science <rnode> ->
 
 <br>
 ### Links
-[Next](/language/how-to-write-file-names)<br>
-[Prev](/language/how-to-write-directives)
+[Next](/language/how-to-write-file-names/)<br>
+[Prev](/language/how-to-write-directives/)

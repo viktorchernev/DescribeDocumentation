@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Describe Compilation - API
-permalink: /language/how-to-compile/api
+permalink: /language/how-to-compile/api/
 exclude: true
 ---
 <br>The Describe Compiler API is a software library, containing the de facto compiler for the Describe Markup Language, as well as some translators for different target languages . It is a .Net dll that targets .Net Standard 2.0 and is licensed under the [AGPL v3](https://www.gnu.org/licenses/agpl-3.0) public license.
@@ -92,7 +92,7 @@ if (result != null)
 
 <br>
 ### Links
-[Describe Compilation](/language/how-to-compile)<br> 
-[Use the CLI version](/language/how-to-compile/cli)<br>
-[Use the AWS version](/language/how-to-compile/aws)<br>
+[Describe Compilation](/language/how-to-compile/)<br> 
+[Use the CLI version](/language/how-to-compile/cli/)<br>
+[Use the AWS version](/language/how-to-compile/aws/)<br>
 [Back](/language/)

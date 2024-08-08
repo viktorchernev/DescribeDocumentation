@@ -1,10 +1,10 @@
 ---
 layout: page
 title: CLI CORE - Operation not supported
-permalink: /v094/bugs/bug-2
+permalink: /language/reference/versioning/v094/bugs/bug-2/
 exclude: true
 ---
-_BUG: CLI CORE - Operation not supported_
+<br>_BUG: CLI CORE - Operation not supported_
 
 <span style="color:red">Presetting console buffer height is not supported in OS other then Windows, so we need to check if we are under windows.</span>
 
@@ -38,3 +38,8 @@ Press any key to exit.
 ```
 
 <span style="color:green">Code has been added to fix the issue.</span>
+
+
+<br>
+### Links
+[Back](/language/reference/versioning/v094/compiler094/)

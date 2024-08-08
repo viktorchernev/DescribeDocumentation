@@ -1,10 +1,10 @@
 ---
 layout: page
 title: Test CLI args
-permalink: /v093/tests/test-1
+permalink: /language/reference/versioning/v093/tests/test-1/
 exclude: true
 ---
-_TEST: Test CLI args_
+<br>_TEST: Test CLI args_
 
 1. help
 ```
@@ -67,3 +67,7 @@ parse-folder "C:\Users\Viktor Chernev\Desktop\docs-scratch\TestData" "C:\Users\V
 parse-folder "C:\Users\Viktor Chernev\Desktop\docs-scratch\TestData" "C:\Users\Viktor Chernev\Desktop\docs-scratch\result.json" template="JSON_COMMONER" verbosity=low logfile="C:\Users\Viktor Chernev\Desktop\docs-scratch\last-log.txt" dsonly toponly=false onerror=stop
 parse-folder "C:\Users\Viktor Chernev\Desktop\docs-scratch\TestData" "C:\Users\Viktor Chernev\Desktop\docs-scratch\result.json" template="JSON_COMMONER" verbosity=low logfile="C:\Users\Viktor Chernev\Desktop\docs-scratch\last-log.txt" dsonly toponly=false onerror=ignore
 ```
+
+<br>
+### Links
+[Back](/language/reference/versioning/v093/compiler093/)

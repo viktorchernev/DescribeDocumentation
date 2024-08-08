@@ -42,5 +42,5 @@ Harry Potter books
 
 <br>
 ### Links
-[Prev](/language/how-to-write-lists)<br>
-[Back](/language/how-to-write)
+[Prev](/language/how-to-write-lists/)<br>
+[Back](/language/how-to-write/)

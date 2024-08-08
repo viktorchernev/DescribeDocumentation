@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Testing - Grammar 0.6
-permalink: /testing/grammar-v06/
+permalink: /language/reference/testing/grammar-v06/
 exclude: true
 ---
 <br>
@@ -59,4 +59,4 @@ _Describe Basics (v0.6)_
 
 <br>
 ### Links
-[Back](/testing)
+[Back](/language/reference/testing)

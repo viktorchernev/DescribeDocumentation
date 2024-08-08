@@ -1,13 +1,17 @@
 ---
 layout: page
 title: Features
-permalink: /v091/features/
+permalink: /language/reference/versioning/v091/features/
 exclude: true
 ---
-_Features implemented in Describe Compiler v0.9.1_
+<br>_Features implemented in Describe Compiler v0.9.1_
 
-* [CLI - Implement template command](/v091/features/feature-1)
-* [CLI - Implement ext command](/v091/features/feature-2)
-* [CLI - Refactor message generation](/v091/features/feature-3)
-* [CLI - Refactor CLI argument handling](/v091/features/feature-4)
-* [Decorators on titles](/v091/features/feature-5)
+[CLI - Implement template command](/language/reference/versioning/v091/features/feature-1/)<br>
+[CLI - Implement ext command](/language/reference/versioning/v091/features/feature-2/)<br>
+[CLI - Refactor message generation](/language/reference/versioning/v091/features/feature-3/)<br>
+[CLI - Refactor CLI argument handling](/language/reference/versioning/v091/features/feature-4/)<br>
+[Decorators on titles](/language/reference/versioning/v091/features/feature-5/)<br>
+
+<br>
+### Links
+[Back](/language/reference/versioning/v091/compiler091/)

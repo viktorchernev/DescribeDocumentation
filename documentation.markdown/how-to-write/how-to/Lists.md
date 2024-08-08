@@ -50,5 +50,5 @@ dwarf planets ->;
 
 <br>
 ### Links
-[Next](/language/how-to-write-comments)<br>
-[Prev](/language/how-to-write)
+[Next](/language/how-to-write-comments/)<br>
+[Prev](/language/how-to-write/)

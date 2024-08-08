@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Testing - Grammar 1.0
-permalink: /testing/grammar-v10
+permalink: /language/reference/testing/grammar-v10
 exclude: true
 ---
 <br>
@@ -21,4 +21,4 @@ _Describe Official (v1.0)_
 
 <br>
 ### Links
-[Back](/testing)
+[Back](/language/reference/testing)

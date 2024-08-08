@@ -1,10 +1,10 @@
 ---
 layout: page
 title: Text Link Text
-permalink: /v093/quirks/quirk-1
+permalink: /language/reference/versioning/v093/quirks/quirk-1/
 exclude: true
 ---
-_QUIRK: Text Link Text_
+<br>_QUIRK: Text Link Text_
 
 When we have text, followed by a link and some other text, the second text is interpreted as second entry. This is with the current implementation and Describe v0.9 grammar.
 
@@ -41,3 +41,7 @@ list ->
 	electric fly swapper (10+5),
 	bathroom hangers (25);
 ```
+
+<br>
+### Links
+[Back](/language/reference/versioning/v093/compiler093/)

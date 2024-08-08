@@ -1,15 +1,20 @@
 ---
 layout: page
 title: Features
-permalink: /v09/features/
+permalink: /language/reference/versioning/v09/features/
 exclude: true
 ---
-_Features implemented in Describe Compiler v0.9_
+<br>_Features implemented in Describe Compiler v0.9_
 
-* [Change entries foreground color](/v09/features/feature-1)
-* [Links in the HTML](/v09/features/feature-2)
-* [Auto-escape symbols](/v09/features/feature-3)
-* [Comment item decorator](/v09/features/feature-4)
-* [Empty item decorator](/v09/features/feature-5)
-* [Translation templates names](/v09/features/feature-6)
-* [Namespace addressing scheme](/v09/features/feature-7)
+[Change entries foreground color](/language/reference/versioning/v09/features/feature-1/)<br>
+[Links in the HTML](/language/reference/versioning/v09/features/feature-2/)<br>
+[Auto-escape symbols](/language/reference/versioning/v09/features/feature-3/)<br>
+[Comment item decorator](/language/reference/versioning/v09/features/feature-4/)<br>
+[Empty item decorator](/language/reference/versioning/v09/features/feature-5/)<br>
+[Translation templates names](/language/reference/versioning/v09/features/feature-6/)<br>
+[Namespace addressing scheme](/language/reference/versioning/v09/features/feature-7/)<br>
+
+
+<br>
+### Links
+[Back](/language/reference/versioning/v09/compiler09/)

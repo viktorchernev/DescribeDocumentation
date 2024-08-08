@@ -1,13 +1,18 @@
 ---
 layout: page
 title: Features
-permalink: /v094/features/
+permalink: /language/reference/versioning/v094/features/
 exclude: true
 ---
-_Features implemented in Describe Compiler v0.9.4_
+<br>_Features implemented in Describe Compiler v0.9.4_
 
-* [Add DescribeCompiler.AWS](/v094/features/feature-1)
-* [Add ParseMultiString](/v094/features/feature-2)
-* [Add ParseString](/v094/features/feature-3)
-* [CLI - Fatal error stack trace option](/v094/features/feature-4)
-* [CLI CORE - Dockerable](/v094/features/feature-5)
+[Add DescribeCompiler.AWS](/language/reference/versioning/v094/features/feature-1/)<br>
+[Add ParseMultiString](/language/reference/versioning/v094/features/feature-2/)<br>
+[Add ParseString](/language/reference/versioning/v094/features/feature-3/)<br>
+[CLI - Fatal error stack trace option](/language/reference/versioning/v094/features/feature-4/)<br>
+[CLI CORE - Dockerable](/language/reference/versioning/v094/features/feature-5/)<br>
+
+
+<br>
+### Links
+[Back](/language/reference/versioning/v094/compiler094/)

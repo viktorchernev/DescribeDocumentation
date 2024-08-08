@@ -1,10 +1,10 @@
 ---
 layout: page
 title: AWS - Lambda memory
-permalink: /v094/bugs/todo-bug-1
+permalink: /language/reference/versioning/v094/bugs/todo-bug-1/
 exclude: true
 ---
-_BUG: AWS - Lambda memory_
+<br>_BUG: AWS - Lambda memory_
 
 1. Sometimes the "dark arts" lists are gone, and we only have it as an item (leaf node) from the PUBLIC list, probably from the file "@public"
 
@@ -16,3 +16,8 @@ _BUG: AWS - Lambda memory_
 I believe that the allowed RAM for my lambda function is exceeded, so the compilation process gets cut short in some way
 
 Tried increasing the available RAM in Visual studio and this worked for a while. When this stopped working I decreased the available RAM back and now it works again. Also, when cold-starting the Lambda function we don't experience this issue.
+
+
+<br>
+### Links
+[Back](/language/reference/versioning/v094/compiler094/)

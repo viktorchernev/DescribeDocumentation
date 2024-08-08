@@ -1,10 +1,10 @@
 ---
 layout: page
 title: Custom decorator for JSON translator
-permalink: /v092/features/feature-5
+permalink: /language/reference/versioning/v092/features/feature-5/
 exclude: true
 ---
-_FEATURE: Custom decorator for JSON translator_
+<br>_FEATURE: Custom decorator for JSON translator_
 
 This is essentially a way to use decorators that are not implemented in the translator. Use the template for a custom decorator, and implemented the functionality in the front end instead.
 
@@ -33,3 +33,7 @@ or
 <span style="color:blue">Code has been implemented.</span>
 
 This is yet to be added to the HTML translator in the future, but how will those decorators be added to the HTML tags? Probably as class names or some kind of attributes?
+
+
+## Links
+[Back](/language/reference/versioning/v092/compiler092/)

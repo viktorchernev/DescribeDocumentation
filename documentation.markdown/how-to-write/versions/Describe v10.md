@@ -174,4 +174,4 @@ scripture 				: expression_list EOF
 
 <br>
 ### Links
-[Back](/language/how-to-write)
+[Back](/language/how-to-write/)

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Describe Compilation - CLI
-permalink: /language/how-to-compile/cli
+permalink: /language/how-to-compile/cli/
 exclude: true
 ---
 <br>The Describe Compiler CLI is a text-based app that provides a command line interface for the API compiler, so that users can compile Describe source files on the command line. The app is licensed under the [AGPL v3](https://www.gnu.org/licenses/agpl-3.0) public license.
@@ -69,7 +69,7 @@ Specifies path of directory or file to output logs to. If not specified, logs wi
 
 <br>
 ### Links
-[Describe Compilation](/language/how-to-compile)<br> 
-[Use the API version](/language/how-to-compile/api)<br>
-[Use the AWS version](/language/how-to-compile/aws)<br>
+[Describe Compilation](/language/how-to-compile/)<br> 
+[Use the API version](/language/how-to-compile/api/)<br>
+[Use the AWS version](/language/how-to-compile/aws/)<br>
 [Back](/language/)

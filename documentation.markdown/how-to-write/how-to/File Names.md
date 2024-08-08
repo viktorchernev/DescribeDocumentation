@@ -33,5 +33,5 @@ hash symbol (aka octothorpe) might indicate that source file is encrypted.
 
 <br>
 ### Links
-[Next](/language/how-to-write-tildes)<br>
-[Prev](/language/how-to-write-dot-notation)
+[Next](/language/how-to-write-tildes/)<br>
+[Prev](/language/how-to-write-dot-notation/)

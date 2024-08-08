@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Describe Transpiler - Testing
-permalink: /testing/
+permalink: /language/reference/testing/
 exclude: true
 ---
 <br>
@@ -17,9 +17,9 @@ exclude: true
 
 <br>
 ### Links
-[Grammar v0.6](/testing/grammar-v06)<br>
-[Grammar v0.7](/testing/grammar-v07)<br>
-[Grammar v0.8](/testing/grammar-v08)<br>
-[Grammar v0.9](/testing/grammar-v09)<br>
-[Grammar v1.0](/testing/grammar-v10)<br>
+[Testing - Grammar v0.6](/language/reference/testing/grammar-v06)<br>
+[Testing - Grammar v0.7](/language/reference/testing/grammar-v07)<br>
+[Testing - Grammar v0.8](/language/reference/testing/grammar-v08)<br>
+[Testing - Grammar v0.9](/language/reference/testing/grammar-v09)<br>
+[Testing - Grammar v1.0](/language/reference/testing/grammar-v10)<br>
 [Back](/language/reference)

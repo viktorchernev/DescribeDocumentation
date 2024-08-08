@@ -36,5 +36,5 @@ solar system ->
 
 <br>
 ### Links
-[Next](/language/how-to-write-links)<br>
-[Prev](/language/how-to-write-lists)
+[Next](/language/how-to-write-links/)<br>
+[Prev](/language/how-to-write-lists/)

@@ -8,7 +8,7 @@ exclude: true
 
 <br>
 ### Links
-[Use the CLI version](/language/how-to-compile/cli)<br>
-[Use the API version](/language/how-to-compile/api)<br>
-[Use the AWS version](/language/how-to-compile/aws)<br>
+[Use the CLI version](/language/how-to-compile/cli/)<br>
+[Use the API version](/language/how-to-compile/api/)<br>
+[Use the AWS version](/language/how-to-compile/aws/)<br>
 [Back](/language/)

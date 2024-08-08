@@ -1,30 +1,31 @@
 ---
 layout: page
 title: Compiler v0.9.4
-permalink: /v094/compiler094/
+permalink: /language/reference/versioning/v094/compiler094/
 exclude: true
 ---
-_Bug fixes and features added in Describe Compiler v0.9.4_
+<br>_Bug fixes and features added in Describe Compiler v0.9.4_
 
-## Features:
-* [Add DescribeCompiler.AWS](/v094/features/feature-1)
-* [Add ParseMultiString](/v094/features/feature-2)
-* [Add ParseString](/v094/features/feature-3)
-* [CLI - Fatal error stack trace option](/v094/features/feature-4)
-* [CLI CORE - Dockerable](/v094/features/feature-5)
+## Features
+[Add DescribeCompiler.AWS](/language/reference/versioning/v094/features/feature-1/)<br>
+[Add ParseMultiString](/language/reference/versioning/v094/features/feature-2/)<br>
+[Add ParseString](/language/reference/versioning/v094/features/feature-3/)<br>
+[CLI - Fatal error stack trace option](/language/reference/versioning/v094/features/feature-4/)<br>
+[CLI CORE - Dockerable](/language/reference/versioning/v094/features/feature-5/)<br>
 
-## Bugs:
-* [CLI CORE - Cannot read console keys](/v094/bugs/bug-1)
-* [CLI CORE - Operation not supported](/v094/bugs/bug-2)
+## Bugs
+[CLI CORE - Cannot read console keys](/language/reference/versioning/v094/bugs/bug-1/)<br>
+[CLI CORE - Operation not supported](/language/reference/versioning/v094/bugs/bug-2/)<br>
 
+[AWS - Lambda memory.md](/language/reference/versioning/v094/bugs/todo-bug-1/)<br>
+[Runaway group.md](/language/reference/versioning/v094/bugs/todo-bug-2/)<br>
 
-* [AWS - Lambda memory.md](/v094/bugs/todo-bug-1)
-* [Runaway group.md](/v094/bugs/todo-bug-2)
+## Warnings
+[warnings](/language/reference/versioning/v094/warnings/)<br>
 
-## Warnings:
-* [warnings](/v094/warnings/)
-
-## Links:
-* [Features](/v094/features/)
-* [Bugs](/v094/bugs/)
-* [Tests](/v094/tests/)
+<br>
+### Links
+[Features](/language/reference/versioning/v094/features/)<br>
+[Bugs](/language/reference/versioning/v094/bugs/)<br>
+[Tests](/language/reference/versioning/v094/tests/)<br>
+[Back](/language/reference/versioning/)

@@ -1,10 +1,10 @@
 ---
 layout: page
 title: CLI CORE - Cannot read console keys
-permalink: /v094/bugs/bug-1
+permalink: /language/reference/versioning/v094/bugs/bug-1/
 exclude: true
 ---
-_BUG: CLI CORE - Cannot read console keys_
+<br>_BUG: CLI CORE - Cannot read console keys_
 
 <span style="color:red">We get an exception upon starting the APP:
 ```
@@ -22,3 +22,8 @@ changed to
 ```
 Console.Read();
 ```
+
+
+<br>
+### Links
+[Back](/language/reference/versioning/v094/compiler094/)

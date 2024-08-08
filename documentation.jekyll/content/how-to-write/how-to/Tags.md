@@ -42,5 +42,5 @@ Note that tags, decorators and links are written after the text of an entry, and
 
 <br>
 ### Links
-[Next](/language/how-to-write-tagging)<br>
-[Prev](/language/how-to-write-decorators)
+[Next](/language/how-to-write-tagging/)<br>
+[Prev](/language/how-to-write-decorators/)

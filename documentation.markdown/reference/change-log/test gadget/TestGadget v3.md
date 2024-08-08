@@ -1,7 +1,7 @@
 ---
 layout: page
 title: TestGadget v3
-permalink: /test-gadget/test-gadget-v3
+permalink: /language/reference/versioning/test-gadget/test-gadget-v3/
 exclude: true
 ---
 ```
@@ -303,6 +303,6 @@ namespace TOATg
 
 ```
 
-
+<br>
 ### Links
-[Back](/versioning/)
+[Back](/language/reference/versioning/)

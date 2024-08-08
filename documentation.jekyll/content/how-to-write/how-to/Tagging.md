@@ -26,5 +26,5 @@ An older scheme exists, that is deprecated and cannot be used. It was called "sl
 
 <br>
 ### Links
-[Next](/language/directives)<br>
-[Prev](/language/tags)
+[Next](/language/directives/)<br>
+[Prev](/language/tags/)

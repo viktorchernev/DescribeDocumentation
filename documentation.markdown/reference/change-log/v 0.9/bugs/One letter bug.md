@@ -1,10 +1,10 @@
 ---
 layout: page
 title: One letter bug
-permalink: /v09/bugs/bug-6
+permalink: /language/reference/versioning/v09/bugs/bug-6/
 exclude: true
 ---
-_BUG: One letter bug_
+<br>_BUG: One letter bug_
 
 <span style="color:red">If we have a single symbol that is a Text and is parsed as text chunk, then we have some escaped symbol that should be parsed as text chunk as well, we get an error. for example:</span>
 
@@ -21,3 +21,8 @@ should be
 ```Text = {TextCharacter}+```
 
 as '+' is 1 or more, not 0 or more</span>
+
+
+<br><br>
+### Links
+[Back](/language/reference/versioning/v09/compiler09/)

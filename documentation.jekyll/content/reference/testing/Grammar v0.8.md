@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Testing - Grammar 0.8
-permalink: /testing/grammar-v08/
+permalink: /language/reference/testing/grammar-v08/
 exclude: true
 ---
 <br>
@@ -54,4 +54,4 @@ _Describe Links (v0.8)_
 
 <br>
 ### Links
-[Back](/testing)
+[Back](/language/reference/testing)

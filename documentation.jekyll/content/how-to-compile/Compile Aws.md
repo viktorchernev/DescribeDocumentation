@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Describe Compilation - AWS
-permalink: /language/how-to-compile/aws
+permalink: /language/how-to-compile/aws/
 exclude: true
 ---
 <br>The Describe Compiler AWS is Amazon Web Services Lambda function project. It is built for hosting the Describe Compiler as a micro-service, in the form of a lambda function. The project is licensed under the [AGPL v3](https://www.gnu.org/licenses/agpl-3.0) public license.
@@ -89,7 +89,7 @@ function logPostResponse($response) {
 
 <br>
 ### Links
-[Describe Compilation](/language/how-to-compile)<br> 
-[Use the API version](/language/how-to-compile/api)<br>
-[Use the CLI version](/language/how-to-compile/cli)<br>
+[Describe Compilation](/language/how-to-compile/)<br> 
+[Use the API version](/language/how-to-compile/api/)<br>
+[Use the CLI version](/language/how-to-compile/cli/)<br>
 [Back](/language/)

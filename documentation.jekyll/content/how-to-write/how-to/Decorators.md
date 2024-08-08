@@ -83,5 +83,5 @@ types of documentaries ->
 
 <br>
 ### Links
-[Next](/language/how-to-write-tags)<br>
-[Prev](/language/how-to-write-links)
+[Next](/language/how-to-write-tags/)<br>
+[Prev](/language/how-to-write-links/)

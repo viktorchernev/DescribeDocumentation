@@ -42,5 +42,5 @@ unsorted <rnode> ->
 
 <br>
 ### Links
-[Next](/language/how-to-write-dot-notation)<br>
-[Prev](/language/how-to-write-tagging)
+[Next](/language/how-to-write-dot-notation/)<br>
+[Prev](/language/how-to-write-tagging/)

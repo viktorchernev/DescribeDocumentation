@@ -1,7 +1,7 @@
 ---
 layout: page
 title: TestGadget v4 (WinForms)
-permalink: /test-gadget/test-gadget-v41
+permalink: /language/reference/versioning/test-gadget/test-gadget-v41/
 exclude: true
 ---
 ```
@@ -183,5 +183,6 @@ namespace TestGadget
 }
 ```
 
+<br>
 ### Links
-[Back](/versioning/)
+[Back](/language/reference/versioning/)

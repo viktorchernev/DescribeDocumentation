@@ -1,10 +1,10 @@
 ---
 layout: page
 title: Runaway group
-permalink: /v094/bugs/todo-bug-2
+permalink: /language/reference/versioning/v094/bugs/todo-bug-2/
 exclude: true
 ---
-_BUG: Runaway group_
+<br>_BUG: Runaway group_
 
 <span style="color:red">The folowing code produced runaway group. To be investegated!!!</span>
 
@@ -40,3 +40,8 @@ Koenigsegg
 
 //*Units planned, the Jesko and Jesko Absolut have a combined production run of 125 units
 ```
+
+
+<br>
+### Links
+[Back](/language/reference/versioning/v094/compiler094/)

@@ -45,5 +45,5 @@ famous websites ->
 
 <br>
 ### Links
-[Next](/language/how-to-write-decorators)<br>
-[Prev](/language/how-to-write-comments)
+[Next](/language/how-to-write-decorators/)<br>
+[Prev](/language/how-to-write-comments/)

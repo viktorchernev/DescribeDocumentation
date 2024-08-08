@@ -1,31 +1,35 @@
 ---
 layout: page
 title: Compiler v0.9
-permalink: /v09/compiler09/
+permalink: /language/reference/versioning/v09/compiler09/
 exclude: true
 ---
 _Bug fixes and features added in Describe Compiler v0.9_
 
-## Features:
-* [Change entries foreground color](/v09/features/feature-1)
-* [Links in the HTML](/v09/features/feature-2)
-* [Auto-escape symbols](/v09/features/feature-3)
-* [Comment item decorator](/v09/features/feature-4)
-* [Empty item decorator](/v09/features/feature-5)
-* [Translation templates names](/v09/features/feature-6)
-* [Namespace addressing scheme](/v09/features/feature-7)
-* [Custom translator](/v09/features/feature-8)
+## Features
 
-## Bugs:
-* [Consecutive closing semicolons](/v09/bugs/bug-1)
-* [Cyrillic or special character](/v09/bugs/bug-2)
-* [Empty production null reference](/v09/bugs/bug-3)
-* [EscapeEscape does not show](/v09/bugs/bug-4)
-* [Last item comment Runaway group](/v09/bugs/bug-5)
-* [One letter bug](/v09/bugs/bug-6)
-* [Redefinition bug](/v09/bugs/bug-7)
+[Change entries foreground color](/language/reference/versioning/v09/features/feature-1/)<br>
+[Links in the HTML](/language/reference/versioning/v09/features/feature-2/)<br>
+[Auto-escape symbols](/language/reference/versioning/v09/features/feature-3/)<br>
+[Comment item decorator](/language/reference/versioning/v09/features/feature-4/)<br>
+[Empty item decorator](/language/reference/versioning/v09/features/feature-5/)<br>
+[Translation templates names](/language/reference/versioning/v09/features/feature-6/)<br>
+[Namespace addressing scheme](/language/reference/versioning/v09/features/feature-7/)<br>
+[Custom translator](/language/reference/versioning/v09/features/feature-8/)<br>
 
-## Links:
-* [Features](/v09/features/)
-* [Bugs](/v09/bugs/)
-* [Compiler v0.9.1](/v091/compiler091)
+## Bugs
+
+[Consecutive closing semicolons](/language/reference/versioning/v09/bugs/bug-1/)<br>
+[Cyrillic or special character](/language/reference/versioning/v09/bugs/bug-2/)<br>
+[Empty production null reference](/language/reference/versioning/v09/bugs/bug-3/)<br>
+[EscapeEscape does not show](/language/reference/versioning/v09/bugs/bug-4/)<br>
+[Last item comment Runaway group](/language/reference/versioning/v09/bugs/bug-5/)<br>
+[One letter bug](/language/reference/versioning/v09/bugs/bug-6/)<br>
+[Redefinition bug](/language/reference/versioning/v09/bugs/bug-7/)<br>
+
+<br>
+### Links
+[Features](/language/reference/versioning/v09/features/)<br>
+[Bugs](/language/reference/versioning/v09/bugs/)<br>
+[Compiler v0.9.1](/language/reference/versioning/v091/compiler091/)<br>
+[Back](/language/reference/versioning/)

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: TestGadget v5 (WinForms, Gold parser)
-permalink: /test-gadget/test-gadget-v5
+permalink: /language/reference/versioning/test-gadget/test-gadget-v5/
 exclude: true
 ---
 ```
@@ -417,5 +417,6 @@ namespace TestGadget
 // Cyrilic symbols result in a lexical error
 ```
 
+<br>
 ### Links
-[Back](/versioning/)
+[Back](/language/reference/versioning/)

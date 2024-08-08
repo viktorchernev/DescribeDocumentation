@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Testing - Grammar 0.9
-permalink: /testing/grammar-v09/
+permalink: /language/reference/testing/grammar-v09/
 exclude: true
 ---
 <br>
@@ -32,4 +32,4 @@ _Describe Decorators (v0.9)_
 
 <br>
 ### Links
-[Back](/testing)
+[Back](/language/reference/testing)

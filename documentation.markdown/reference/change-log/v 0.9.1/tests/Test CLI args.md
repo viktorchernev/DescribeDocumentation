@@ -1,10 +1,10 @@
 ---
 layout: page
 title: Test CLI args
-permalink: /v091/tests/test-1
+permalink: /language/reference/versioning/v091/tests/test-1/
 exclude: true
 ---
-_TEST: Test CLI args_
+<br>_TEST: Test CLI args_
 
 1. default
 ```
@@ -50,3 +50,8 @@ d) "C:\Users\Viktor Chernev\Desktop\DataLists\Lists" verbosity=HIGH "C:\Users\Vi
 ```
 C:\Users\Viktor Chernev\Desktop\DataLists\Lists
 ```
+
+
+<br>
+### Links
+[Back](/language/reference/versioning/v091/compiler091/)

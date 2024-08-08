@@ -1,10 +1,10 @@
 ---
 layout: page
 title: Star Comments
-permalink: /v091/bugs/bug-2
+permalink: /language/reference/versioning/v091/bugs/bug-2/
 exclude: true
 ---
-_BUG: Star Comments_
+<br>_BUG: Star Comments_
 
 <span style="color:red">There is a bug related to star comments - we might be erroneously escaping the stars for example?</span>
 
@@ -38,3 +38,8 @@ May <may2023> ->
 		Friday ->;
 	*/
 ```
+
+
+<br>
+### Links
+[Back](/language/reference/versioning/v091/compiler091/)

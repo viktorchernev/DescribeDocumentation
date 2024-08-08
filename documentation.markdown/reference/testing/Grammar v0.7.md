@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Testing - Grammar 0.7
-permalink: /testing/grammar-v07/
+permalink: /language/reference/testing/grammar-v07/
 exclude: true
 ---
 <br>
@@ -63,4 +63,4 @@ _Describe Tags (v0.7)_
 
 <br>
 ### Links
-[Back](/testing)
+[Back](/language/reference/testing)

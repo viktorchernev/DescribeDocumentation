@@ -1,9 +1,13 @@
 ---
 layout: page
 title: Quirks
-permalink: /v093/quirks/
+permalink: /language/reference/versioning/v093/quirks/
 exclude: true
 ---
-_Quirks fixed in Describe Compiler v0.9.3_
+<br>_Quirks fixed in Describe Compiler v0.9.3_
 
-* [Text Link Text](/v093/quirks/quirk-1)
+[Text Link Text](/language/reference/versioning/v093/quirks/quirk-1/)<br>
+
+<br>
+### Links
+[Back](/language/reference/versioning/v093/compiler093/)

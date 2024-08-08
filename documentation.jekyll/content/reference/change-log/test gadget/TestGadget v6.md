@@ -1,7 +1,7 @@
 ---
 layout: page
 title: TestGadget v6 (WinForms, Gold parser)
-permalink: /test-gadget/test-gadget-v6
+permalink: /language/reference/versioning/test-gadget/test-gadget-v6/
 exclude: true
 ---
 ```
@@ -675,5 +675,6 @@ namespace TestGadget
 //TestGadget.WriteTree(MainTreeView);
 ```
 
+<br>
 ### Links
-[Back](/versioning/)
+[Back](/language/reference/versioning/)

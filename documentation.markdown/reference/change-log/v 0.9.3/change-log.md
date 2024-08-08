@@ -1,10 +1,10 @@
 ---
 layout: page
 title: change-log
-permalink: /v093/change-log
+permalink: /language/reference/versioning/v093/change-log/
 exclude: true
 ---
-_change-log for v0.9.3_
+<br>_change-log for v0.9.3_
 
 IMPLEMENTED:
 * Describe language version 1.0 (code-named "Describe Official") has been developed and tested and implemented in the current version. With this new version of describe we have a significantly more complex preprocessor, which allow for intuitive handling of special characters. For more information, see the specification on Describe Official v 1.0
@@ -23,3 +23,8 @@ FIXED:
 * A bug with the implementation of custom decorators in the JSON translator have been removed
 * CLI Showing proper "Press any key to exit" message, after parsing a folder
 * CLI Changing console color on exit to what it was before execution
+
+
+<br>
+### Links
+[Back](/language/reference/versioning/v093/compiler093/)
