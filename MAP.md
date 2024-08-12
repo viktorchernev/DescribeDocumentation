@@ -33,3 +33,8 @@ Describe Markup Language related stuff - grammars, test files for those grammars
 
 ### `DescribeCompiler`
 The Transpiler for the Describe Markup Language.
+
+
+<br><br>
+# !work
+This folder contains different files that have been worked on in the past and could be useful for future work.
