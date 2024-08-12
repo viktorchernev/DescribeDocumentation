@@ -1,7 +1,7 @@
 ---
 layout: page
 title: DescribeParser.Visitors namespace - Universal Log Visitor for Describe
-permalink: /tanspiler/parser/visitors/log/universal/
+permalink: /language/reference/dev/tanspiler/parser/visitors/log/universal/
 exclude: true
 ---
 ## 1. UniversalLogVisitor
@@ -102,5 +102,6 @@ A Log visitor for all Describe Language versions in one class.
         .public string VisitTerminal11(ITerminalNode node)
 
 
+<br>
 ### Links
-[Back](/tanspiler/parser/visitors/log/)
+[Back](/language/reference/dev/tanspiler/parser/visitors/log/)

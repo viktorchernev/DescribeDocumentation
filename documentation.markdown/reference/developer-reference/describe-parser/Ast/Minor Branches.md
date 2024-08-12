@@ -1,12 +1,13 @@
 ---
 layout: page
 title: DescribeParser.Ast namespace - Abstract Syntax Tree
-permalink: /tanspiler/parser/ast/minor-branches/
+permalink: /language/reference/dev/tanspiler/parser/ast/minor-branches/
 exclude: true
 ---
-The minor branches are branch nodes that contain only LeafNode-s. Those are the Tag(s), Link(s) and Decorator(s).
+<br>The minor branches are branch nodes that contain only LeafNode-s. Those are the Tag(s), Link(s) and Decorator(s).
 
 
+<br>
 ## 1. AstTagNode
 
 Represents an Ast Tag object. This class has an internal constructor in order to prevent external instantiation, for which we use the AstFactory methods.
@@ -43,6 +44,7 @@ Represents an Ast Tag object. This class has an internal constructor in order to
             .public override string ToCode()
 
 
+<br>
 ## 2. AstLinkNode
 
 Represents an Ast Link object.
@@ -53,8 +55,8 @@ This class has an internal constructor in order to prevent external instantiatio
         Title - The Leaf Node representing the Title of the Link object.
         Letter - The Leaf Node representing the Letter of the Link object.
         CloseBracket - The Leaf Node representing the closing bracket of the Link object.
-        HasTitle - Wether this Link object contains a Title.
-        HasLetter - Wether this Link object contains a Letter
+        HasTitle - Weather this Link object contains a Title.
+        HasLetter - Weather this Link object contains a Letter
         Leafs - Get the Leaf Nodes that make the Link object.
         Children - Get the Leaf Nodes that make the Link object, as objects.
         Position - Gets the position of this link node within the source code.
@@ -90,6 +92,7 @@ This class has an internal constructor in order to prevent external instantiatio
             .public override string ToCode()
 
 
+<br>
 ## 3. Decorators
 
 ## 3.1. AstDecoratorNode
@@ -122,6 +125,7 @@ This class has an internal constructor in order to prevent external instantiatio
                 .public override string ToCode()
 
 
+<br>
 ## 3.2. enum AstSimpleDecoratorType
 
 Specifies the type of simple decorator in an abstract syntax tree (AST).
@@ -147,6 +151,7 @@ Specifies the type of simple decorator in an abstract syntax tree (AST).
                 .NlCommentDecorator
 
 
+<br>
 ## 3.3. AstSimpleDecoratorNode
 
 Represents a simple decorator node - "{ Name }", in the abstract syntax tree (AST).
@@ -178,6 +183,7 @@ This class has an internal constructor in order to prevent external instantiatio
                 .public override string ToJson()
 
 
+<br>
 ## 3.4. enum AstDoubleDecoratorType
 
 Specifies the type of double decorator in an abstract syntax tree (AST).
@@ -197,6 +203,7 @@ Specifies the type of double decorator in an abstract syntax tree (AST).
                 .EnlistDecorator
 
 
+<br>
 ## 3.5. AstDoubleDecoratorNode
 
 Represents a double decorator node - "{ Name | Value }", in the abstract syntax tree (AST).
@@ -230,6 +237,7 @@ This class has an internal constructor in order to prevent external instantiatio
                 .public override string ToJson()
 
 
+<br>
 ## 3.6. enum AstTripleDecoratorType
 
 Specifies the type of triple decorator in an abstract syntax tree (AST).
@@ -243,6 +251,7 @@ Specifies the type of triple decorator in an abstract syntax tree (AST).
                 .CustomDoubleDecorator
 
 
+<br>
 ## 3.7. AstTripleDecoratorNode
 
 Represents a triple decorator node - "{ Category | Name | Value }", in the abstract syntax tree (AST).
@@ -278,5 +287,6 @@ This class has an internal constructor in order to prevent external instantiatio
                 .public override string ToJson()
 
 
+<br>
 ### Links
-[Back](/tanspiler/parser/)
+[Back](/language/reference/dev/tanspiler/parser/ast/)

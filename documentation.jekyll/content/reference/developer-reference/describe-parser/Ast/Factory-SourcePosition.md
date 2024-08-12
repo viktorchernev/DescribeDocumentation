@@ -1,12 +1,13 @@
 ---
 layout: page
 title: DescribeParser.Ast namespace - AstFactory
-permalink: /tanspiler/parser/ast/factory/position/
+permalink: /language/reference/dev/tanspiler/parser/ast/factory/position/
 exclude: true
 ---
-The AstFactory contains all the methods needed to construct Ast classes. Those classes have internal constructors, so the AstFactory is the only way to construct the objects of the Abstract Syntax Tree.
+<br>The AstFactory contains all the methods needed to construct Ast classes. Those classes have internal constructors, so the AstFactory is the only way to construct the objects of the Abstract Syntax Tree.
 
 
+<br>
 ## 8. SourcePosition - These methods constructs SourcePosition objects
 	
 	
@@ -40,6 +41,7 @@ The AstFactory contains all the methods needed to construct Ast classes. Those c
     RETURNS - A single `SourcePosition` that spans from the minimum first index to the maximum last index of the input positions.
 
 
+<br>
 ### Links
-[Next](/tanspiler/parser/ast/factory/)<br>
-[Back](/tanspiler/parser/ast/factory/leaf/)
+[Next](/language/reference/dev/tanspiler/parser/ast/factory/)<br>
+[Back](/language/reference/dev/tanspiler/parser/ast/factory/leaf/)

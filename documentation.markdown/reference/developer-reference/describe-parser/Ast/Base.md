@@ -1,11 +1,12 @@
 ---
 layout: page
 title: DescribeParser.Ast namespace - Abstract Syntax Tree
-permalink: /tanspiler/parser/ast/base/
+permalink: /language/reference/dev/tanspiler/parser/ast/base/
 exclude: true
 ---
-The Base folder contains the base class and the interfaces for the members of the AST. These are the base classes and interfaces for the Abstract Syntax Tree. `SourcePosition` describes the position of the first and the last character in a Node. AstNode is the base class for all the Nodes in the abstract syntax tree. It implement the IAstNode interface. Every IAstNode - that is, every AstNode, that is every node in the abstract syntax tree should implement the appropriate methods thus being directly translateable to string representation, to JSON representation, and to source code. Finally, every node in the abstract syntax tree can be IAstChildNode and IAstBranchNode, and most are both, with the exception of the top-level and bottom level classes.
+<br>The Base folder contains the base class and the interfaces for the members of the AST. These are the base classes and interfaces for the Abstract Syntax Tree. `SourcePosition` describes the position of the first and the last character in a Node. AstNode is the base class for all the Nodes in the abstract syntax tree. It implement the IAstNode interface. Every IAstNode - that is, every AstNode, that is every node in the abstract syntax tree should implement the appropriate methods thus being directly translateable to string representation, to JSON representation, and to source code. Finally, every node in the abstract syntax tree can be IAstChildNode and IAstBranchNode, and most are both, with the exception of the top-level and bottom level classes.
 
+<br>
 ## 1. IAstNode
 
 The IAstNode interface represents a node in an abstract syntax tree (AST).
@@ -20,6 +21,7 @@ The IAstNode interface represents a node in an abstract syntax tree (AST).
             .public string ToCode()
 
 
+<br>
 ## 2. AstNode
 
 The base class for the AST
@@ -42,6 +44,7 @@ The base class for the AST
             .protected static string replaceWhitespaceE(string text)
 
 
+<br>
 ## 3. IAstChildNode
 
 Represents a child node in an abstract syntax tree (AST).
@@ -56,6 +59,7 @@ Being a child node means that a node is not the top level one, and has its place
             .IAstBranchNode? Parent                 { get; set; }
 
 
+<br>
 ## 4. SourcePosition
 
 Represents an Ast SourcePosition object. 
@@ -76,11 +80,13 @@ Represents an Ast SourcePosition object.
             .public int LastColumn                  {get; internal set; }
 
 
+<br>
 ## 5. IAstBranchNode
 
 Represents a branch node in an abstract syntax tree (AST).
 Branch nodes are nodes that contain other nodes. 
 
+<br>
 ### 5.1. IAstBranchNode
 
     Leafs - Gets the list of leaf nodes associated with this branch node. A `List<AstLeafNode>` containing the leaf nodes.
@@ -91,6 +97,7 @@ Branch nodes are nodes that contain other nodes.
         .public List<object> Children           { get; }
 
 
+<br>
 ### 5.2. IAstBranchNode<T>
 
 Represents a generic branch node in an abstract syntax tree (AST) that can contain children of a specified type.
@@ -103,5 +110,6 @@ Represents a generic branch node in an abstract syntax tree (AST) that can conta
         .public List<T> Children                { get; }
 
 
+<br>
 ### Links
-[Back](/tanspiler/parser/)
+[Back](/language/reference/dev/tanspiler/parser/ast/)

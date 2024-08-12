@@ -1,12 +1,13 @@
 ---
 layout: page
 title: DescribeParser.Visitors namespace - Unfold Visitors
-permalink: /tanspiler/parser/visitors/unfold/
+permalink: /language/reference/dev/tanspiler/parser/visitors/unfold/
 exclude: true
 ---
-The Unfold visitor classes are used to extract data from the parse tree contexts and store that data in a DescribeUnfold class, that is provided as an input parameter to the methods.
+<br>The Unfold visitor classes are used to extract data from the parse tree contexts and store that data in a DescribeUnfold class, that is provided as an input parameter to the methods.
 
 
+<br>
 ## 1. UniversalUnfoldVisitor
 An Unfold visitor for all Describe Language versions in one class. Used to extract data and store it in a `DescribeUnfold`.
 
@@ -76,7 +77,7 @@ An Unfold visitor for all Describe Language versions in one class. Used to extra
         .public bool TranslateContext11(DescribeUnfold u, ParserRuleContext context, string filename = "")
 
 
-
+<br>
 ## 2. UnfoldVisitor06
 This visitor class is used extract data and store it in an `DescribeUnfold`. For Describe Language version 0.6
 
@@ -98,7 +99,7 @@ This visitor class is used extract data and store it in an `DescribeUnfold`. For
     .public bool TranslateContext(DescribeUnfold u, Describe06Parser.ScriptureContext context, string filename = "")
 
 
-
+<br>
 ## 3. UnfoldVisitor07
 This visitor class is used extract data and store it in an `DescribeUnfold`. For Describe Language version 0.7
 
@@ -120,7 +121,7 @@ This visitor class is used extract data and store it in an `DescribeUnfold`. For
         .public bool TranslateContext(DescribeUnfold u, Describe07Parser.ScriptureContext context, string filename = "")
 
 
-
+<br>
 ## 4. UnfoldVisitor08
 This visitor class is used extract data and store it in an `DescribeUnfold`. For Describe Language version 0.8
 
@@ -142,7 +143,7 @@ This visitor class is used extract data and store it in an `DescribeUnfold`. For
         .public bool TranslateContext(DescribeUnfold u, Describe08Parser.ScriptureContext context, string filename = "")
 
 
-
+<br>
 ## 5. UnfoldVisitor09
 This visitor class is used extract data and store it in an `DescribeUnfold`. For Describe Language version 0.9
 
@@ -164,7 +165,7 @@ This visitor class is used extract data and store it in an `DescribeUnfold`. For
         .public bool TranslateContext(DescribeUnfold u, Describe09Parser.ScriptureContext context, string filename = "")
 
 
-
+<br>
 ## 6. UnfoldVisitor10
 This visitor class is used extract data and store it in an `DescribeUnfold`. For Describe Language version 1.0
 
@@ -186,7 +187,7 @@ This visitor class is used extract data and store it in an `DescribeUnfold`. For
         .public bool TranslateContext(DescribeUnfold u, Describe10Parser.ScriptureContext context, string filename = "")
 
 
-
+<br>
 ## 7. UnfoldVisitor11
 This visitor class is used extract data and store it in an `DescribeUnfold`. For Describe Language version 1.1
 
@@ -208,5 +209,6 @@ This visitor class is used extract data and store it in an `DescribeUnfold`. For
         .public bool TranslateContext(DescribeUnfold u, Describe11Parser.ScriptureContext context, string filename = "")
 
 
+<br>
 ### Links
-[Back](/tanspiler/parser/visitors/)
+[Back](/language/reference/dev/tanspiler/parser/visitors/)

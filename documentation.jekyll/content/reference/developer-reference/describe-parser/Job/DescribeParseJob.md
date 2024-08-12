@@ -1,12 +1,12 @@
 ---
 layout: page
 title: DescribeParser namespace - Job classes
-permalink: /tanspiler/parser/job/
+permalink: /language/reference/dev/tanspiler/parser/job/
 exclude: true
 ---
-The `IDescribeParseJob` interface describes a class, containing variables that are used by the Unfold Visitors during the translation process. The `SimpleParseJob` class is an implementation of this interface that the Unfold uses. However, users can device their own implementations that can be used for other parts of the transpilation process, by implementing the interface and reassigning in the `DescribeUnfold` class that will be used.
+<br>The `IDescribeParseJob` interface describes a class, containing variables that are used by the Unfold Visitors during the translation process. The `SimpleParseJob` class is an implementation of this interface that the Unfold uses. However, users can device their own implementations that can be used for other parts of the transpilation process, by implementing the interface and reassigning in the `DescribeUnfold` class that will be used.
 	
-	
+<br>
 ## 1. IDescribeParseJob interface
 
 	Contains the intermediate data, used during a parse operation.
@@ -20,7 +20,7 @@ The `IDescribeParseJob` interface describes a class, containing variables that a
         .public string? LastFile                                    { get; set; }
 	
 	
-	
+<br>
 ## 2. SimpleParseJob class
 
 	Contains the intermediate data, used during a parse operation.
@@ -34,5 +34,6 @@ The `IDescribeParseJob` interface describes a class, containing variables that a
         .public string? LastFile                                    { get; set; }
 
 
+<br>
 ### Links
-[Back](/tanspiler/parser/)
+[Back](/language/reference/dev/tanspiler/parser/)

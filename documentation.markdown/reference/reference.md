@@ -9,7 +9,7 @@ Below you can find technical reference for the transpiler, as well as change-log
 
 <br>
 ### Links
-[Technical Reference](/tanspiler/home/)<br>
+[Technical Reference](/language/reference/dev/)<br>
 [Change log and Versioning](/language/reference/versioning/)<br>
 [Various tests and testing data](/language/reference/testing/)<br>
 [Back](/language/)

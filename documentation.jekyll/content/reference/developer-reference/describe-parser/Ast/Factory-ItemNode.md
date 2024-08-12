@@ -1,12 +1,13 @@
 ---
 layout: page
 title: DescribeParser.Ast namespace - AstFactory
-permalink: /tanspiler/parser/ast/factory/item/
+permalink: /language/reference/dev/tanspiler/parser/ast/factory/item/
 exclude: true
 ---
-The AstFactory contains all the methods needed to construct Ast classes. Those classes have internal constructors, so the AstFactory is the only way to construct the objects of the Abstract Syntax Tree.
+<br>The AstFactory contains all the methods needed to construct Ast classes. Those classes have internal constructors, so the AstFactory is the only way to construct the objects of the Abstract Syntax Tree.
 
 
+<br>
 ## 3. ItemNode - These methods constructs ItemNode objects
 	
 
@@ -90,6 +91,7 @@ The AstFactory contains all the methods needed to construct Ast classes. Those c
 	RETURNS - The created AstItemNode.
 
 
+<br>
 ### Links
-[Next](/tanspiler/parser/ast/factory/expression/)<br>
-[Back](/tanspiler/parser/ast/factory/tag/)
+[Next](/language/reference/dev/tanspiler/parser/ast/factory/tag/)<br>
+[Back](/language/reference/dev/tanspiler/parser/ast/factory/expression/)

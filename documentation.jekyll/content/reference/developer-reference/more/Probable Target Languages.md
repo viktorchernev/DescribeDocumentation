@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Possible target languages for Describe Markup Translator development
-permalink: /tanspiler/targets/
+permalink: /language/reference/dev/more/targets/
 exclude: true
 ---
 This article explores different programming languages that might be of interest as destination languages for the Describe Markup Language.
@@ -33,4 +33,4 @@ This article explores different programming languages that might be of interest 
 
 
 ### Links
-[Back](/tanspiler/home/)
+[Back](/language/reference/dev/)

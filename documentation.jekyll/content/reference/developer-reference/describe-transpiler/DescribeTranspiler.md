@@ -1,7 +1,7 @@
 ---
 layout: page
-title: Describe Transpiler Documentation - Home
-permalink: /tanspiler/api/
+title: Describe Transpiler
+permalink: /language/reference/dev/tanspiler/api/
 exclude: true
 ---
 # Transpiler for the Describe Markup Language
@@ -20,5 +20,6 @@ Finally, the Translators are used to translate an Unfold or AST to a target lang
 [Compiler]()<br>
 [Translators]()<br>
 
+<br>
 ### Links
-[Back](/tanspiler/home/)
+[Back](/language/reference/dev/)

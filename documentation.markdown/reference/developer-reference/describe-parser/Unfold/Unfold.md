@@ -1,12 +1,13 @@
 ---
 layout: page
 title: DescribeUnfold - DescribeParser.Unfold namespace
-permalink: /tanspiler/parser/unfold/
+permalink: /language/reference/dev/tanspiler/parser/unfold/
 exclude: true
 ---
-The describe Unfold is a class that represents the information contained within Describe source code, be it a single file or multiple files. Unlike the AST, it does not retain source-code related information, like source code position or whitespaces between different syntactical constructs, and cannot be used to reconstruct the original source code. We could say that, the Unfold is optimised for tasks where only the actual data contaied in the source code matters.
+<br>The describe Unfold is a class that represents the information contained within Describe source code, be it a single file or multiple files. Unlike the AST, it does not retain source-code related information, like source code position or whitespaces between different syntactical constructs, and cannot be used to reconstruct the original source code. We could say that, the Unfold is optimised for tasks where only the actual data contaied in the source code matters.
 
 
+<br>
 ## 1. DescribeDecorator
 
 	The `DescribeDecorator` struct represents a decorator structure in the Describe language, containing name, value, and category information.
@@ -22,6 +23,7 @@ The describe Unfold is a class that represents the information contained within 
         .string?                Category
 
 
+<br>
 ## 2. DescribeLink
 
 	The `DescribeLink` struct represents a link structure in the Describe language, containing URL, title, and letter information.
@@ -35,6 +37,7 @@ The describe Unfold is a class that represents the information contained within 
         .string?                Letter
 
 
+<br>
 ## 3. DescribeUnfold
 	
 	The `DescribeUnfold` class represents the data structure for unfolded data with links and decorators.
@@ -83,5 +86,6 @@ The describe Unfold is a class that represents the information contained within 
         .FromJson(string json)
 
 
+<br>
 ### Links
-[Back](/tanspiler/parser/)
+[Back](/language/reference/dev/tanspiler/parser/)

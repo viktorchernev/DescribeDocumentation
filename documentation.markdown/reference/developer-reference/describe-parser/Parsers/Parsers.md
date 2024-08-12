@@ -1,11 +1,12 @@
 ---
 layout: page
 title: Parsers folder - DescribeParser.Parsers namespace
-permalink: /tanspiler/parser/parsers/
+permalink: /language/reference/dev/tanspiler/parser/parsers/
 exclude: true
 ---
-The Parser classes are used to, well, parse Describe source code. Those classes are generated automatically using the ANTLR 4 tool, that takes in a `.g4` grammar file and emits those C# source code files - only thing left for us is to add them to our project. Those classes will not be tested directly with unit-tests, as we trust the authors of ANTLR have done their job, as it is a state of the art tool. In fact, we don't even understand their innerworkings in details - we simply use them, and this is fine.
+<br>The Parser classes are used to, well, parse Describe source code. Those classes are generated automatically using the ANTLR 4 tool, that takes in a `.g4` grammar file and emits those C# source code files - only thing left for us is to add them to our project. Those classes will not be tested directly with unit-tests, as we trust the authors of ANTLR have done their job, as it is a state of the art tool. In fact, we don't even understand their innerworkings in details - we simply use them, and this is fine.
 
+<br>
 ## Parser classes source files
 There is a different set of classes for each version of the Describe language being parsed. Below is a file listing.
 I want to note here that, when building those classes with the ANTLR tool, you can specify wether you want to build listeners or visitors, as those are two separate ways of interacting with the parser, resulting in two distinct design patterns being used. We are using visitors, as this is the favorable approach for a few reasons, but we have chosen to have the Listener classes built anyway, so users are able to implement their own listener, if need be.
@@ -21,6 +22,7 @@ ParsersFor11 / Describe11BaseListener.cs, Describe11Listener.cs, Describe11BaseV
 	
 We are not going to give a documentation of those classes here - anyone interested in that can read the book - "The Definitive ANTLR 4 Reference" or seek various online turorials and resources. We will simply give an example of basic usage of these classes, the way thhey are used in the DescribeParser project.
 	
+<br>
 ## A) Test Lexer 
 ```
 //get source code to test
@@ -40,6 +42,7 @@ foreach (var token in tokenstream.GetTokens())
 }
 ```
 
+<br>
 ## B) Test Parser
 ```
 //get source code to test
@@ -62,5 +65,6 @@ visitor.Visit(scriptureContext);
 // The visitor does the rest of the work from here.
 ```
 
+<br>
 ### Links
-[Back](/tanspiler/parser/)
+[Back](/language/reference/dev/tanspiler/parser/)

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: DescribeParser.Visitors namespace - Log Visitor for Describe 1.1
-permalink: /tanspiler/parser/visitors/log/v11/
+permalink: /language/reference/dev/tanspiler/parser/visitors/log/v11/
 exclude: true
 ---
 ## 1. LogVisitor11
@@ -75,5 +75,6 @@ This LogVisitor is for Describe version 1.1
         .public override string VisitItem_or_expression_part(Describe11Parser.Item_or_expression_partContext context)
 
 
+<br>
 ### Links
-[Back](/tanspiler/parser/visitors/log/)
+[Back](/language/reference/dev/tanspiler/parser/visitors/log/)

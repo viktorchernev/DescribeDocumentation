@@ -1,11 +1,12 @@
 ---
 layout: page
 title: DescribeParser.Ast namespace - Abstract Syntax Tree
-permalink: /tanspiler/parser/ast/major-branches/
+permalink: /language/reference/dev/tanspiler/parser/ast/major-branches/
 exclude: true
 ---
-The major branches are branch nodes that contain only other branches, as well as leafs. Those are the Item, Expression, and the top-level node scripture, that represents a Describe source file.
+<br>The major branches are branch nodes that contain only other branches, as well as leafs. Those are the Item, Expression, and the top-level node scripture, that represents a Describe source file.
 
+<br>
 ## 1. AstScriptureNode
 
 Represents an Ast Scripture object.
@@ -22,9 +23,9 @@ This class has an internal constructor in order to prevent external instantiatio
         RETURNS - The `AstExpressionNode` at the specified index.
         EXCEPTION / IndexOutOfRangeException - Thrown if the index is less than 0 or greater than or equal to the number of expressions.
 
-        IsMultyExpression - Wether this Scripture object has an multiple Expressions or a single one.
+        IsMultyExpression - Weather this Scripture object has an multiple Expressions or a single one.
         ExpressionCount - Gets the Number of Expressions in this Scripture object.
-        HasException - Wether this Scripture object has an Exception.
+        HasException - Weather this Scripture object has an Exception.
         Leafs - Gets all the Leaf Nodes contained in this Scripture object.
         Children - Gets all the direct descendant nodes of this Scripture object.
         ToString() - Returns a string representation of the `AstScriptureNode`.
@@ -56,6 +57,7 @@ This class has an internal constructor in order to prevent external instantiatio
             .public override string ToCode()
 
 
+<br>
 ## 2. AstExpressionNode
 
 Represents an Ast Expression object .
@@ -71,8 +73,8 @@ This class has an internal constructor in order to prevent external instantiatio
         RETURNS - The `AstExpressionLineNode` at the specified index.
         EXCEPTION / IndexOutOfRangeException - Thrown if the index is less than 0 or greater than or equal to the number of expressions.
 
-        IsEmpty - Wether this Expression object has multiple Expression lines or not.
-        IsMultyLined - Wether this Expression object has multiple Expression lines or not.
+        IsEmpty - Weather this Expression object has multiple Expression lines or not.
+        IsMultyLined - Weather this Expression object has multiple Expression lines or not.
         LinesCount - Gets the Number of Lines in this Expression object.
         Leafs - Gets all the Leaf Nodes contained in this Expression object.
         Children - Gets all the direct descendant nodes of this Expression object.
@@ -110,6 +112,7 @@ This class has an internal constructor in order to prevent external instantiatio
             .public override string ToCode()
 
 
+<br>
 ## 2.1. AstExpressionLineNode
 
 Represents an Ast ExpressionLine object.
@@ -117,8 +120,8 @@ This class has an internal constructor in order to prevent external instantiatio
 
         Body - The Item Node or Expression Node representing the Body symbol of the Expression line object.
         Punctuation - The Leaf Node representing the punctuation symbol of the ExpressionLine object.
-        HasBody - Wether this ExpressionLine has Body.
-        HasPunctuation - Wether this ExpressionLine object has Punctuation.
+        HasBody - Weather this ExpressionLine has Body.
+        HasPunctuation - Weather this ExpressionLine object has Punctuation.
         Leafs - Gets all the Leaf Nodes contained in this ExpressionLine object.
         Children - Gets all the direct descendant nodes of this ExpressionLine object.
         Position - Get the SourcePosition of this ExpressionLine object.
@@ -152,6 +155,7 @@ This class has an internal constructor in order to prevent external instantiatio
             .public override string ToCode()
 
 
+<br>
 ## 3. AstItemNode
 
 Represents an Ast Item object.
@@ -162,9 +166,9 @@ This class has an internal constructor in order to prevent external instantiatio
         Tag - The Tag Node representing the Tag object of the Item object.
         Links - The List representing the Link objects of the Item object.
         Decorators - The List representing the Decorator objects of the Item object.
-        HasTag - Wether the Item object has a Tag.
-        HasLinks - Wether the Item object has Links.
-        HasDecorators - Wether the Item object has Decorators.
+        HasTag - Weather the Item object has a Tag.
+        HasLinks - Weather the Item object has Links.
+        HasDecorators - Weather the Item object has Decorators.
         Leafs - Gets all the Leaf Nodes contained in this Item object.
         Children - Gets all the direct descendant nodes of this Item object.
         Position - Get the SourcePosition of this Item object.
@@ -201,5 +205,6 @@ This class has an internal constructor in order to prevent external instantiatio
             .public override string ToCode()
 
 
+<br>
 ### Links
-[Back](/tanspiler/parser/)
+[Back](/language/reference/dev/tanspiler/parser/ast/)

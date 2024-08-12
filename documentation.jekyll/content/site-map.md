@@ -43,7 +43,12 @@ Some pages are omitted in order to keep the page of more manageable size.
 	
 		[Describe Transpiler - Technical Reference](/tanspiler/home/)<br>
 		
-		
+			[Antlr4 - Another Tool for Language Recognition](/language/reference/dev/tanspiler/antlr/)<br>
+			[DescribeParser - Parser for the Describe Markup Language](/language/reference/dev/tanspiler/parser/)<br>
+			[DescribeTranspiler - Transpiler for the Describe Markup Language](/language/reference/dev/tanspiler/api/)<br>
+			[DescribeTranspiler.CLI - Command Line Interface for the Transpiler](/language/reference/dev/tanspiler/cli/)<br>
+			[DescribeTranspiler.AWS - Amazon Web Services Interface for the Transpiler](/language/reference/dev/tanspiler/aws/)<br>
+
 		[Versioning](/versioning/)<br>
 		
 			[Transpiler v1.0](/language/reference/versioning/v10/transpiler10/)<br>
@@ -71,6 +76,7 @@ Some pages are omitted in order to keep the page of more manageable size.
 			[Testing - Grammar 0.9](/testing/grammar-v09/)<br>
 			[Testing - Grammar 1.0](/testing/grammar-v10/)<br>
 
+		[Possible target languates for Describe Markup Translator development](/language/reference/dev/more/targets/)<br>
 
 <br>
 ### Links

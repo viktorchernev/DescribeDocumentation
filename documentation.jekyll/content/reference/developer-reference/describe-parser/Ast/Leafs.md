@@ -1,11 +1,12 @@
 ---
 layout: page
 title: DescribeParser.Ast namespace - Abstract Syntax Tree
-permalink: /tanspiler/parser/ast/leafs/
+permalink: /language/reference/dev/tanspiler/parser/ast/leafs/
 exclude: true
 ---
-Those are the classes, or rather the class `AstLeafNode`, that represent terminals in the Syntax tree (Not to be confused with Tokens in the parse tree which they not always translate one on one to). For all the terminals, we use `AstLeafNode`, and give it a different type.
+<br>Those are the classes, or rather the class `AstLeafNode`, that represent terminals in the Syntax tree (Not to be confused with Tokens in the parse tree which they not always translate one on one to). For all the terminals, we use `AstLeafNode`, and give it a different type.
 
+<br>
 ## 1. AstLeafType
 
 Specifies the type of a leaf node in an abstract syntax tree (AST).
@@ -41,6 +42,7 @@ Specifies the type of a leaf node in an abstract syntax tree (AST).
             .CloseDecorator
 
 
+<br>
 ## 2. AstLeafNode
 
 Represents a leaf node in an abstract syntax tree (AST). This class has an internal constructor in order to prevent external instantiation, for which we use the AstFactory methods.
@@ -82,5 +84,6 @@ Represents a leaf node in an abstract syntax tree (AST). This class has an inter
             .public override string ToCode()
 
 
+<br>
 ### Links
-[Back](/tanspiler/parser/)
+[Back](/language/reference/dev/tanspiler/parser/ast/)

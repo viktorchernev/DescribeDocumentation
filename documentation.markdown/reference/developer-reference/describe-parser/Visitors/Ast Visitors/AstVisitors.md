@@ -1,12 +1,12 @@
 ---
 layout: page
 title: DescribeParser.Visitors namespace - Ast Visitors
-permalink: /tanspiler/parser/visitors/ast/
+permalink: /language/reference/dev/tanspiler/parser/visitors/ast/
 exclude: true
 ---
-The Ast visitor classes are used to build Abstract Syntax Trees form parse trees.
+<br>The Ast visitor classes are used to build Abstract Syntax Trees form parse trees.
 
-
+<br>
 ## 1. UniversalAstVisitor
 An Ast visitor for all Describe Language versions in one class. Used to build Abstract Syntax Tree.
 
@@ -69,7 +69,7 @@ An Ast visitor for all Describe Language versions in one class. Used to build Ab
         .public AstScriptureNode TranslateContext11(ParserRuleContext context, string filename = "")
 
 
-
+<br>
 ## 2. AstVisitor06
 An Ast visitor for Describe Language version 0.6. Used to build Abstract Syntax Trees.
 
@@ -90,6 +90,7 @@ An Ast visitor for Describe Language version 0.6. Used to build Abstract Syntax 
         .public bool TranslateContext(DescribeUnfold u, Describe06Parser.ScriptureContext context, string filename = "")
 
 
+<br>
 ## 3. AstVisitor07
 An Ast visitor for Describe Language version 0.7. Used to build Abstract Syntax Trees.
 
@@ -110,7 +111,7 @@ An Ast visitor for Describe Language version 0.7. Used to build Abstract Syntax 
         .public bool TranslateContext(DescribeUnfold u, Describe07Parser.ScriptureContext context, string filename = "")
 
 
-
+<br>
 ## 4. AstVisitor08
 An Ast visitor for Describe Language version 0.8. Used to build Abstract Syntax Trees.
 
@@ -131,6 +132,7 @@ An Ast visitor for Describe Language version 0.8. Used to build Abstract Syntax 
         .public bool TranslateContext(DescribeUnfold u, Describe08Parser.ScriptureContext context, string filename = "")
 
 
+<br>
 ## 5. AstVisitor09
 An Ast visitor for Describe Language version 0.9. Used to build Abstract Syntax Trees.
 
@@ -151,6 +153,7 @@ An Ast visitor for Describe Language version 0.9. Used to build Abstract Syntax 
         .public bool TranslateContext(DescribeUnfold u, Describe09Parser.ScriptureContext context, string filename = "")
 
 
+<br>
 ## 6. AstVisitor10
 An Ast visitor for Describe Language version 1.0. Used to build Abstract Syntax Trees.
 
@@ -171,6 +174,7 @@ An Ast visitor for Describe Language version 1.0. Used to build Abstract Syntax 
         .public bool TranslateContext(DescribeUnfold u, Describe10Parser.ScriptureContext context, string filename = "")
 
 
+<br>
 ## 7. AstVisitor11
 An Ast visitor for Describe Language version 1.1. Used to build Abstract Syntax Trees.
 
@@ -191,5 +195,6 @@ An Ast visitor for Describe Language version 1.1. Used to build Abstract Syntax 
         .public bool TranslateContext(DescribeUnfold u, Describe11Parser.ScriptureContext context, string filename = "")
 
 
+<br>
 ### Links
-[Back](/tanspiler/parser/visitors/)
+[Back](/language/reference/dev/tanspiler/parser/visitors/)
