@@ -1,4 +1,4 @@
-# !documentation
+# documentation
 
 ### `documentation.changelog`
 Contains text/markdown files describing bugs, features and ideas, both implemented in the past and ones for future consideration and/or implementation.
