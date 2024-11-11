@@ -1,4 +1,4 @@
-Describe version 1.1, codenamed Doubles is the second official version of the language, although it is similar to a variant of version 1.0. The difference is that, in this version, the `<<` tags `>>`, `[[` links `]]` and `{{` decorators `}}` are enclosed in double brackets, thus allowing for text that contains single brackets of these kinds be conveniently written, without the need to escape said brackets.
+Describe version 1.1, codenamed Doubles is the second official version of the language, although it is similar to version 1.0. The difference is that, in this version, the `<<` tags `>>`, `[[` links `]]` and `{{` decorators `}}` are enclosed in double brackets, thus allowing for text that contains single brackets of these kinds be conveniently written, without the need to escape said brackets.
 
 The ANTLR4 parser grammar is given next.<br><br>
 
@@ -8,7 +8,7 @@ The ANTLR4 parser grammar is given next.<br><br>
 /* Describe Markup Language
  * version 1.1 (Doubles)
  * Created by DemonOfReason and ChatGPT
- * Finished on 20 June 2024 */
+ * Finished on 03 Aug 2024 */
 
 grammar Describe11;
 
@@ -36,7 +36,8 @@ fragment LINESPACE			: [ \r\n\t\u000B\u000C\u0085\u00A0\u1680\u2000-\u200A\u2028
 
 
 // Define lexer rules for comments
-LINE_COMMENT       			: '// ' .*? ('\r'? '\n' LINESPACE* | EOF) -> skip ;
+PROTO_SLASHES				: '://' ;
+LINE_COMMENT       			: '//' .*? ('\r'? '\n' LINESPACE* | EOF) -> skip ;
 BLOCK_COMMENT       			: '/*' .*? ('*/' LINESPACE* | EOF) -> skip ;
 TAG					: '<<' .+? '>>' LINESPACE* ;
 LINK					: '[[' .*? ']]' LINESPACE* ;
@@ -47,7 +48,7 @@ DECORATOR				: '{{' .*? '}}' LINESPACE* ;
 HYPHEN					: '-' ;
 TILDE					: '~' ;
 
-PRODUCTION_ARROW			: '>' WHITESPACE* BLOCK_COMMENT* '\n' LINESPACE*
+PRODUCTION_ARROW            		: '>' WHITESPACE* BLOCK_COMMENT* '\n' LINESPACE*
 					| '>' WHITESPACE* BLOCK_COMMENT* LINE_COMMENT
 					| '>>' LINESPACE* ;
 
@@ -59,10 +60,10 @@ TERMINATOR           			: ';' WHITESPACE* BLOCK_COMMENT* ('\n' | EOF) LINESPACE*
 					| ';' WHITESPACE* BLOCK_COMMENT* LINE_COMMENT
 					| ';;' LINESPACE* ;
 
-FORWARD_SLASHES				: '//' LINESPACE* ;
-FORWARD_SLASH				: '/' LINESPACE* ;
+FORWARD_SLASH               		: '/' LINESPACE* ;
 COMMA					: ',' LINESPACE* ;
 SEMICOLON				: ';' LINESPACE* ;
+COLON             			: ':' LINESPACE* ;
 RIGHT_ARROW             		: '>' LINESPACE* ;
 LEFT_ARROW             			: '<' LINESPACE* ;
 RIGHT_SQUARE      			: ']' LINESPACE* ;
@@ -73,14 +74,16 @@ STAR					: '*' LINESPACE* ;
 
 ESCAPE_ESCAPE        			: '\\\\' LINESPACE* ;
 ESCAPE_HYPHEN      			: '\\-' LINESPACE* ;
+ESCAPE_TILDE				: '\\~' LINESPACE* ;
 ESCAPE_RIGHT_ARROW      		: '\\>' LINESPACE* ;
 ESCAPE_LEFT_ARROW      			: '\\<' LINESPACE* ;
-ESCAPE_RIGHT_SQUARE     	 	: '\\]' LINESPACE* ;
+ESCAPE_RIGHT_SQUARE      		: '\\]' LINESPACE* ;
 ESCAPE_LEFT_SQUARE      		: '\\[' LINESPACE* ;
 ESCAPE_RIGHT_CURL      			: '\\}' LINESPACE* ;
 ESCAPE_LEFT_CURL     	 		: '\\{' LINESPACE* ;
 ESCAPE_SEPARATOR     			: '\\,' LINESPACE* ;
 ESCAPE_TERMINATOR    			: '\\;' LINESPACE* ;
+ESCAPE_COLON    			: '\\:' LINESPACE* ;
 ESCAPE_LCOMMENT      			: '\\//' LINESPACE* ;
 ESCAPE_BCOMMENT      			: '\\/*' LINESPACE* ;
 ESCAPE               			: '\\' LINESPACE* ;
@@ -89,7 +92,7 @@ ESCAPE               			: '\\' LINESPACE* ;
 // Define lexer rule for data
 // Note: For some reason we don't need to escape '[' and '|'
 // and ANTLR does not like when we try to escape them
-fragment DATA_CHAR			: ~[{}[\]\-<>,;*~/\\] ;
+fragment DATA_CHAR			: ~[{}[\]\-<>,:;*~/\\] ;
 DATA                			: DATA_CHAR+ ;
 
 
@@ -99,6 +102,7 @@ producer				: HYPHEN PRODUCTION_ARROW ;
 
 text_chunk				: ESCAPE_ESCAPE
 					| ESCAPE_HYPHEN
+					| ESCAPE_TILDE
 					| ESCAPE_RIGHT_ARROW
 					| ESCAPE_LEFT_ARROW
 					| ESCAPE_RIGHT_SQUARE
@@ -107,6 +111,7 @@ text_chunk				: ESCAPE_ESCAPE
 					| ESCAPE_LEFT_CURL
 					| ESCAPE_SEPARATOR
 					| ESCAPE_TERMINATOR
+					| ESCAPE_COLON
 					| ESCAPE_LCOMMENT
 					| ESCAPE_BCOMMENT
 					| ESCAPE
@@ -123,8 +128,9 @@ text_chunk				: ESCAPE_ESCAPE
 					| RIGHT_CURL
 					| LEFT_CURL
 							
-					| FORWARD_SLASHES
 					| FORWARD_SLASH
+					| PROTO_SLASHES
+					| COLON
 					| STAR
 					| DATA ;
 

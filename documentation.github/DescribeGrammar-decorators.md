@@ -1,6 +1,7 @@
-Decorators basically are some text enclosed in curly brackets - ```{``` and ```}```. Decorators are used to add different kind of data to items - weather it is additional text or instruction to change the color of the item or add a particular icon image. Decorators can either be simple ones, consisting of just a key, or complex ones, consisting of a key and a value, delimited by a pipe symbol ```|```. 
+Decorators are basically some text enclosed in curly brackets - ```{``` and ```}```. Decorators are used to add different kinds of data to items - whether it is additional text or an instruction to change the color or the style of the item or even more <!--or add a particular icon image-->. Decorators can either be simple ones, consisting of just a key, or complex ones, consisting of a key and a value, delimited by a pipe symbol ```|```. 
+(Decorators can even be ternary ones consisting of a name, key and value, again delimited by a pipe symbol, although those have not been implemented yet).
 
-A list of decorators and instructions for their use follows. However, in the Describe language grammar, a decorator is just some text in curly brackets. What a particular decorator will do is implemented in the particular translator, and if users are developing their own translators, they are free to implement their own decorators.
+A list of decorators and instructions for their use follows. However, in the Describe language grammar, a decorator is just some text in curly brackets. What a particular decorator will do is implemented per translator, and if users are developing their own translators, they are free to implement their own decorators.
 
 * <span style="color:blue">**_empty_** ```{empty}```</span><br>
 The empty entry decorator is a simple decorator used to create empty entries. Those empty entries essentially act as new lines in lists. This decorator cannot be applied on an item that is a head of a production.
@@ -29,6 +30,19 @@ The underline decorator is a simple decorator used to make an entry underlined.
 * <span style="color:blue">**_striked_** ```{striked}```</span><br>
 The striked decorator is a simple decorator used to add the strike-through CSS effect to an entry.
 
+* <span style="color:blue">**_sensitive_** ```{sensitive}```</span><br>
+Entries can be marked as sensitive and productions can as well. When marked as such, nothing happens until we use the cmd switch `censor`. 
+If we do, marked entries are obscured with '?' instead. That is, if the translator supports the feature. Our inbuilt HTML translators do.
+
+* <span style="color:blue">**_secret_** ```{secret}```</span><br>
+Entries can be marked as secret and productions can as well. When marked as such, nothing happens until we use the cmd switch `censor`. 
+If we do, marked entries are replaced with random number of black squares. That is, if the translator supports the feature. Our inbuilt HTML translators do.
+
+* <span style="color:blue">**_hidden_** ```{hidden}```</span><br>
+Entries can be marked as hidden and productions can as well. When marked as such, nothing happens until we use the cmd switch `censor`. 
+If we do, marked entries are replaced with random gibberish text. That is, if the translator supports the feature. Our inbuilt HTML translators do.
+
+<!--
 * <span style="color:blue">**_style_** ```{style|VALUE}```</span><br>
 The style decorator is a complex decorator used with HTML translators to provide CSS for an entry. Value is a valid CSS string that goes in the style attribute of some item like ```<li>``` or ```<span>```.
 
@@ -37,15 +51,7 @@ The custom decorator is a way to add a user defined decorator. How this is handl
 
 * <span style="color:blue">**_custom_** ```{custom|NAME|VALUE}```</span><br>
 The custom decorator is a way to add a user defined decorator with a value. How this is handled depends on the translator implementing it.
-
-* <span style="color:orange">**_*enlist_** ```{enlist|VALUE}``` *EXPERIMENTAL</span><br>
-The enlist decorator is the list-creating aka placement decorator. It puts an entry in a sibling list. For example ```entry {enlist | refs}``` will create a sibling list ```refs``` and put the entry in it. ```entry {enlist | legend}``` will create a sibling list ```legend``` and put the entry in it.
-
-* <span style="color:orange">**_*shorter_** ```{shorter-1|TEXT}``` *EXPERIMENTAL</span><br>
-The shorter decorator is a content-provider. It provides a shorter version of the entry, so that when the display is too small to display an entry, it does not get cut off, but the shorter version is used instead. There are up to 5 levels available to the user, with ```shorter-1``` being the longest or the least-shortened text and ```shorter-5``` being the most shortened.
-
-* <span style="color:orange">**_*shortest_** ```{shortest-1|TEXT}``` *EXPERIMENTAL</span><br>
-The same as ```shorter``` but in reverse order. There are up to 5 levels available to the user, with ```shortest-1``` being the shortest or the most-shortened text and ```shortest-5``` being the least shortened.
+-->
 
 ***
 Using decorators:  

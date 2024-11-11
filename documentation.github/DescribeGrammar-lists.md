@@ -2,7 +2,7 @@ At the core of the describe language are the lists. We write describe lists by w
 
 Empty lists are treated like items. Creating empty lists is a way of putting a placeholder, like saying - "this should be a list, but I am yet to figure out the rest of it".
 
-The other core feature of the describe language is the ability of those lists to come together to form larger and larger lists. This is done via Tags, which we will learn about in the next section.
+The other core feature of the describe language is the ability of those lists to come together to form larger and larger lists. This is done via Tags, which we will learn about a bit later on.
 
 Simple list:  
 ![simple list](https://github.com/viktorchernev/DescribeCompiler/assets/72315339/631f71b0-343f-4e01-86b1-c0d53312241e)

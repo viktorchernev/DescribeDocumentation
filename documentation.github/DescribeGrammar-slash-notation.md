@@ -6,5 +6,5 @@ Slash notation was the first addressing scheme used in the prototype of the desc
 * not well suited for database integration  
   
 ### Links
-[[Next|https://github.com/viktorchernev/DescribeCompiler/wiki/DescribeGrammar-filenames]]  
-[[Prev|https://github.com/viktorchernev/DescribeCompiler/wiki/DescribeGrammar-dot-notation]]  
+[[Next|https://github.com/viktorchernev/DescribeCompiler/wiki/DescribeGrammar-delimiter-mode]]  
+[[Back|https://github.com/viktorchernev/DescribeCompiler/wiki/Grammar-How-To]]  

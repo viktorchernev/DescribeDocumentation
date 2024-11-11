@@ -4,7 +4,7 @@ To understand how this works, let's look at the example below. We have a list 1)
   
 Another way of thinking about this is that tags are a way of saying what list goes where - you tag a list somewhere in your code (by tagging the head element) and then copy that head element in other lists, instead of copying the whole list.  
    
-Note that tags, decorators and links are written after the text of an entry, and are grouped together - all links - one after another and all the decorators  - one after another. It is not valid to have those mingled together, or having a tag in the middle of the text, for example. It is also not valid to have multiple tags in one item.  
+Note that tags, decorators and links are written after the text of an entry, and are grouped together - all links - one after another and all the decorators  - one after another. It is not valid to have those mingled together, or having a tag in the middle of the text, for example. It is also not valid to have multiple tags on one item.  
   
 Example:  
 ![tags](https://github.com/viktorchernev/DescribeCompiler/assets/72315339/383a4ebe-0ba9-4377-824a-050d338321e3)

@@ -8,8 +8,8 @@ Writing Describe code is very easy and intuitive - anyone can start right away, 
 [[More on Tags - Addressing schemes and more | DescribeGrammar-tagging]]  
 [[Directives - The role of the preprocessor | DescribeGrammar-directives]]  
 [[Dot Notation - The namespace-based addressing scheme | DescribeGrammar-dot-notation]]  
-[[Files - Types and extensions used by the compiler | DescribeGrammar-filenames]]  
-[[Tildes - An alternative way to add data to entries | DescribeGrammar-tildes]] 
+[[Tildes - An alternative way to add data to entries | DescribeGrammar-tildes]]  
+[[Files - Types and extensions used by the compiler | DescribeGrammar-filenames]] 
    
 ## Versions
 
