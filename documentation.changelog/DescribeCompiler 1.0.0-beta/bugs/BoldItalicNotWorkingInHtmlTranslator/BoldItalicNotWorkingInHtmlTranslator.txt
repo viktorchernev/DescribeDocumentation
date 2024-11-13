@@ -1,0 +1,1 @@
+Decorators like {bold} don't work in HTML_PAGE

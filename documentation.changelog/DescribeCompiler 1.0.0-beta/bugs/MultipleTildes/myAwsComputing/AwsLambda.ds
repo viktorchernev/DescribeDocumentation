@@ -1,0 +1,22 @@
+directives ->
+
+	namespace <research.cloudcomputing.aws>,
+	language-version <1.0>;
+
+
+AWS Lambda research links <.links> ->
+
+	documentation {comment},
+	Amazon API GATEWAY - How To Build HTTP APIs | AWS LAMBDA SERIES | .NET ON AWS [https://www.youtube.com/watch?v=43DQm2ObWSU],
+	What is AWS Lambda? [https://docs.aws.amazon.com/lambda/latest/dg/welcome.html],
+	Lambda runtimes [https://docs.aws.amazon.com/lambda/latest/dg/lambda-runtimes.html],
+
+	video tutorials {nlcomment},
+	AWS LAMBDA For The .NET Developer: How To Easily Get Started | AWS LAMBDA SERIES [https://www.youtube.com/watch?v=IHIJFVUQyFY],
+	
+	more on AWS {nlcomment},
+	@RahulNath [https://www.youtube.com/@RahulNath/videos],
+	AWS SQS (Simple Queue Service) - Getting Started and Integrating with .NET Apps | .NET ON AWS [https://www.youtube.com/watch?v=U7PvdYlvA-8],
+	AWS PARAMETER STORE - Getting Started and Integrating with .NET Apps | .NET ON AWS [https://www.youtube.com/watch?v=eRtBIAx7sJc],
+	SERVERLESS APPLICATION on AWS For The .NET Developer: How To Easily Get Started | AWS LAMBDA SERIES [https://www.youtube.com/watch?v=iLo8svHzD_g],
+	AWS DynamoDB For The .NET Developer: How To Easily Get Started | AWS LAMBDA SERIES [https://www.youtube.com/watch?v=BbUmLRaxZG8];

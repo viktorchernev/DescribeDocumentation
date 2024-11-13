@@ -1,0 +1,2 @@
+The `auto` argument in the Describe Transpiler CLI app is used to set an 'auto' mode for use with scripts and automated tools.
+Basically this mode removes console interactions - like changing console color and asking the user for input, which can otherwise break scripts and automated tools.

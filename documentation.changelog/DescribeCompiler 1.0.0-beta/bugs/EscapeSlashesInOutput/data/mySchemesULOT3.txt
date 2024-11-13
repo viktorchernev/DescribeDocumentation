@@ -1,0 +1,46 @@
+Understanding Level Of Topic
+<.ulot> ->
+
+    No knowledge ->
+        0 ,
+        No exposure to the topic. ;
+    
+    Superficial knowledge ->
+        1 ,
+        Basic awareness of the topic, possibly 
+        through casual exposure, but without 
+        much understanding. ;
+        
+    Familiarity ->
+        2 ,
+        Understands the basic concepts and 
+        terminology, can follow general discussions, but 
+		lacks in-depth knowledge. ;
+        
+    Competency -> 
+        3 ,
+        Can engage in more detailed 
+        conversations, understands key principles\, 
+        and can apply basic concepts with some 
+        guidance. ;
+        
+    Proficiency -> 
+        4 ,
+        Has strong understanding of the topic\,
+        can explain it clearly to others, solve 
+        common problems, and work 
+        independently. ;
+
+    Expertise -> 
+        5 ,
+        Deep and comprehensive knowledge of 
+        the topic, able to handle complex problems\, 
+        innovate solutions, and teach others at a 
+        high level. ;
+    
+    Mastery -> 
+        6 ,
+        Recognized authority in the topic\, 
+        capable of contributing new ideas\, 
+        leading advancements, and pushing the 
+        boundaries of the subject. ;

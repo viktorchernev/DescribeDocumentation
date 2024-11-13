@@ -1,0 +1,7 @@
+log-file argument, when written with hypen does not work!
+Especially with parse-file. Check it.
+DescribeTranspiler.CLI parse-file "C:\Users\Viktor Chernev\Desktop\@Ds\MyLife\!MySchemes\mySchemesULOT.txt" "C:\Users\Viktor Chernev\Desktop\testing\!compiled\MySchemes.html" translator=html_page beautify=true verbosity=h log-file="C:\Users\Viktor Chernev\Desktop\testing\!compiled\MySchemes.log" theme="DBLUE"
+
+---------------------------------------------------------------
+
+Argument "log-file" implemented.

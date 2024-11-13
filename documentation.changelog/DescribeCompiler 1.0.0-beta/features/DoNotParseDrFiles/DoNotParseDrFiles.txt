@@ -1,0 +1,1 @@
+Do not parse ".dr" files, even if "dsonly=false" - it should be an ignore file type

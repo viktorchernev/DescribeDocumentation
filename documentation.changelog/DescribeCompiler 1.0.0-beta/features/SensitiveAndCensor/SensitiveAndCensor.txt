@@ -1,0 +1,4 @@
+Sensitive decorator that masks contents and censor cmd switch
+
+Entries can be marked as {sensitive} and productions can as well. When marked as such, nothing happens until we use the cmd switch `censor=true`. 
+If we do, marked entries are obscured with '?' instead

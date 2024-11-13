@@ -1,0 +1,14 @@
+directives ->
+
+	namespace <research.cloudcomputing.aws>,
+	language-version <1.0>;
+
+
+AWS Research <.rnode> ->
+
+	AWS Services - My <.myserv>,
+	AWS Services - VisualStudio <.vsserv>,
+	AWS alternatives <.altern>,
+	
+	gap {empty},
+	AWS Lambda research links <.links>;

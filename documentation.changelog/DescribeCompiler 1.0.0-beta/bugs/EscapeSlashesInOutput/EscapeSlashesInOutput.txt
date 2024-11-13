@@ -1,0 +1,7 @@
+In outputted HTML, we have escape slashes 
+
+	`Has strong understanding of the topic\, can explain it clearly to others, solve common problems, and work independently.`
+	`\,`
+
+There was simply no mechanism implemented to deal with the escape sequence in tokens properly.
+I have implemented a method that does that and turns every sequence of white-space characters to a single space.

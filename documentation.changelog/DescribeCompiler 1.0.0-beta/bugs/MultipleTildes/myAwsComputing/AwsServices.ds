@@ -1,0 +1,70 @@
+directives ->
+
+	namespace <research.cloudcomputing.aws>,
+	language-version <1.0>;
+
+
+AWS Services - VisualStudio <.vsserv> ->
+
+	~ Visual Studio . View \> AWS Explorer <info>;
+	
+	
+	Amazon CloudFront [https://aws.amazon.com/cloudfront/] ->
+	
+		~ Amazon CloudFront is a Content Delivery Network (CDN) service provided by AWS. It helps deliver data, videos, applications, and APIs to users globally with low latency and high transfer speeds. CloudFront is designed to improve performance and reduce the load on your origin servers by caching content at edge locations closer to your users. <info>;
+
+	Amazon CloudWatch [https://aws.amazon.com/cloudwatch/] ->
+
+		~ Amazon CloudWatch is a service that monitors applications, responds to performance changes, optimizes resource use, and provides insights into operational health. By collecting data across AWS resources, CloudWatch gives visibility into system-wide performance and allows users to set alarms, automatically react to changes, and gain a unified view of operational health. <info>;
+
+	Amazon CodeArtifact [https://aws.amazon.com/codeartifact/] ->
+	
+		~ Amazon CodeArtifact is a fully managed artifact repository service provided by AWS. It makes it easy for developers and teams to store, manage, and share software packages (artifacts) across different stages of the development lifecycle. CodeArtifact supports multiple package formats, including Maven, npm, Python (PyPI), and NuGet, allowing organizations to centralize their package management. <info>;
+	
+	Amazon DynamoDB [https://aws.amazon.com/dynamodb/] ->
+	
+		~ Amazon DynamoDB is a fully managed NoSQL database service provided by AWS. It offers high performance, scalability, and flexibility for applications that require low-latency data access and can handle large amounts of data. DynamoDB is designed for both document and key-value store use cases, making it suitable for a wide variety of applications. <info>;
+	
+	Amazon EC2 [https://aws.amazon.com/ec2/] ->
+	
+		~ Amazon EC2 (Elastic Compute Cloud) is a web service provided by AWS that allows users to rent virtual servers, known as instances, to run applications in the cloud. EC2 provides scalable computing capacity, which means you can launch instances on-demand, scale them up or down based on your needs, and pay only for the resources you use. It's a fundamental building block of AWS, widely used for hosting websites, applications, databases, machine learning workloads, and much more. <info>;
+		
+	Amazon Elastic Container Service [https://aws.amazon.com/ecs/] ->
+	
+		~ Amazon Elastic Container Service (ECS) is a fully managed container orchestration service that helps you to more efficiently deploy, manage, and scale containerized applications. It deeply integrates with the AWS environment to provide an easy-to-use solution for running container workloads in the cloud and on premises with advanced security features using Amazon ECS Anywhere. <info>;
+	
+	Amazon RDS [https://aws.amazon.com/rds/] ->
+	
+		~ Amazon Relational Database Service (Amazon RDS) is a managed database service provided by AWS that simplifies the setup, operation, and scaling of relational databases in the cloud. It automates many time-consuming tasks related to database management, such as backups, software patching, monitoring, scaling, and failover, allowing you to focus more on application development instead of managing databases. <info>;
+	
+	Amazon S3 [https://aws.amazon.com/s3/] ->
+	
+		~ Amazon Simple Storage Service (Amazon S3) is a highly scalable, durable, and secure object storage service provided by Amazon Web Services (AWS). It allows users to store and retrieve any amount of data, at any time, from anywhere on the web. S3 is widely used for a variety of purposes, including data backup, archival, content distribution, big data analytics, and serving static websites. <info>;
+	
+	Amazon SNS [https://aws.amazon.com/sns/] ->
+	
+		~ Amazon Simple Notification Service (Amazon SNS) is a fully managed messaging service provided by AWS that enables the exchange of messages between different software components, microservices, or users in a highly scalable and flexible way. SNS supports both publish/subscribe (pub/sub) messaging patterns and direct messaging via SMS, email, and mobile push notifications. <info>;
+	
+	Amazon SQS [https://aws.amazon.com/sqs/] ->
+	
+		~ Amazon Simple Queue Service (Amazon SQS) is a fully managed message queuing service provided by AWS that enables decoupling and scaling of microservices, distributed systems, and serverless applications. SQS allows you to send, store, and receive messages between software components or services without losing messages or requiring each component to be available simultaneously. <info>;
+	
+	Amazon VPC [https://aws.amazon.com/vpc/] ->
+	
+		~ Amazon Virtual Private Cloud (Amazon VPC) is a core networking service provided by Amazon Web Services (AWS) that allows you to provision a logically isolated section of the AWS cloud where you can launch and manage AWS resources in a virtual network that you define. VPC provides complete control over your virtual networking environment, including IP address ranges, subnets, route tables, and network gateways.  <info>;
+	
+	AWS CloudFormation [https://aws.amazon.com/cloudformation/] ->
+	
+		~ AWS CloudFormation is a service that provides a simple, automated way to model, provision, and manage AWS infrastructure resources. It allows you to define and deploy infrastructure as code (IaC) using templates written in either JSON or YAML. CloudFormation automates the creation and management of AWS resources like EC2 instances, S3 buckets, RDS databases, and more, enabling repeatable, scalable, and consistent infrastructure management. <info>;
+	
+	AWS Elastic Beanstalk [https://aws.amazon.com/elasticbeanstalk/] ->
+	
+		~ Elastic Beanstalk is a service for deploying and scaling web applications and services. Upload your code and Elastic Beanstalk automatically handles the deployment—from capacity provisioning, load balancing, and auto scaling to application health monitoring. <info>;
+	
+	AWS Identity and Access Management [https://aws.amazon.com/iam/] ->
+	
+		~ AWS Identity and Access Management (IAM) is a service that helps you securely control access to AWS resources. It allows you to manage who can access resources (authentication) and what actions they can perform (authorization) within your AWS account. <info>;
+	
+	AWS Lambda [https://aws.amazon.com/lambda/] ->
+	
+		~ AWS Lambda is a serverless computing service provided by Amazon Web Services (AWS). It allows you to run code without having to manage or provision servers. You simply upload your code to Lambda, and AWS takes care of executing it based on the triggers or events you define. AWS automatically scales your Lambda function in response to incoming requests, and you only pay for the compute time your code consumes. <info>;

@@ -1,15 +1,3 @@
-
-
-
-
-
-
-
-
-
-
-
-
 [https://viktorchernev.github.io/DescribeDocumentation/technical/ | github]
 [[https://viktorchernev.github.io/DescribeDocumentation/technical/]| github]]
 [[https://viktorchernev.github.io/DescribeDocumentation/technical/](github)]]

@@ -1,0 +1,55 @@
+directives ->
+
+	namespace <research.cloudcomputing.aws>,
+	language-version <1.0>;
+
+
+AWS alternatives <.altern> ->
+
+	Azure Functions ->
+
+		~ Overview: Microsoft Azure offers a free tier for Azure Functions, which can run C# code as serverless functions. <infoo>;
+		~ Free Tier: Azure Functions has a free grant that allows you to execute a certain number of function executions per month without charge. <infof>;
+		~ HTTPS Endpoint: Functions can be triggered via HTTP requests, making them suitable for creating microservices. <infoe>;
+
+
+	Google Cloud Functions ->
+
+		~ Overview: Google Cloud Functions is another serverless compute service that can run C# (using .NET). <infoo>;
+		~ Free Tier: Google Cloud provides a free tier that includes free invocations and resources, ideal for lightweight applications. <infof>;
+		~ HTTPS Endpoint: Like Azure, you can expose your functions as HTTPS endpoints. <infoe>;
+
+
+	AWS Lambda ->
+
+		~ Overview: AWS Lambda supports C# (.NET Core) and has a free tier that provides a generous amount of free invocations each month. <infoo>;
+		~ Free Tier: AWS offers 1 million free requests per month and 400,000 GB-seconds of compute time per month. <infof>;
+		~ HTTPS Endpoint: You can create an API Gateway to expose your Lambda functions as HTTPS endpoints. <infoe>;
+
+
+	Railway ->
+
+		~ Overview: Railway is a platform for deploying applications with a developer-friendly interface. <infoo>;
+		~ Free Tier: Railway provides free hosting credits each month, which can cover small applications. <infof>;
+		~ C# Support: While it’s primarily geared towards Node.js and Python, you can deploy C# applications using Docker. <infoe>;
+
+
+	Glitch ->
+
+		~ Overview: Glitch is an online platform for creating and hosting web applications. <infoo>;
+		~ Free Tier: You can host small projects for free, though it may have some limitations in terms of uptime and performance. <infof>;
+		~ C# Support: While Glitch primarily supports JavaScript, you can potentially run .NET applications through Docker. <infoe>;
+
+
+	Replit ->
+
+		~ Overview: Replit is an online coding platform that supports multiple programming languages, including C#. <infoo>;
+		~ Free Tier: You can create small applications for free and collaborate in real-time. <infof>;
+		~ HTTPS Endpoint: You can host web applications and expose them via HTTPS. <infoe>;
+
+
+	Fly.io ->
+
+		~ Overview: Fly.io is a platform for deploying applications close to users globally. <infoo>;
+		~ Free Tier: They offer a free tier that includes several hours of application runtime and data transfer. <infof>;
+		~ C# Support: You can run .NET applications, and they provide automatic HTTPS for your apps. <infoe>;

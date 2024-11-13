@@ -4,3 +4,5 @@ Both Core and Framework versions of the CLI app do the same. At this moment, the
 
 On deeper analysis, we will need it.
 CLI.Framework returned as CLI.NET 
+
+Finally, it has been removed

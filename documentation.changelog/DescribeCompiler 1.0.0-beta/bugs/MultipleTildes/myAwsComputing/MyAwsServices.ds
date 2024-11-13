@@ -1,0 +1,29 @@
+directives ->
+
+	namespace <research.cloudcomputing.aws>,
+	language-version <1.0>;
+
+
+AWS Services - My <.myserv> ->
+
+	AWS Lambda [https://aws.amazon.com/lambda/] ->
+	
+		~ AWS Lambda is a serverless computing service provided by Amazon Web Services (AWS). It allows you to run code without having to manage or provision servers. You simply upload your code to Lambda, and AWS takes care of executing it based on the triggers or events you define. AWS automatically scales your Lambda function in response to incoming requests, and you only pay for the compute time your code consumes. <info>;
+	
+ 	Amazon API Gateway [https://aws.amazon.com/api-gateway/] ->
+	
+		~ Amazon API Gateway is a fully managed service that makes it easy for developers to create, publish, maintain, monitor, and secure APIs at any scale. APIs act as the "front door" for applications to access data, business logic, or functionality from your backend services. Using API Gateway, you can create RESTful APIs and WebSocket APIs that enable real-time two-way communication applications. API Gateway supports containerized and serverless workloads, as well as web applications. <info>;
+
+
+	gap {empty},
+	Amazon CloudWatch [https://aws.amazon.com/cloudwatch/] ->
+
+		~ Amazon CloudWatch is a service that monitors applications, responds to performance changes, optimizes resource use, and provides insights into operational health. By collecting data across AWS resources, CloudWatch gives visibility into system-wide performance and allows users to set alarms, automatically react to changes, and gain a unified view of operational health. <info>;
+	
+	AWS Identity and Access Management [https://aws.amazon.com/iam/] ->
+	
+		~ AWS Identity and Access Management (IAM) is a service that helps you securely control access to AWS resources. It allows you to manage who can access resources (authentication) and what actions they can perform (authorization) within your AWS account. <info>;
+	
+	AWS Budgets [https://aws.amazon.com/aws-cost-management/aws-budgets/] ->
+	
+		~ AWS Budgets is a cost management tool within Amazon Web Services (AWS) that allows users to create custom budgets to track and manage their AWS usage and costs. AWS Budgets helps you forecast, monitor, and control your AWS spending, providing real-time insights and notifications when your costs or usage exceed predefined thresholds. This service is crucial for organizations seeking to maintain control over their AWS resources and costs. <info>;

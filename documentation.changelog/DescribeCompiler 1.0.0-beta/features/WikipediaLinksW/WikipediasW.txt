@@ -1,0 +1,2 @@
+Wikipedia links do not show 'W'
+All links show 'A' in a dot, but wikipedia ones should show 'W' instead. But this is not the case with the HTML translator, and possibly with other translators as well.

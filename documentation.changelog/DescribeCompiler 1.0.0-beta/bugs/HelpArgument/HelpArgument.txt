@@ -1,0 +1,7 @@
+> -help
+Invalid argument 2 - "-help"
+Why argument 2, and is this message good
+
+-----------------------------------------------------
+
+Argument "-help" implemented.

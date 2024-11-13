@@ -1,0 +1,11 @@
+Result is empty for the information it should contain
+
+DescribeTranspiler.CLI parse-file "C:\Users\Viktor Chernev\Desktop\@Ds\MyLife\!MySchemes\mySchemesULOT.txt" "C:\Users\Viktor Chernev\Desktop\testing\!compiled\MySchemes.html" translator=html_page beautify=true verbosity=h logfile="C:\Users\Viktor Chernev\Desktop\testing\!compiled\MySchemes.log" theme="DBLUE"
+
+We forgot to set root file for the unfold object's ParseJob. 
+Because of that, the translator could not find which productions were root productions, and since we start translation from the root productions, if we have no root productions, we have no data in the final output, apart from the actual template.
+
+--------------------------------------------------------
+
+First of all, in the transpiler's methods for parsing file or string this has been remediated.
+Second, we have added a verification check at ValidateUnfold method, that will throw an exception should RootFile be null again.
