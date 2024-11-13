@@ -1,0 +1,208 @@
+{
+  "items": [
+    {
+      "name": "branch",
+      "filename": "C:\\Users\\Viktor Chernev\\Desktop\\@Ds\\MyLife\\!MySchemes\\ULOT.txt",
+      "text": "understanding-level of topic",
+      "id": "my.schemes.ulot",
+      "links": [],
+      "decorators": [],
+      "items": [
+        {
+          "name": "branch",
+          "filename": "C:\\Users\\Viktor Chernev\\Desktop\\@Ds\\MyLife\\!MySchemes\\ULOT.txt",
+          "text": "No knowledge",
+          "id": "@9751KC.NUWDWW0Z",
+          "links": [],
+          "decorators": [],
+          "items": [
+            {
+              "name": "leaf",
+              "text": "0",
+              "id": "@9751KC.value~8UZT71TM",
+              "links": [],
+              "decorators": [],
+              "type": "item"
+            },
+            {
+              "name": "leaf",
+              "text": "No exposure to the topic.",
+              "id": "@9751KC.info~OPS840LY",
+              "links": [],
+              "decorators": [],
+              "type": "item"
+            }
+          ],
+          "type": "item"
+        },
+        {
+          "name": "branch",
+          "filename": "C:\\Users\\Viktor Chernev\\Desktop\\@Ds\\MyLife\\!MySchemes\\ULOT.txt",
+          "text": "Superficial knowledge",
+          "id": "@9751KC.031UTXGW",
+          "links": [],
+          "decorators": [],
+          "items": [
+            {
+              "name": "leaf",
+              "text": "1",
+              "id": "@9751KC.value~AZWNIPUD",
+              "links": [],
+              "decorators": [],
+              "type": "item"
+            },
+            {
+              "name": "leaf",
+              "text": "Basic awareness of the topic, possibly through casual exposure, but without much understanding.",
+              "id": "@9751KC.info~WCRLO623",
+              "links": [],
+              "decorators": [],
+              "type": "item"
+            }
+          ],
+          "type": "item"
+        },
+        {
+          "name": "branch",
+          "filename": "C:\\Users\\Viktor Chernev\\Desktop\\@Ds\\MyLife\\!MySchemes\\ULOT.txt",
+          "text": "Familiarity",
+          "id": "@9751KC.D75N7981",
+          "links": [],
+          "decorators": [],
+          "items": [
+            {
+              "name": "leaf",
+              "text": "2",
+              "id": "@9751KC.value~ZFLI2A1V",
+              "links": [],
+              "decorators": [],
+              "type": "item"
+            },
+            {
+              "name": "leaf",
+              "text": "Understands the basic concepts and terminology, can follow general discussions, but lacks in-depth knowledge.",
+              "id": "@9751KC.info~RUL2IJXW",
+              "links": [],
+              "decorators": [],
+              "type": "item"
+            }
+          ],
+          "type": "item"
+        },
+        {
+          "name": "branch",
+          "filename": "C:\\Users\\Viktor Chernev\\Desktop\\@Ds\\MyLife\\!MySchemes\\ULOT.txt",
+          "text": "Competency",
+          "id": "@9751KC.L5LQYVAH",
+          "links": [],
+          "decorators": [],
+          "items": [
+            {
+              "name": "leaf",
+              "text": "3",
+              "id": "@9751KC.value~GF3KGKVN",
+              "links": [],
+              "decorators": [],
+              "type": "item"
+            },
+            {
+              "name": "leaf",
+              "text": "Can engage in more detailed conversations, understands key principles, and can apply basic concepts with some guidance.",
+              "id": "@9751KC.info~7FZBFTQP",
+              "links": [],
+              "decorators": [],
+              "type": "item"
+            }
+          ],
+          "type": "item"
+        },
+        {
+          "name": "branch",
+          "filename": "C:\\Users\\Viktor Chernev\\Desktop\\@Ds\\MyLife\\!MySchemes\\ULOT.txt",
+          "text": "Proficiency",
+          "id": "@9751KC.5W1TU593",
+          "links": [],
+          "decorators": [],
+          "items": [
+            {
+              "name": "leaf",
+              "text": "4",
+              "id": "@9751KC.value~KQR73R86",
+              "links": [],
+              "decorators": [],
+              "type": "item"
+            },
+            {
+              "name": "leaf",
+              "text": "Has strong understanding of the topic, can explain it clearly to others, solve common problems, and work independently.",
+              "id": "@9751KC.info~FP9ET7D0",
+              "links": [],
+              "decorators": [],
+              "type": "item"
+            }
+          ],
+          "type": "item"
+        },
+        {
+          "name": "branch",
+          "filename": "C:\\Users\\Viktor Chernev\\Desktop\\@Ds\\MyLife\\!MySchemes\\ULOT.txt",
+          "text": "Expertise",
+          "id": "@9751KC.42ZCSQPO",
+          "links": [],
+          "decorators": [],
+          "items": [
+            {
+              "name": "leaf",
+              "text": "5",
+              "id": "@9751KC.value~BQQKV8R8",
+              "links": [],
+              "decorators": [],
+              "type": "item"
+            },
+            {
+              "name": "leaf",
+              "text": "Deep and comprehensive knowledge of the topic, able to handle complex problems, innovate solutions, and teach others at a high level.",
+              "id": "@9751KC.info~OXI5K3AO",
+              "links": [],
+              "decorators": [],
+              "type": "item"
+            }
+          ],
+          "type": "item"
+        },
+        {
+          "name": "branch",
+          "filename": "C:\\Users\\Viktor Chernev\\Desktop\\@Ds\\MyLife\\!MySchemes\\ULOT.txt",
+          "text": "Mastery",
+          "id": "@9751KC.5AQ9Z4Q2",
+          "links": [],
+          "decorators": [],
+          "items": [
+            {
+              "name": "leaf",
+              "text": "6",
+              "id": "@9751KC.value~YV5BS1H8",
+              "links": [],
+              "decorators": [],
+              "type": "item"
+            },
+            {
+              "name": "leaf",
+              "text": "Recognized authority in the topic, capable of contributing new ideas, leading advancements, and pushing the boundaries of the subject.",
+              "id": "@9751KC.info~AOJIR25A",
+              "links": [],
+              "decorators": [],
+              "type": "item"
+            }
+          ],
+          "type": "item"
+        }
+      ],
+      "type": "item"
+    }
+  ],
+  "timestamp": "Built on 04 October 2024, 18:43:18.536 (UTC)",
+  "version": "Built with Describe Compiler version 1.0",
+  "short_timestamp": "04 Oct 2024, 18:43:18",
+  "short_version": "Describe Compiler v 1.0"
+}

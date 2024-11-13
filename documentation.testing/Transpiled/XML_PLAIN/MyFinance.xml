@@ -1,0 +1,156 @@
+<document>
+  <timestamp>Built on 04 October 2024, 17:56:06.912 (UTC)</timestamp>
+  <version>Built with Describe Compiler version 1.0</version>
+  <data>
+    <ul class="listree">
+      <production>
+        <titleItem>My Finance</titleItem>
+        <bodyItems>
+          <production>
+            <titleItem>monthly expenses</titleItem>
+            <bodyItems>
+              <item>
+                <htmlStyle>color: green; font-style: italic;</htmlStyle>
+                <type>basic</type>
+                <content>2x toilet paper (13)</content>
+                <links></links>
+              </item>
+              <item>
+                <htmlStyle>color: green; font-style: italic;</htmlStyle>
+                <type>basic</type>
+                <content>drink cups (6)</content>
+                <links></links>
+              </item>
+              <item>
+                <htmlStyle>color: green; font-style: italic;</htmlStyle>
+                <type>basic</type>
+                <content>2x liquid soap (3)</content>
+                <links></links>
+              </item>
+              <item>
+                <htmlStyle>color: green; font-style: italic;</htmlStyle>
+                <type>basic</type>
+                <content>2x soap bars (3)</content>
+                <links></links>
+              </item>
+              <item>
+                <htmlStyle>color: green; font-style: italic;</htmlStyle>
+                <type>basic</type>
+                <content>2x dish-washing liquid (3)</content>
+                <links></links>
+              </item>
+              <item>
+                <htmlStyle>color: green; font-style: italic;</htmlStyle>
+                <type>nlcomment</type>
+                <content>cosmetics</content>
+                <links></links>
+              </item>
+              <item>
+                <htmlStyle>color: green; font-style: italic;</htmlStyle>
+                <type>basic</type>
+                <content>shampoo (7)</content>
+                <links></links>
+              </item>
+              <item>
+                <htmlStyle>color: green; font-style: italic;</htmlStyle>
+                <type>basic</type>
+                <content>dry deo stick (7)</content>
+                <links></links>
+              </item>
+              <item>
+                <htmlStyle>color: green; font-style: italic;</htmlStyle>
+                <type>basic</type>
+                <content>cotton swabs (5)</content>
+                <links></links>
+              </item>
+            </bodyItems>
+          </production>
+          <production>
+            <titleItem>monthly taxes</titleItem>
+            <bodyItems>
+              <item>
+                <htmlStyle>color: blue;</htmlStyle>
+                <type>colored</type>
+                <content>inet - 05 (22)</content>
+                <links></links>
+              </item>
+              <item>
+                <htmlStyle>color: blue;</htmlStyle>
+                <type>colored</type>
+                <content>phone minutes (12)</content>
+                <links></links>
+              </item>
+              <item>
+                <type>empty</type>
+                <content> </content>
+              </item>
+              <item>
+                <htmlStyle></htmlStyle>
+                <type>empty</type>
+                <content> </content>
+                <links></links>
+              </item>
+              <item>
+                <htmlStyle>color: gray;</htmlStyle>
+                <type>colored</type>
+                <content>* water</content>
+                <links></links>
+              </item>
+              <item>
+                <htmlStyle>color: gray;</htmlStyle>
+                <type>colored</type>
+                <content>* electricity</content>
+                <links></links>
+              </item>
+              <item>
+                <htmlStyle>color: gray;</htmlStyle>
+                <type>colored</type>
+                <content>* building entrance fee</content>
+                <links></links>
+              </item>
+            </bodyItems>
+          </production>
+          <production>
+            <titleItem>upcoming taxes</titleItem>
+            <bodyItems>
+              <item>
+                <htmlStyle>color: red;</htmlStyle>
+                <type>colored</type>
+                <content>Github - 22 Nov 2024 (48 $)</content>
+                <links></links>
+              </item>
+              <item>
+                <htmlStyle>color: red;</htmlStyle>
+                <type>colored</type>
+                <content>Jump.bg - 04 Jan 2025 (100)</content>
+                <links></links>
+              </item>
+              <item>
+                <type>empty</type>
+                <content> </content>
+              </item>
+              <item>
+                <htmlStyle></htmlStyle>
+                <type>empty</type>
+                <content> </content>
+                <links></links>
+              </item>
+              <item>
+                <htmlStyle>color: gray;</htmlStyle>
+                <type>colored</type>
+                <content>* chatGPT (50)</content>
+                <links></links>
+              </item>
+              <item>
+                <htmlStyle>color: gray;</htmlStyle>
+                <type>colored</type>
+                <content>* boosteroid (20)</content>
+                <links></links>
+              </item>
+            </bodyItems>
+          </production>
+        </bodyItems>
+      </production>
+    </ul>
+  </data>
+</document>

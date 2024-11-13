@@ -1,0 +1,21 @@
+   /\\\\     /\\\\     /\\\\     /\\\\     /\\\\     /\\\\     /\\\\     /\\\\  
+  /  \\\\   /  \\\\   /  \\\\   /  \\\\   /  \\\\   _\ \\\\   /  \\\\   /  \\\\ 
+ / /\ \\\\ /  \ \\\\ /\ \ \\\\ / /\ \\\\ /  \ \\\\ /\/  \\\\ /  \ \\\\ /  \ \\\\
+ \ \/ //// \ \ \//// \ \ \//// \ \\\//// \|   //// \  /\//// \ \  //// \ \ \////
+  \  ////   \ \////   \  ////   \ \\\\    | \////   \ \\\\    \  ////   \ \//// 
+   \////     \////     \////     \////     \||||     \////     \////     \////  
+
+> parse-file "C:\Users\Viktor Chernev\Desktop\testing\TestFiles\live_Radio\NovaNews.ds" "C:\Users\Viktor Chernev\Desktop\testing\TranslatorCliTests\html_page-low-beautified.html" logfile="C:\Users\Viktor Chernev\Desktop\testing\TranslatorCliTests\html_page-low-beautified.log" translator=HTML_PAGE beautify=true verbosity=low
+--------------------------------------------------
+Initializing Describe Transpiler v1.0
+Verbosity set to: Low
+Language version set to: Describe Lines - v1.0
+Describe Transpiler initialized.
+Translator initialized - "HTML_PAGE"
+Starting a 'File -> Unfold' operation...
+"C:\Users\Viktor Chernev\Desktop\testing\TestFiles\live_Radio\NovaNews.ds" - parsed successfully
+Parser red 164 characters, into 17 tokens.
+Those were translated to 1 productions, containing 5 entries.
+All Files: 1, Succeeded: 1, Failed: 0, Errors: 0
+--------------------------------------------------
+Task completed successfully. Press any key to exit.

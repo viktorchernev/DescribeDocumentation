@@ -1,0 +1,12 @@
+cd "C:\Users\Viktor Chernev\Desktop\testing\!TestRelease"
+DescribeTranspiler.CLI help
+
+DescribeTranspiler.CLI parse-file "C:\Users\Viktor Chernev\Desktop\@Ds\MyLife\!MySchemes\ULOT.txt" "C:\Users\Viktor Chernev\Desktop\testing\!compiled\HTML_PLAIN\MySchemes.html" translator=html_plain beautify=true verbosity=h log-file="C:\Users\Viktor Chernev\Desktop\testing\!compiled\HTML_PLAIN\MySchemes.log" theme="DBLUE"
+
+DescribeTranspiler.CLI parse-file "C:\Users\Viktor Chernev\Desktop\@Ds\MyLife\!MySchemes\ULOT.txt" "C:\Users\Viktor Chernev\Desktop\testing\!compiled\HTML_PLAIN\MySchemes.html" translator=html_plain beautify=true verbosity=h logfile="C:\Users\Viktor Chernev\Desktop\testing\!compiled\HTML_PLAIN\MySchemes.log" theme="DBLUE"
+
+DescribeTranspiler.CLI parse-file "C:\Users\Viktor Chernev\Desktop\@Ds\MyLife\MyDiet\myHealthyFoodTypes.txt" "C:\Users\Viktor Chernev\Desktop\testing\!compiled\HTML_PLAIN\myHealthyFoodTypes.html" translator=html_plain beautify=true verbosity=h logfile="C:\Users\Viktor Chernev\Desktop\testing\!compiled\HTML_PLAIN\myHealthyFoodTypes.log" theme="DBLUE"
+
+DescribeTranspiler.CLI parse-file "C:\Users\Viktor Chernev\Desktop\@Ds\MyLife\MyFinance\myTaxes.txt" "C:\Users\Viktor Chernev\Desktop\testing\!compiled\HTML_PLAIN\MyFinance.html" translator=html_plain beautify=true verbosity=h logfile="C:\Users\Viktor Chernev\Desktop\testing\!compiled\HTML_PLAIN\MyFinance.log" theme="DBLUE"
+
+DescribeTranspiler.CLI parse-folder "C:\Users\Viktor Chernev\Desktop\@Ds\MyLife" "C:\Users\Viktor Chernev\Desktop\testing\!compiled\HTML_PLAIN\@MyLife.html" translator=html_plain beautify=true verbosity=h logfile="C:\Users\Viktor Chernev\Desktop\testing\!compiled\HTML_PLAIN\@MyLife.log" dsonly=false toponly=false onerror=ignore

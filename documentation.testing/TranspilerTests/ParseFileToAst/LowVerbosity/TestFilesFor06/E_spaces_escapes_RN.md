@@ -1,0 +1,29 @@
+========================================
+Source Code (between the arrows)
+========================================
+
+🡆fabric     s 	->
+
+	wool   fabrics	,
+	cotton\, fabrics textiles  ,
+    silk\->fabrics,
+    syntic 		fabrics;🡄
+
+========================================
+Logged text
+========================================
+
+🡆Verbosity set to: Low
+Language version set to: Describe Basics - v0.6
+Describe Transpiler initialized.
+Starting a 'File -> AST' operation...
+"C:\Users\Viktor Chernev\Desktop\testing\TestFiles\TestFilesFor06\E_spaces_escapes_RN.ds" - parsed successfully
+Parser red 112 characters, into 17 tokens.
+Those were translated to an AST.
+All Files: 1, Succeeded: 1, Failed: 0, Errors: 0🡄
+
+========================================
+Produced AST
+========================================
+
+{"filename":"C:\\Users\\Viktor Chernev\\Desktop\\testing\\TestFiles\\TestFilesFor06\\E_spaces_escapes_RN.ds","nspace":null,"expressions":[{"title":{"tilde":null,"text":{"leafType":"Text","text":"fabric     s","leadingTrivia":"","trailingTrivia":" \t"},"tag":null,"links":null,"decorators":null},"arrow":{"leafType":"ProductionArrow","text":"->","leadingTrivia":"","trailingTrivia":"\r\n\r\n\t"},"lines":[{"body":{"tilde":null,"text":{"leafType":"Text","text":"wool   fabrics","leadingTrivia":"","trailingTrivia":"\t"},"tag":null,"links":null,"decorators":null},"punctuation":{"leafType":"Separator","text":",","leadingTrivia":"","trailingTrivia":"\r\n\t"}},{"body":{"tilde":null,"text":{"leafType":"Text","text":"cotton\\, fabrics textiles","leadingTrivia":"","trailingTrivia":"  "},"tag":null,"links":null,"decorators":null},"punctuation":{"leafType":"Separator","text":",","leadingTrivia":"","trailingTrivia":"\r\n    "}},{"body":{"tilde":null,"text":{"leafType":"Text","text":"silk\\->fabrics","leadingTrivia":"","trailingTrivia":""},"tag":null,"links":null,"decorators":null},"punctuation":{"leafType":"Separator","text":",","leadingTrivia":"","trailingTrivia":"\r\n    "}},{"body":{"tilde":null,"text":{"leafType":"Text","text":"syntic \t\tfabrics","leadingTrivia":"","trailingTrivia":""},"tag":null,"links":null,"decorators":null},"punctuation":{"leafType":"Terminator","text":";","leadingTrivia":"","trailingTrivia":""}}]}],"exception":null}

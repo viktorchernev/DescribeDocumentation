@@ -1,0 +1,31 @@
+   /\\\\     /\\\\     /\\\\     /\\\\     /\\\\     /\\\\     /\\\\     /\\\\  
+  /  \\\\   /  \\\\   /  \\\\   /  \\\\   /  \\\\   _\ \\\\   /  \\\\   /  \\\\ 
+ / /\ \\\\ /  \ \\\\ /\ \ \\\\ / /\ \\\\ /  \ \\\\ /\/  \\\\ /  \ \\\\ /  \ \\\\
+ \ \/ //// \ \ \//// \ \ \//// \ \\\//// \|   //// \  /\//// \ \  //// \ \ \////
+  \  ////   \ \////   \  ////   \ \\\\    | \////   \ \\\\    \  ////   \ \//// 
+   \////     \////     \////     \////     \||||     \////     \////     \////  
+
+> parse-file "C:\Users\Viktor Chernev\Desktop\@Ds\MyLife\MyFinance\myTaxes.txt" "C:\Users\Viktor Chernev\Desktop\testing\!compiled\HTML_PLAIN\MyFinance.html" translator=html_plain beautify=true verbosity=h logfile="C:\Users\Viktor Chernev\Desktop\testing\!compiled\HTML_PLAIN\MyFinance.log" theme=DBLUE
+--------------------------------------------------
+Initializing Describe Transpiler v1.0
+Verbosity set to: High
+Language version set to: Describe Lines - v1.0
+Describe Transpiler initialized.
+Translator initialized - using template "HTML_PLAIN"
+Starting a 'File -> Unfold' operation...
+------------------------
+Starting a parse operation on file: "C:\Users\Viktor Chernev\Desktop\@Ds\MyLife\MyFinance\myTaxes.txt"
+Fetched file contents - 662 characters long
+
+Parsing sequence: T(DATA|'My Finance ') T(TAG|'<.rnode> ') T(HYPHEN|'-') T(PRODUCTION_ARROW|'>\r\n\r\n\t') T(DATA|'monthly expenses ') T(HYPHEN|'-') T(PRODUCTION_ARROW|'>\r\n\t\t') T(DATA|'2x toilet paper (13)') T(SEPARATOR|',\r\n\t\t') T(DATA|'drink cups (6)') T(SEPARATOR|',\r\n\t\t') T(DATA|'2x liquid soap (3)') T(SEPARATOR|',\r\n\t\t') T(DATA|'2x soap bars (3)') T(SEPARATOR|',\r\n\t\t') T(DATA|'2x dish') T(HYPHEN|'-') T(DATA|'washing liquid (3)') T(SEPARATOR|',\r\n\t\t\r\n\t\t') T(DATA|'cosmetics ') T(DECORATOR|'{nlcomment}') T(SEPARATOR|',\r\n\t\t') T(DATA|'shampoo (7)') T(SEPARATOR|',\r\n\t\t') T(DATA|'dry deo stick (7)') T(SEPARATOR|',\r\n\t\t') T(DATA|'cotton swabs (5)') T(TERMINATOR|';\r\n\t\t\r\n\t') T(DATA|'monthly taxes ') T(HYPHEN|'-') T(PRODUCTION_ARROW|'>\r\n\t\t') T(DATA|'inet ') T(HYPHEN|'-') T(DATA|' 05 (22) ') T(DECORATOR|'{color|blue}') T(SEPARATOR|',\r\n\t\t') T(DATA|'phone minutes (12) ') T(DECORATOR|'{color|blue}') T(SEPARATOR|',\r\n\t\t\r\n\t\t') T(DATA|'gap ') T(DECORATOR|'{empty}') T(SEPARATOR|',\r\n\t\t') T(STAR|'* ') T(DATA|'water ') T(DECORATOR|'{color|gray}') T(SEPARATOR|',\r\n\t\t') T(STAR|'* ') T(DATA|'electricity ') T(DECORATOR|'{color|gray}') T(SEPARATOR|',\r\n\t\t') T(STAR|'* ') T(DATA|'building entrance fee ') T(DECORATOR|'{color|gray}') T(TERMINATOR|';\r\n\r\n\t') T(DATA|'upcoming taxes ') T(HYPHEN|'-') T(PRODUCTION_ARROW|'>\r\n\t\t') T(DATA|'Github ') T(HYPHEN|'-') T(DATA|' 22 Nov 2024 (48 $) ') T(DECORATOR|'{color|red}') T(SEPARATOR|',\r\n\t\t') T(DATA|'Jump.bg ') T(HYPHEN|'-') T(DATA|' 04 Jan 2025 (100) ') T(DECORATOR|'{color|red}') T(SEPARATOR|',\r\n\t\t\r\n\t\t') T(DATA|'gap ') T(DECORATOR|'{empty}') T(SEPARATOR|',\r\n\t\t') T(STAR|'* ') T(DATA|'chatGPT (50) ') T(DECORATOR|'{color|gray}') T(SEPARATOR|',\r\n\t\t') T(STAR|'* ') T(DATA|'boosteroid (20) ') T(DECORATOR|'{color|gray}') T(TERMINATOR|';\n') T(TERMINATOR|';\n') T(EOF|'<EOF>') Ok
+
+File parsed successfully
+Parse tree unfolded successfully
+Done!
+------------------------
+File parsed successfully
+Parser red 662 characters, into 80 tokens.
+Those were translated to 4 productions, containing 24 entries.
+All Files: 1, Succeeded: 1, Failed: 0, Errors: 0
+--------------------------------------------------
+Task completed successfully. Press any key to exit.

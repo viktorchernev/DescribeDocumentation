@@ -1,0 +1,352 @@
+{
+  "items": [
+    {
+      "name": "branch",
+      "filename": "C:\\Users\\Viktor Chernev\\Desktop\\@Ds\\MyLife\\MyDiet\\myHealthyFoodTypes.txt",
+      "text": "My Diet",
+      "id": "my.diet.rnode",
+      "links": [],
+      "decorators": [],
+      "items": [
+        {
+          "name": "branch",
+          "filename": "C:\\Users\\Viktor Chernev\\Desktop\\@Ds\\MyLife\\MyDiet\\myHealthyFoodTypes.txt",
+          "text": "healthy breakfast options",
+          "id": "@S99EGF.D3ZUZITU",
+          "links": [],
+          "decorators": [],
+          "items": [
+            {
+              "name": "leaf",
+              "text": "simple",
+              "id": "@S99EGF.PTSSY1L4",
+              "links": [],
+              "decorators": [],
+              "type": "comment"
+            },
+            {
+              "name": "leaf",
+              "text": "Nuts and/or Fruits",
+              "id": "@S99EGF.137G3GSC",
+              "links": [],
+              "decorators": [],
+              "type": "item"
+            },
+            {
+              "name": "leaf",
+              "text": "Rlavored rusks",
+              "id": "@S99EGF.H5ZMY99D",
+              "links": [],
+              "decorators": [],
+              "type": "item"
+            },
+            {
+              "name": "leaf",
+              "text": "Soletti and Crackers",
+              "id": "@S99EGF.NG9C0W2L",
+              "links": [],
+              "decorators": [],
+              "type": "item"
+            },
+            {
+              "name": "leaf",
+              "text": "baked",
+              "id": "@S99EGF.BP2GXIT0",
+              "links": [],
+              "decorators": [],
+              "type": "nlcomment"
+            },
+            {
+              "name": "leaf",
+              "text": "healthy Sandwiches",
+              "id": "@S99EGF.VZ2HRHZA",
+              "links": [],
+              "decorators": [],
+              "type": "item"
+            },
+            {
+              "name": "leaf",
+              "text": "healthy Baked goods",
+              "id": "@S99EGF.6C27YBMA",
+              "links": [],
+              "decorators": [],
+              "type": "item"
+            },
+            {
+              "name": "leaf",
+              "text": "Fancy Breads",
+              "id": "@S99EGF.R3Q1K6BA",
+              "links": [],
+              "decorators": [],
+              "type": "item"
+            },
+            {
+              "name": "leaf",
+              "text": "yoghurt",
+              "id": "@S99EGF.SVBID0SR",
+              "links": [],
+              "decorators": [],
+              "type": "nlcomment"
+            },
+            {
+              "name": "leaf",
+              "text": "Yoghurt",
+              "id": "@S99EGF.NKG0YRFP",
+              "links": [],
+              "decorators": [],
+              "type": "item"
+            },
+            {
+              "name": "leaf",
+              "text": "Yoghurt and Fruits",
+              "id": "@S99EGF.TLS2LA9M",
+              "links": [],
+              "decorators": [],
+              "type": "item"
+            },
+            {
+              "name": "leaf",
+              "text": "Yoghurt and Nuts",
+              "id": "@S99EGF.PMBXE0GF",
+              "links": [],
+              "decorators": [],
+              "type": "item"
+            },
+            {
+              "name": "leaf",
+              "text": "Yoghurt and Cereals",
+              "id": "@S99EGF.UJSEQ0J0",
+              "links": [],
+              "decorators": [],
+              "type": "item"
+            },
+            {
+              "name": "leaf",
+              "text": "more",
+              "id": "@S99EGF.21VC4LKH",
+              "links": [],
+              "decorators": [],
+              "type": "nlcomment"
+            },
+            {
+              "name": "leaf",
+              "text": "Ramen noodles",
+              "id": "@S99EGF.7CYMS7EN",
+              "links": [],
+              "decorators": [],
+              "type": "item"
+            },
+            {
+              "name": "leaf",
+              "text": "Soup",
+              "id": "@S99EGF.OJCJQ0K3",
+              "links": [],
+              "decorators": [],
+              "type": "item"
+            }
+          ],
+          "type": "item"
+        },
+        {
+          "name": "branch",
+          "filename": "C:\\Users\\Viktor Chernev\\Desktop\\@Ds\\MyLife\\MyDiet\\myHealthyFoodTypes.txt",
+          "text": "healthy lunch options",
+          "id": "@S99EGF.1FQOGR7W",
+          "links": [],
+          "decorators": [],
+          "items": [
+            {
+              "name": "leaf",
+              "text": "soups",
+              "id": "@S99EGF.KBB8FVIS",
+              "links": [],
+              "decorators": [],
+              "type": "comment"
+            },
+            {
+              "name": "leaf",
+              "text": "Tripe soup",
+              "id": "@S99EGF.OUDEK89E",
+              "links": [],
+              "decorators": [],
+              "type": "item"
+            },
+            {
+              "name": "leaf",
+              "text": "Lamb soup",
+              "id": "@S99EGF.TEXXMFEA",
+              "links": [],
+              "decorators": [],
+              "type": "item"
+            },
+            {
+              "name": "leaf",
+              "text": "Veil-boiled soup",
+              "id": "@S99EGF.JP42SHMZ",
+              "links": [],
+              "decorators": [],
+              "type": "item"
+            },
+            {
+              "name": "leaf",
+              "text": "Chicken soup",
+              "id": "@S99EGF.X7WWQU1G",
+              "links": [],
+              "decorators": [],
+              "type": "item"
+            },
+            {
+              "name": "leaf",
+              "text": "Lentil soup",
+              "id": "@S99EGF.11HC7X6P",
+              "links": [],
+              "decorators": [],
+              "type": "item"
+            },
+            {
+              "name": "leaf",
+              "text": "stews",
+              "id": "@S99EGF.FRITBBOP",
+              "links": [],
+              "decorators": [],
+              "type": "nlcomment"
+            },
+            {
+              "name": "leaf",
+              "text": "Bean stew",
+              "id": "@S99EGF.943BM45C",
+              "links": [],
+              "decorators": [],
+              "type": "item"
+            },
+            {
+              "name": "leaf",
+              "text": "Lentil stew",
+              "id": "@S99EGF.VAS2D3C7",
+              "links": [],
+              "decorators": [],
+              "type": "item"
+            },
+            {
+              "name": "leaf",
+              "text": "Tas kebap",
+              "id": "@S99EGF.HNRFTLGZ",
+              "links": [],
+              "decorators": [],
+              "type": "item"
+            },
+            {
+              "name": "leaf",
+              "text": "grill",
+              "id": "@S99EGF.IURNIG0M",
+              "links": [],
+              "decorators": [],
+              "type": "nlcomment"
+            },
+            {
+              "name": "leaf",
+              "text": "Grilled fish",
+              "id": "@S99EGF.I2SWJ60P",
+              "links": [],
+              "decorators": [],
+              "type": "item"
+            },
+            {
+              "name": "leaf",
+              "text": "Grilled Chicken Filet w side",
+              "id": "@S99EGF.L2Z2HZZ4",
+              "links": [],
+              "decorators": [],
+              "type": "item"
+            },
+            {
+              "name": "leaf",
+              "text": "more",
+              "id": "@S99EGF.1L6UHPJG",
+              "links": [],
+              "decorators": [],
+              "type": "nlcomment"
+            },
+            {
+              "name": "leaf",
+              "text": "Caesar salad",
+              "id": "@S99EGF.CM43BM5W",
+              "links": [
+                {
+                  "name": "link",
+                  "text": "&#x1F150;",
+                  "url": "https://en.wikipedia.org/wiki/Caesar_salad"
+                }
+              ],
+              "decorators": [],
+              "type": "item"
+            },
+            {
+              "name": "leaf",
+              "text": "Bread and Hummus",
+              "id": "@S99EGF.BK9KLNJ8",
+              "links": [
+                {
+                  "name": "link",
+                  "text": "&#x1F150;",
+                  "url": "https://en.wikipedia.org/wiki/Hummus"
+                }
+              ],
+              "decorators": [],
+              "type": "item"
+            },
+            {
+              "name": "leaf",
+              "text": "Grilled Sandwiches",
+              "id": "@S99EGF.LAC070BY",
+              "links": [],
+              "decorators": [],
+              "type": "item"
+            },
+            {
+              "name": "leaf",
+              "text": "Kebapche in Bun",
+              "id": "@S99EGF.L5DUWOD0",
+              "links": [],
+              "decorators": [],
+              "type": "item"
+            }
+          ],
+          "type": "item"
+        },
+        {
+          "name": "branch",
+          "filename": "C:\\Users\\Viktor Chernev\\Desktop\\@Ds\\MyLife\\MyDiet\\myHealthyFoodTypes.txt",
+          "text": "healthy dinner options",
+          "id": "@S99EGF.3EPNM1D3",
+          "links": [],
+          "decorators": [],
+          "items": [
+            {
+              "name": "leaf",
+              "text": "Bean stew",
+              "id": "@S99EGF.W1ENSS9T",
+              "links": [],
+              "decorators": [],
+              "type": "item"
+            },
+            {
+              "name": "leaf",
+              "text": "Caesar salad",
+              "id": "@S99EGF.23398YT9",
+              "links": [],
+              "decorators": [],
+              "type": "item"
+            }
+          ],
+          "type": "item"
+        }
+      ],
+      "type": "item"
+    }
+  ],
+  "timestamp": "Built on 04 October 2024, 18:42:36.221 (UTC)",
+  "version": "Built with Describe Compiler version 1.0",
+  "short_timestamp": "04 Oct 2024, 18:42:36",
+  "short_version": "Describe Compiler v 1.0"
+}

@@ -1,0 +1,189 @@
+   /\\\\     /\\\\     /\\\\     /\\\\     /\\\\     /\\\\     /\\\\     /\\\\  
+  /  \\\\   /  \\\\   /  \\\\   /  \\\\   /  \\\\   _\ \\\\   /  \\\\   /  \\\\ 
+ / /\ \\\\ /  \ \\\\ /\ \ \\\\ / /\ \\\\ /  \ \\\\ /\/  \\\\ /  \ \\\\ /  \ \\\\
+ \ \/ //// \ \ \//// \ \ \//// \ \\\//// \|   //// \  /\//// \ \  //// \ \ \////
+  \  ////   \ \////   \  ////   \ \\\\    | \////   \ \\\\    \  ////   \ \//// 
+   \////     \////     \////     \////     \||||     \////     \////     \////  
+
+> parse-folder "C:\Users\Viktor Chernev\Desktop\testing\TestFiles\live_Radio" "C:\Users\Viktor Chernev\Desktop\testing\TranslatorCliTests\html_page-med.html" logfile="C:\Users\Viktor Chernev\Desktop\testing\TranslatorCliTests\html_page-med.log" dsonly=true toponly=false translator=HTML_PAGE verbosity=m beautify=true
+--------------------------------------------------
+Initializing Describe Transpiler v1.0
+Verbosity set to: Medium
+Language version set to: Describe Lines - v1.0
+Describe Transpiler initialized.
+Translator initialized - "HTML_PAGE"
+Starting a 'Directory -> Unfold' operation...
+"C:\Users\Viktor Chernev\Desktop\testing\TestFiles\live_Radio"
+STOP_ON_ERROR - True
+PARSE_DS_ONLY - True
+PARSE_TOP_DIRECTORY_ONLY - False
+Starting a parse operation on file: "C:\Users\Viktor Chernev\Desktop\testing\TestFiles\live_Radio\.radiowatch.ds"
+File parsed successfully
+Parse tree unfolded successfully
+Done!
+------------------------
+File parsed successfully
+Parser red 521 characters, into 45 tokens.
+Those were translated to 2 productions, containing 9 entries.
+Starting a parse operation on file: "C:\Users\Viktor Chernev\Desktop\testing\TestFiles\live_Radio\City.ds"
+File parsed successfully
+Parse tree unfolded successfully
+Done!
+------------------------
+File parsed successfully
+Parser red 150 characters, into 17 tokens.
+Those were translated to 1 productions, containing 4 entries.
+Starting a parse operation on file: "C:\Users\Viktor Chernev\Desktop\testing\TestFiles\live_Radio\Energy.ds"
+File parsed successfully
+Parse tree unfolded successfully
+Done!
+------------------------
+File parsed successfully
+Parser red 160 characters, into 17 tokens.
+Those were translated to 1 productions, containing 4 entries.
+Starting a parse operation on file: "C:\Users\Viktor Chernev\Desktop\testing\TestFiles\live_Radio\NovaNews.ds"
+File parsed successfully
+Parse tree unfolded successfully
+Done!
+------------------------
+File parsed successfully
+Parser red 165 characters, into 17 tokens.
+Those were translated to 1 productions, containing 4 entries.
+Starting a parse operation on file: "C:\Users\Viktor Chernev\Desktop\testing\TestFiles\live_Radio\Radio1Rock.ds"
+File parsed successfully
+Parse tree unfolded successfully
+Done!
+------------------------
+File parsed successfully
+Parser red 164 characters, into 17 tokens.
+Those were translated to 1 productions, containing 4 entries.
+Starting a parse operation on file: "C:\Users\Viktor Chernev\Desktop\testing\TestFiles\live_Radio\Veselina.ds"
+File parsed successfully
+Parse tree unfolded successfully
+Done!
+------------------------
+File parsed successfully
+Parser red 170 characters, into 17 tokens.
+Those were translated to 1 productions, containing 4 entries.
+Starting a parse operation on file: "C:\Users\Viktor Chernev\Desktop\testing\TestFiles\live_Radio\City\2024-04-15.ds"
+File parsed successfully
+Parse tree unfolded successfully
+Done!
+------------------------
+File parsed successfully
+Parser red 10196 characters, into 1350 tokens.
+Those were translated to 1 productions, containing 347 entries.
+Starting a parse operation on file: "C:\Users\Viktor Chernev\Desktop\testing\TestFiles\live_Radio\City\2024-04-16.ds"
+File parsed successfully
+Parse tree unfolded successfully
+Done!
+------------------------
+File parsed successfully
+Parser red 10314 characters, into 1406 tokens.
+Those were translated to 1 productions, containing 356 entries.
+Starting a parse operation on file: "C:\Users\Viktor Chernev\Desktop\testing\TestFiles\live_Radio\City\2024-04-17.ds"
+File parsed successfully
+Parse tree unfolded successfully
+Done!
+------------------------
+File parsed successfully
+Parser red 10097 characters, into 1372 tokens.
+Those were translated to 1 productions, containing 349 entries.
+Starting a parse operation on file: "C:\Users\Viktor Chernev\Desktop\testing\TestFiles\live_Radio\Energy\2024-04-15.ds"
+File parsed successfully
+Parse tree unfolded successfully
+Done!
+------------------------
+File parsed successfully
+Parser red 10410 characters, into 1373 tokens.
+Those were translated to 1 productions, containing 335 entries.
+Starting a parse operation on file: "C:\Users\Viktor Chernev\Desktop\testing\TestFiles\live_Radio\Energy\2024-04-16.ds"
+File parsed successfully
+Parse tree unfolded successfully
+Done!
+------------------------
+File parsed successfully
+Parser red 10654 characters, into 1349 tokens.
+Those were translated to 1 productions, containing 334 entries.
+Starting a parse operation on file: "C:\Users\Viktor Chernev\Desktop\testing\TestFiles\live_Radio\Energy\2024-04-17.ds"
+File parsed successfully
+Parse tree unfolded successfully
+Done!
+------------------------
+File parsed successfully
+Parser red 9593 characters, into 1287 tokens.
+Those were translated to 1 productions, containing 316 entries.
+Starting a parse operation on file: "C:\Users\Viktor Chernev\Desktop\testing\TestFiles\live_Radio\NovaNews\2024-04-15.ds"
+File parsed successfully
+Parse tree unfolded successfully
+Done!
+------------------------
+File parsed successfully
+Parser red 9985 characters, into 1169 tokens.
+Those were translated to 1 productions, containing 277 entries.
+Starting a parse operation on file: "C:\Users\Viktor Chernev\Desktop\testing\TestFiles\live_Radio\NovaNews\2024-04-16.ds"
+File parsed successfully
+Parse tree unfolded successfully
+Done!
+------------------------
+File parsed successfully
+Parser red 9869 characters, into 1207 tokens.
+Those were translated to 1 productions, containing 283 entries.
+Starting a parse operation on file: "C:\Users\Viktor Chernev\Desktop\testing\TestFiles\live_Radio\NovaNews\2024-04-17.ds"
+File parsed successfully
+Parse tree unfolded successfully
+Done!
+------------------------
+File parsed successfully
+Parser red 7054 characters, into 824 tokens.
+Those were translated to 1 productions, containing 191 entries.
+Starting a parse operation on file: "C:\Users\Viktor Chernev\Desktop\testing\TestFiles\live_Radio\Radio1Rock\2024-04-15.ds"
+File parsed successfully
+Parse tree unfolded successfully
+Done!
+------------------------
+File parsed successfully
+Parser red 9674 characters, into 1241 tokens.
+Those were translated to 1 productions, containing 299 entries.
+Starting a parse operation on file: "C:\Users\Viktor Chernev\Desktop\testing\TestFiles\live_Radio\Radio1Rock\2024-04-16.ds"
+File parsed successfully
+Parse tree unfolded successfully
+Done!
+------------------------
+File parsed successfully
+Parser red 9359 characters, into 1213 tokens.
+Those were translated to 1 productions, containing 293 entries.
+Starting a parse operation on file: "C:\Users\Viktor Chernev\Desktop\testing\TestFiles\live_Radio\Radio1Rock\2024-04-17.ds"
+File parsed successfully
+Parse tree unfolded successfully
+Done!
+------------------------
+File parsed successfully
+Parser red 6889 characters, into 899 tokens.
+Those were translated to 1 productions, containing 217 entries.
+Starting a parse operation on file: "C:\Users\Viktor Chernev\Desktop\testing\TestFiles\live_Radio\Veselina\2024-04-15.ds"
+File parsed successfully
+Parse tree unfolded successfully
+Done!
+------------------------
+File parsed successfully
+Parser red 5762 characters, into 771 tokens.
+Those were translated to 1 productions, containing 176 entries.
+Starting a parse operation on file: "C:\Users\Viktor Chernev\Desktop\testing\TestFiles\live_Radio\Veselina\2024-04-16.ds"
+File parsed successfully
+Parse tree unfolded successfully
+Done!
+------------------------
+File parsed successfully
+Parser red 6182 characters, into 807 tokens.
+Those were translated to 1 productions, containing 182 entries.
+Starting a parse operation on file: "C:\Users\Viktor Chernev\Desktop\testing\TestFiles\live_Radio\Veselina\2024-04-17.ds"
+File parsed successfully
+Parse tree unfolded successfully
+Done!
+------------------------
+File parsed successfully
+Parser red 3738 characters, into 491 tokens.
+Those were translated to 1 productions, containing 108 entries.
+All Files: 21, Succeeded: 21, Failed: 0, Errors: 0
+Task completed successfully. Press any key to exit.

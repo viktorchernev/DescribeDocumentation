@@ -1,0 +1,208 @@
+{
+  "items": [
+    {
+      "name": "branch",
+      "filename": "C:\\Users\\Viktor Chernev\\Desktop\\@Ds\\MyLife\\!MySchemes\\ULOT.txt",
+      "text": "understanding-level of topic",
+      "id": "my.schemes.ulot",
+      "links": [],
+      "decorators": [],
+      "items": [
+        {
+          "name": "branch",
+          "filename": "C:\\Users\\Viktor Chernev\\Desktop\\@Ds\\MyLife\\!MySchemes\\ULOT.txt",
+          "text": "No knowledge",
+          "id": "@SSVIDL.S9940LY1",
+          "links": [],
+          "decorators": [],
+          "items": [
+            {
+              "name": "leaf",
+              "text": "0",
+              "id": "@SSVIDL.value~7KZ1CE9E",
+              "links": [],
+              "decorators": [],
+              "type": "item"
+            },
+            {
+              "name": "leaf",
+              "text": "No exposure to the topic.",
+              "id": "@SSVIDL.info~ICKREUFR",
+              "links": [],
+              "decorators": [],
+              "type": "item"
+            }
+          ],
+          "type": "item"
+        },
+        {
+          "name": "branch",
+          "filename": "C:\\Users\\Viktor Chernev\\Desktop\\@Ds\\MyLife\\!MySchemes\\ULOT.txt",
+          "text": "Superficial knowledge",
+          "id": "@SSVIDL.U3UX2PD2",
+          "links": [],
+          "decorators": [],
+          "items": [
+            {
+              "name": "leaf",
+              "text": "1",
+              "id": "@SSVIDL.value~QG0OIQH6",
+              "links": [],
+              "decorators": [],
+              "type": "item"
+            },
+            {
+              "name": "leaf",
+              "text": "Basic awareness of the topic, possibly through casual exposure, but without much understanding.",
+              "id": "@SSVIDL.info~LGHHSNHO",
+              "links": [],
+              "decorators": [],
+              "type": "item"
+            }
+          ],
+          "type": "item"
+        },
+        {
+          "name": "branch",
+          "filename": "C:\\Users\\Viktor Chernev\\Desktop\\@Ds\\MyLife\\!MySchemes\\ULOT.txt",
+          "text": "Familiarity",
+          "id": "@SSVIDL.XBA616UV",
+          "links": [],
+          "decorators": [],
+          "items": [
+            {
+              "name": "leaf",
+              "text": "2",
+              "id": "@SSVIDL.value~K9LHPJDS",
+              "links": [],
+              "decorators": [],
+              "type": "item"
+            },
+            {
+              "name": "leaf",
+              "text": "Understands the basic concepts and terminology, can follow general discussions, but lacks in-depth knowledge.",
+              "id": "@SSVIDL.info~0PF9BQD3",
+              "links": [],
+              "decorators": [],
+              "type": "item"
+            }
+          ],
+          "type": "item"
+        },
+        {
+          "name": "branch",
+          "filename": "C:\\Users\\Viktor Chernev\\Desktop\\@Ds\\MyLife\\!MySchemes\\ULOT.txt",
+          "text": "Competency",
+          "id": "@SSVIDL.OQI8CSEO",
+          "links": [],
+          "decorators": [],
+          "items": [
+            {
+              "name": "leaf",
+              "text": "3",
+              "id": "@SSVIDL.value~29BUGJ4A",
+              "links": [],
+              "decorators": [],
+              "type": "item"
+            },
+            {
+              "name": "leaf",
+              "text": "Can engage in more detailed conversations, understands key principles, and can apply basic concepts with some guidance.",
+              "id": "@SSVIDL.info~IUNB379J",
+              "links": [],
+              "decorators": [],
+              "type": "item"
+            }
+          ],
+          "type": "item"
+        },
+        {
+          "name": "branch",
+          "filename": "C:\\Users\\Viktor Chernev\\Desktop\\@Ds\\MyLife\\!MySchemes\\ULOT.txt",
+          "text": "Proficiency",
+          "id": "@SSVIDL.ZRWLNYBB",
+          "links": [],
+          "decorators": [],
+          "items": [
+            {
+              "name": "leaf",
+              "text": "4",
+              "id": "@SSVIDL.value~SLCXNCB8",
+              "links": [],
+              "decorators": [],
+              "type": "item"
+            },
+            {
+              "name": "leaf",
+              "text": "Has strong understanding of the topic, can explain it clearly to others, solve common problems, and work independently.",
+              "id": "@SSVIDL.info~GW5HYI2Q",
+              "links": [],
+              "decorators": [],
+              "type": "item"
+            }
+          ],
+          "type": "item"
+        },
+        {
+          "name": "branch",
+          "filename": "C:\\Users\\Viktor Chernev\\Desktop\\@Ds\\MyLife\\!MySchemes\\ULOT.txt",
+          "text": "Expertise",
+          "id": "@SSVIDL.A3G381ZB",
+          "links": [],
+          "decorators": [],
+          "items": [
+            {
+              "name": "leaf",
+              "text": "5",
+              "id": "@SSVIDL.value~NVHIJSUB",
+              "links": [],
+              "decorators": [],
+              "type": "item"
+            },
+            {
+              "name": "leaf",
+              "text": "Deep and comprehensive knowledge of the topic, able to handle complex problems, innovate solutions, and teach others at a high level.",
+              "id": "@SSVIDL.info~1ZJJY9B5",
+              "links": [],
+              "decorators": [],
+              "type": "item"
+            }
+          ],
+          "type": "item"
+        },
+        {
+          "name": "branch",
+          "filename": "C:\\Users\\Viktor Chernev\\Desktop\\@Ds\\MyLife\\!MySchemes\\ULOT.txt",
+          "text": "Mastery",
+          "id": "@SSVIDL.U82IZNRA",
+          "links": [],
+          "decorators": [],
+          "items": [
+            {
+              "name": "leaf",
+              "text": "6",
+              "id": "@SSVIDL.value~8I762F6M",
+              "links": [],
+              "decorators": [],
+              "type": "item"
+            },
+            {
+              "name": "leaf",
+              "text": "Recognized authority in the topic, capable of contributing new ideas, leading advancements, and pushing the boundaries of the subject.",
+              "id": "@SSVIDL.info~Q2GQ7I58",
+              "links": [],
+              "decorators": [],
+              "type": "item"
+            }
+          ],
+          "type": "item"
+        }
+      ],
+      "type": "item"
+    }
+  ],
+  "timestamp": "Built on 04 October 2024, 18:52:32.406 (UTC)",
+  "version": "Built with Describe Compiler version 1.0",
+  "short_timestamp": "04 Oct 2024, 18:52:32",
+  "short_version": "Describe Compiler v 1.0"
+}

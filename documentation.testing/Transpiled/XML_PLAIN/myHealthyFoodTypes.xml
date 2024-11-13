@@ -1,0 +1,258 @@
+<document>
+  <timestamp>Built on 04 October 2024, 17:57:12.109 (UTC)</timestamp>
+  <version>Built with Describe Compiler version 1.0</version>
+  <data>
+    <ul class="listree">
+      <production>
+        <titleItem>My Diet</titleItem>
+        <bodyItems>
+          <production>
+            <titleItem>healthy breakfast options</titleItem>
+            <bodyItems>
+              <item>
+                <htmlStyle>color: green; font-style: italic;</htmlStyle>
+                <type>comment</type>
+                <content>simple</content>
+                <links></links>
+              </item>
+              <item>
+                <htmlStyle>color: green; font-style: italic;</htmlStyle>
+                <type>basic</type>
+                <content>Nuts and/or Fruits</content>
+                <links></links>
+              </item>
+              <item>
+                <htmlStyle>color: green; font-style: italic;</htmlStyle>
+                <type>basic</type>
+                <content>Rlavored rusks</content>
+                <links></links>
+              </item>
+              <item>
+                <htmlStyle>color: green; font-style: italic;</htmlStyle>
+                <type>basic</type>
+                <content>Soletti and Crackers</content>
+                <links></links>
+              </item>
+              <item>
+                <htmlStyle>color: green; font-style: italic;</htmlStyle>
+                <type>nlcomment</type>
+                <content>baked</content>
+                <links></links>
+              </item>
+              <item>
+                <htmlStyle>color: green; font-style: italic;</htmlStyle>
+                <type>basic</type>
+                <content>healthy Sandwiches</content>
+                <links></links>
+              </item>
+              <item>
+                <htmlStyle>color: green; font-style: italic;</htmlStyle>
+                <type>basic</type>
+                <content>healthy Baked goods</content>
+                <links></links>
+              </item>
+              <item>
+                <htmlStyle>color: green; font-style: italic;</htmlStyle>
+                <type>basic</type>
+                <content>Fancy Breads</content>
+                <links></links>
+              </item>
+              <item>
+                <htmlStyle>color: green; font-style: italic;</htmlStyle>
+                <type>nlcomment</type>
+                <content>yoghurt</content>
+                <links></links>
+              </item>
+              <item>
+                <htmlStyle>color: green; font-style: italic;</htmlStyle>
+                <type>basic</type>
+                <content>Yoghurt</content>
+                <links></links>
+              </item>
+              <item>
+                <htmlStyle>color: green; font-style: italic;</htmlStyle>
+                <type>basic</type>
+                <content>Yoghurt and Fruits</content>
+                <links></links>
+              </item>
+              <item>
+                <htmlStyle>color: green; font-style: italic;</htmlStyle>
+                <type>basic</type>
+                <content>Yoghurt and Nuts</content>
+                <links></links>
+              </item>
+              <item>
+                <htmlStyle>color: green; font-style: italic;</htmlStyle>
+                <type>basic</type>
+                <content>Yoghurt and Cereals</content>
+                <links></links>
+              </item>
+              <item>
+                <htmlStyle>color: green; font-style: italic;</htmlStyle>
+                <type>nlcomment</type>
+                <content>more</content>
+                <links></links>
+              </item>
+              <item>
+                <htmlStyle>color: green; font-style: italic;</htmlStyle>
+                <type>basic</type>
+                <content>Ramen noodles</content>
+                <links></links>
+              </item>
+              <item>
+                <htmlStyle>color: green; font-style: italic;</htmlStyle>
+                <type>basic</type>
+                <content>Soup</content>
+                <links></links>
+              </item>
+            </bodyItems>
+          </production>
+          <production>
+            <titleItem>healthy lunch options</titleItem>
+            <bodyItems>
+              <item>
+                <htmlStyle>color: green; font-style: italic;</htmlStyle>
+                <type>comment</type>
+                <content>soups</content>
+                <links></links>
+              </item>
+              <item>
+                <htmlStyle>color: green; font-style: italic;</htmlStyle>
+                <type>basic</type>
+                <content>Tripe soup</content>
+                <links></links>
+              </item>
+              <item>
+                <htmlStyle>color: green; font-style: italic;</htmlStyle>
+                <type>basic</type>
+                <content>Lamb soup</content>
+                <links></links>
+              </item>
+              <item>
+                <htmlStyle>color: green; font-style: italic;</htmlStyle>
+                <type>basic</type>
+                <content>Veil-boiled soup</content>
+                <links></links>
+              </item>
+              <item>
+                <htmlStyle>color: green; font-style: italic;</htmlStyle>
+                <type>basic</type>
+                <content>Chicken soup</content>
+                <links></links>
+              </item>
+              <item>
+                <htmlStyle>color: green; font-style: italic;</htmlStyle>
+                <type>basic</type>
+                <content>Lentil soup</content>
+                <links></links>
+              </item>
+              <item>
+                <htmlStyle>color: green; font-style: italic;</htmlStyle>
+                <type>nlcomment</type>
+                <content>stews</content>
+                <links></links>
+              </item>
+              <item>
+                <htmlStyle>color: green; font-style: italic;</htmlStyle>
+                <type>basic</type>
+                <content>Bean stew</content>
+                <links></links>
+              </item>
+              <item>
+                <htmlStyle>color: green; font-style: italic;</htmlStyle>
+                <type>basic</type>
+                <content>Lentil stew</content>
+                <links></links>
+              </item>
+              <item>
+                <htmlStyle>color: green; font-style: italic;</htmlStyle>
+                <type>basic</type>
+                <content>Tas kebap</content>
+                <links></links>
+              </item>
+              <item>
+                <htmlStyle>color: green; font-style: italic;</htmlStyle>
+                <type>nlcomment</type>
+                <content>grill</content>
+                <links></links>
+              </item>
+              <item>
+                <htmlStyle>color: green; font-style: italic;</htmlStyle>
+                <type>basic</type>
+                <content>Grilled fish</content>
+                <links></links>
+              </item>
+              <item>
+                <htmlStyle>color: green; font-style: italic;</htmlStyle>
+                <type>basic</type>
+                <content>Grilled Chicken Filet w side</content>
+                <links></links>
+              </item>
+              <item>
+                <htmlStyle>color: green; font-style: italic;</htmlStyle>
+                <type>nlcomment</type>
+                <content>more</content>
+                <links></links>
+              </item>
+              <item>
+                <htmlStyle>color: green; font-style: italic;</htmlStyle>
+                <type>basic</type>
+                <content>Caesar salad</content>
+                <links>
+                  <link>
+                    <target>_blank</target>
+                    <htmlStyle>text-decoration: none</htmlStyle>
+                    <url>https://en.wikipedia.org/wiki/Caesar_salad</url>
+                    <text>🅐</text>
+                  </link>
+                </links>
+              </item>
+              <item>
+                <htmlStyle>color: green; font-style: italic;</htmlStyle>
+                <type>basic</type>
+                <content>Bread and Hummus</content>
+                <links>
+                  <link>
+                    <target>_blank</target>
+                    <htmlStyle>text-decoration: none</htmlStyle>
+                    <url>https://en.wikipedia.org/wiki/Hummus</url>
+                    <text>🅐</text>
+                  </link>
+                </links>
+              </item>
+              <item>
+                <htmlStyle>color: green; font-style: italic;</htmlStyle>
+                <type>basic</type>
+                <content>Grilled Sandwiches</content>
+                <links></links>
+              </item>
+              <item>
+                <htmlStyle>color: green; font-style: italic;</htmlStyle>
+                <type>basic</type>
+                <content>Kebapche in Bun</content>
+                <links></links>
+              </item>
+            </bodyItems>
+          </production>
+          <production>
+            <titleItem>healthy dinner options</titleItem>
+            <bodyItems>
+              <item>
+                <htmlStyle>color: green; font-style: italic;</htmlStyle>
+                <type>basic</type>
+                <content>Bean stew</content>
+                <links></links>
+              </item>
+              <item>
+                <htmlStyle>color: green; font-style: italic;</htmlStyle>
+                <type>basic</type>
+                <content>Caesar salad</content>
+                <links></links>
+              </item>
+            </bodyItems>
+          </production>
+        </bodyItems>
+      </production>
+    </ul>
+  </data>
+</document>

@@ -1,0 +1,51 @@
+{
+  "items": [
+    {
+      "name": "branch",
+      "filename": "A_basic1.ds",
+      "text": "fabric*s",
+      "id": "@YBSLWC.6SVXNJY1",
+      "links": [],
+      "decorators": [],
+      "items": [
+        {
+          "name": "leaf",
+          "text": "wool http://abc.de fabrics",
+          "id": "@YBSLWC.GJ5VCO7T",
+          "links": [],
+          "decorators": [],
+          "type": "item"
+        },
+        {
+          "name": "leaf",
+          "text": "cotton fabrics",
+          "id": "@YBSLWC.H84D8IIB",
+          "links": [],
+          "decorators": [],
+          "type": "item"
+        },
+        {
+          "name": "leaf",
+          "text": "silk fabrics",
+          "id": "@YBSLWC.KV80KBXD",
+          "links": [],
+          "decorators": [],
+          "type": "item"
+        },
+        {
+          "name": "leaf",
+          "text": "synthetic fabrics",
+          "id": "@YBSLWC.TJVOCCHP",
+          "links": [],
+          "decorators": [],
+          "type": "item"
+        }
+      ],
+      "type": "item"
+    }
+  ],
+  "timestamp": "Built on 11 September 2024, 18:53:50.987 (UTC)",
+  "version": "Built with Describe Compiler version 1.0",
+  "short_timestamp": "11 Sep 2024, 18:53:50",
+  "short_version": "Describe Compiler v 1.0"
+}

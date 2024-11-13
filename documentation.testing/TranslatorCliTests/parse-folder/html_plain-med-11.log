@@ -1,0 +1,78 @@
+   /\\\\     /\\\\     /\\\\     /\\\\     /\\\\     /\\\\     /\\\\     /\\\\  
+  /  \\\\   /  \\\\   /  \\\\   /  \\\\   /  \\\\   _\ \\\\   /  \\\\   /  \\\\ 
+ / /\ \\\\ /  \ \\\\ /\ \ \\\\ / /\ \\\\ /  \ \\\\ /\/  \\\\ /  \ \\\\ /  \ \\\\
+ \ \/ //// \ \ \//// \ \ \//// \ \\\//// \|   //// \  /\//// \ \  //// \ \ \////
+  \  ////   \ \////   \  ////   \ \\\\    | \////   \ \\\\    \  ////   \ \//// 
+   \////     \////     \////     \////     \||||     \////     \////     \////  
+
+> parse-folder "C:\Users\Viktor Chernev\Desktop\testing\TestFiles\TestFilesFor11" "C:\Users\Viktor Chernev\Desktop\testing\TranslatorCliTests\html_plain-med-11.html" logfile="C:\Users\Viktor Chernev\Desktop\testing\TranslatorCliTests\html_plain-med-11.log" language-version=1.1 dsonly=true toponly=false translator=HTML_PLAIN verbosity=m beautify=true
+--------------------------------------------------
+Initializing Describe Transpiler v1.0
+Verbosity set to: Medium
+Language version set to: Describe Lines - v1.0
+Describe Transpiler initialized.
+Language version set to: Describe Doubles - v1.1
+Translator initialized - using template "HTML_PLAIN"
+Starting a 'Directory -> Unfold' operation...
+"C:\Users\Viktor Chernev\Desktop\testing\TestFiles\TestFilesFor11"
+STOP_ON_ERROR - True
+PARSE_DS_ONLY - True
+PARSE_TOP_DIRECTORY_ONLY - False
+Starting a parse operation on file: "C:\Users\Viktor Chernev\Desktop\testing\TestFiles\TestFilesFor11\A_decorators.ds"
+File parsed successfully
+Parse tree unfolded successfully
+Done!
+------------------------
+File parsed successfully
+Parser red 127 characters, into 15 tokens.
+Those were translated to 1 productions, containing 5 entries.
+Starting a parse operation on file: "C:\Users\Viktor Chernev\Desktop\testing\TestFiles\TestFilesFor11\A_decorators2.ds"
+File parsed successfully
+Parse tree unfolded successfully
+Done!
+------------------------
+File parsed successfully
+Parser red 134 characters, into 24 tokens.
+Those were translated to 1 productions, containing 5 entries.
+Starting a parse operation on file: "C:\Users\Viktor Chernev\Desktop\testing\TestFiles\TestFilesFor11\A_links.ds"
+File parsed successfully
+Parse tree unfolded successfully
+Done!
+------------------------
+File parsed successfully
+Parser red 150 characters, into 15 tokens.
+Those were translated to 1 productions, containing 5 entries.
+Starting a parse operation on file: "C:\Users\Viktor Chernev\Desktop\testing\TestFiles\TestFilesFor11\A_links2.ds"
+File parsed successfully
+Parse tree unfolded successfully
+Done!
+------------------------
+File parsed successfully
+Parser red 159 characters, into 25 tokens.
+Those were translated to 1 productions, containing 5 entries.
+Starting a parse operation on file: "C:\Users\Viktor Chernev\Desktop\testing\TestFiles\TestFilesFor11\A_tags.ds"
+File parsed successfully
+Parse tree unfolded successfully
+Done!
+------------------------
+File parsed successfully
+Parser red 117 characters, into 15 tokens.
+Those were translated to 1 productions, containing 3 entries.
+Starting a parse operation on file: "C:\Users\Viktor Chernev\Desktop\testing\TestFiles\TestFilesFor11\A_tags2.ds"
+File parsed successfully
+Parse tree unfolded successfully
+Done!
+------------------------
+File parsed successfully
+Parser red 121 characters, into 22 tokens.
+Those were translated to 1 productions, containing 3 entries.
+Starting a parse operation on file: "C:\Users\Viktor Chernev\Desktop\testing\TestFiles\TestFilesFor11\A_tilde.ds"
+File parsed successfully
+Parse tree unfolded successfully
+Done!
+------------------------
+File parsed successfully
+Parser red 124 characters, into 17 tokens.
+Those were translated to 1 productions, containing 4 entries.
+All Files: 7, Succeeded: 7, Failed: 0, Errors: 0
+Task completed successfully. Press any key to exit.

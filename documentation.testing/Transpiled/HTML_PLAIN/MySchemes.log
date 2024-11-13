@@ -1,0 +1,31 @@
+   /\\\\     /\\\\     /\\\\     /\\\\     /\\\\     /\\\\     /\\\\     /\\\\  
+  /  \\\\   /  \\\\   /  \\\\   /  \\\\   /  \\\\   _\ \\\\   /  \\\\   /  \\\\ 
+ / /\ \\\\ /  \ \\\\ /\ \ \\\\ / /\ \\\\ /  \ \\\\ /\/  \\\\ /  \ \\\\ /  \ \\\\
+ \ \/ //// \ \ \//// \ \ \//// \ \\\//// \|   //// \  /\//// \ \  //// \ \ \////
+  \  ////   \ \////   \  ////   \ \\\\    | \////   \ \\\\    \  ////   \ \//// 
+   \////     \////     \////     \////     \||||     \////     \////     \////  
+
+> parse-file "C:\Users\Viktor Chernev\Desktop\@Ds\MyLife\!MySchemes\ULOT.txt" "C:\Users\Viktor Chernev\Desktop\testing\!compiled\HTML_PLAIN\MySchemes.html" translator=html_plain beautify=true verbosity=h log-file="C:\Users\Viktor Chernev\Desktop\testing\!compiled\HTML_PLAIN\MySchemes.log" theme=DBLUE
+--------------------------------------------------
+Initializing Describe Transpiler v1.0
+Verbosity set to: High
+Language version set to: Describe Lines - v1.0
+Describe Transpiler initialized.
+Translator initialized - using template "HTML_PLAIN"
+Starting a 'File -> Unfold' operation...
+------------------------
+Starting a parse operation on file: "C:\Users\Viktor Chernev\Desktop\@Ds\MyLife\!MySchemes\ULOT.txt"
+Fetched file contents - 1431 characters long
+
+Parsing sequence: T(DATA|'understanding') T(HYPHEN|'-') T(DATA|'level of topic \r\n') T(TAG|'<.ulot> ') T(HYPHEN|'-') T(PRODUCTION_ARROW|'>\r\n\r\n    ') T(DATA|'No knowledge ') T(HYPHEN|'-') T(PRODUCTION_ARROW|'>\r\n        ') T(TILDE|'~') T(DATA|' 0 ') T(TAG|'<value>') T(SEPARATOR|',\r\n        ') T(TILDE|'~') T(DATA|' No exposure to the topic. ') T(TAG|'<info>') T(TERMINATOR|';\r\n    \r\n    ') T(DATA|'Superficial knowledge ') T(HYPHEN|'-') T(PRODUCTION_ARROW|'>\r\n        ') T(TILDE|'~') T(DATA|' 1 ') T(TAG|'<value>') T(SEPARATOR|',\r\n        ') T(TILDE|'~') T(DATA|' Basic awareness of the topic') T(COMMA|', ') T(DATA|'possibly \r\n        through casual exposure') T(COMMA|', ') T(DATA|'but without \r\n        much understanding. ') T(TAG|'<info>') T(TERMINATOR|';\r\n        \r\n    ') T(DATA|'Familiarity ') T(HYPHEN|'-') T(PRODUCTION_ARROW|'>\r\n        ') T(TILDE|'~') T(DATA|' 2 ') T(TAG|'<value>') T(SEPARATOR|',\r\n        ') T(TILDE|'~') T(DATA|' Understands the basic concepts and \r\n        terminology') T(COMMA|', ') T(DATA|'can follow general discussions') T(ESCAPE_SEPARATOR|'\, \r\n        ') T(DATA|'but lacks in') T(HYPHEN|'-') T(DATA|'depth knowledge. ') T(TAG|'<info>') T(TERMINATOR|';\r\n        \r\n    ') T(DATA|'Competency ') T(HYPHEN|'-') T(PRODUCTION_ARROW|'> \r\n        ') T(TILDE|'~') T(DATA|' 3 ') T(TAG|'<value>') T(SEPARATOR|',\r\n        ') T(TILDE|'~') T(DATA|' Can engage in more detailed \r\n        conversations') T(COMMA|', ') T(DATA|'understands key principles') T(ESCAPE_SEPARATOR|'\, \r\n        ') T(DATA|'and can apply basic concepts with some \r\n        guidance. ') T(TAG|'<info>') T(TERMINATOR|';\r\n        \r\n    ') T(DATA|'Proficiency ') T(HYPHEN|'-') T(PRODUCTION_ARROW|'> \r\n        ') T(TILDE|'~') T(DATA|' 4 ') T(TAG|'<value>') T(SEPARATOR|',\r\n        ') T(TILDE|'~') T(DATA|' Has strong understanding of the topic') T(ESCAPE_SEPARATOR|'\,\r\n        ') T(DATA|'can explain it clearly to others') T(COMMA|', ') T(DATA|'solve \r\n        common problems') T(COMMA|', ') T(DATA|'and work \r\n        independently. ') T(TAG|'<info>') T(TERMINATOR|';\r\n\r\n    ') T(DATA|'Expertise ') T(HYPHEN|'-') T(PRODUCTION_ARROW|'> \r\n        ') T(TILDE|'~') T(DATA|' 5 ') T(TAG|'<value>') T(SEPARATOR|',\r\n        ') T(TILDE|'~') T(DATA|' Deep and comprehensive knowledge of \r\n        the topic') T(COMMA|', ') T(DATA|'able to handle complex problems') T(ESCAPE_SEPARATOR|'\, \r\n        ') T(DATA|'innovate solutions') T(COMMA|', ') T(DATA|'and teach others at a \r\n        high level. ') T(TAG|'<info>') T(TERMINATOR|';\r\n    \r\n    ') T(DATA|'Mastery ') T(HYPHEN|'-') T(PRODUCTION_ARROW|'> \r\n        ') T(TILDE|'~') T(DATA|' 6 ') T(TAG|'<value>') T(SEPARATOR|',\r\n        ') T(TILDE|'~') T(DATA|' Recognized authority in the topic') T(ESCAPE_SEPARATOR|'\, \r\n        ') T(DATA|'capable of contributing new ideas') T(ESCAPE_SEPARATOR|'\, \r\n        ') T(DATA|'leading advancements') T(COMMA|', ') T(DATA|'and pushing the \r\n        boundaries of the subject. ') T(TAG|'<info>') T(TERMINATOR|';\n') T(TERMINATOR|';\n') T(EOF|'<EOF>') Ok
+
+File parsed successfully
+Parse tree unfolded successfully
+Done!
+------------------------
+File parsed successfully
+Parser red 1431 characters, into 117 tokens.
+Those were translated to 8 productions, containing 22 entries.
+All Files: 1, Succeeded: 1, Failed: 0, Errors: 0
+--------------------------------------------------
+Task completed successfully. Press any key to exit.

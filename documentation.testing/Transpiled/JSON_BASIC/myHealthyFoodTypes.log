@@ -1,0 +1,31 @@
+   /\\\\     /\\\\     /\\\\     /\\\\     /\\\\     /\\\\     /\\\\     /\\\\  
+  /  \\\\   /  \\\\   /  \\\\   /  \\\\   /  \\\\   _\ \\\\   /  \\\\   /  \\\\ 
+ / /\ \\\\ /  \ \\\\ /\ \ \\\\ / /\ \\\\ /  \ \\\\ /\/  \\\\ /  \ \\\\ /  \ \\\\
+ \ \/ //// \ \ \//// \ \ \//// \ \\\//// \|   //// \  /\//// \ \  //// \ \ \////
+  \  ////   \ \////   \  ////   \ \\\\    | \////   \ \\\\    \  ////   \ \//// 
+   \////     \////     \////     \////     \||||     \////     \////     \////  
+
+> parse-file "C:\Users\Viktor Chernev\Desktop\@Ds\MyLife\MyDiet\myHealthyFoodTypes.txt" "C:\Users\Viktor Chernev\Desktop\testing\!compiled\JSON_BASIC\myHealthyFoodTypes.json" translator=JSON_BASIC beautify=true verbosity=h logfile="C:\Users\Viktor Chernev\Desktop\testing\!compiled\JSON_BASIC\myHealthyFoodTypes.log" theme=DBLUE
+--------------------------------------------------
+Initializing Describe Transpiler v1.0
+Verbosity set to: High
+Language version set to: Describe Lines - v1.0
+Describe Transpiler initialized.
+Translator initialized - using template "JSON_BASIC"
+Starting a 'File -> Unfold' operation...
+------------------------
+Starting a parse operation on file: "C:\Users\Viktor Chernev\Desktop\@Ds\MyLife\MyDiet\myHealthyFoodTypes.txt"
+Fetched file contents - 946 characters long
+
+Parsing sequence: T(DATA|'My Diet ') T(TAG|'<.rnode> ') T(HYPHEN|'-') T(PRODUCTION_ARROW|'>\r\n\r\n\t') T(DATA|'healthy breakfast options ') T(HYPHEN|'-') T(PRODUCTION_ARROW|'>\r\n\r\n\t\t') T(DATA|'simple ') T(DECORATOR|'{comment}') T(SEPARATOR|',\r\n\t\t') T(DATA|'Nuts and') T(FORWARD_SLASH|'/') T(DATA|'or Fruits') T(SEPARATOR|',\r\n\t\t') T(DATA|'Rlavored rusks') T(SEPARATOR|',\r\n\t\t') T(DATA|'Soletti and Crackers') T(SEPARATOR|',\r\n\t\t\r\n\t\t') T(DATA|'baked ') T(DECORATOR|'{nlcomment}') T(SEPARATOR|',\r\n\t\t') T(DATA|'healthy Sandwiches') T(SEPARATOR|',\r\n\t\t') T(DATA|'healthy Baked goods') T(SEPARATOR|',\r\n\t\t') T(DATA|'Fancy Breads ') T(DECORATOR|'{bold}') T(SEPARATOR|',\r\n\t\t\r\n\t\t') T(DATA|'yoghurt ') T(DECORATOR|'{nlcomment}') T(SEPARATOR|',\r\n\t\t') T(DATA|'Yoghurt') T(SEPARATOR|',\r\n\t\t') T(DATA|'Yoghurt and Fruits ') T(DECORATOR|'{bold}') T(SEPARATOR|',\r\n\t\t') T(DATA|'Yoghurt and Nuts') T(SEPARATOR|',\r\n\t\t') T(DATA|'Yoghurt and Cereals') T(SEPARATOR|',\r\n\t\t\r\n\t\t') T(DATA|'more ') T(DECORATOR|'{nlcomment}') T(SEPARATOR|',\r\n\t\t') T(DATA|'Ramen noodles') T(SEPARATOR|',\r\n\t\t') T(DATA|'Soup') T(TERMINATOR|';\r\n\r\n\r\n\t') T(DATA|'healthy lunch options ') T(HYPHEN|'-') T(PRODUCTION_ARROW|'>\r\n\r\n\t\t') T(DATA|'soups ') T(DECORATOR|'{comment}') T(SEPARATOR|',\r\n\t\t') T(DATA|'Tripe soup') T(SEPARATOR|',\r\n\t\t') T(DATA|'Lamb soup') T(SEPARATOR|',\r\n\t\t') T(DATA|'Veil') T(HYPHEN|'-') T(DATA|'boiled soup') T(SEPARATOR|',\r\n\t\t') T(DATA|'Chicken soup') T(SEPARATOR|',\r\n\t\t') T(DATA|'Lentil soup') T(SEPARATOR|',\r\n\t\t\r\n\t\t') T(DATA|'stews ') T(DECORATOR|'{nlcomment}') T(SEPARATOR|',\r\n\t\t') T(DATA|'Bean stew') T(SEPARATOR|',\r\n\t\t') T(DATA|'Lentil stew') T(SEPARATOR|',\r\n\t\t') T(DATA|'Tas kebap') T(SEPARATOR|',\r\n\t\t\r\n\t\t') T(DATA|'grill ') T(DECORATOR|'{nlcomment}') T(SEPARATOR|',\r\n\t\t') T(DATA|'Grilled fish') T(SEPARATOR|',\r\n\t\t') T(DATA|'Grilled Chicken Filet w side') T(SEPARATOR|',\r\n\t\t\r\n\t\t') T(DATA|'more ') T(DECORATOR|'{nlcomment}') T(SEPARATOR|',\r\n\t\t') T(DATA|'Caesar salad ') T(LINK|'[https://en.wikipedia.org/wiki/Caesar_salad]') T(SEPARATOR|',\r\n\t\t') T(DATA|'Bread and Hummus ') T(LINK|'[https://en.wikipedia.org/wiki/Hummus]') T(SEPARATOR|',\r\n\t\t') T(DATA|'Grilled Sandwiches') T(SEPARATOR|',\r\n\t\t') T(DATA|'Kebapche in Bun') T(TERMINATOR|';\r\n\r\n\r\n\t') T(DATA|'healthy dinner options ') T(HYPHEN|'-') T(PRODUCTION_ARROW|'>\r\n\r\n\t\t') T(DATA|'Bean stew') T(SEPARATOR|',\r\n\t\t') T(DATA|'Caesar salad') T(TERMINATOR|';\n') T(TERMINATOR|';\n') T(EOF|'<EOF>') Ok
+
+File parsed successfully
+Parse tree unfolded successfully
+Done!
+------------------------
+File parsed successfully
+Parser red 946 characters, into 103 tokens.
+Those were translated to 4 productions, containing 40 entries.
+All Files: 1, Succeeded: 1, Failed: 0, Errors: 0
+--------------------------------------------------
+Task completed successfully. Press any key to exit.

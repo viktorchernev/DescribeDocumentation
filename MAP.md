@@ -3,6 +3,9 @@
 ### `documentation.changelog`
 Contains text/markdown files describing bugs, features and ideas, both implemented in the past and ones for future consideration and/or implementation.
 
+### `documentation.testing`
+Contains text/markdown files and artifacts regarding tests ran against the latest version and previous versions, by version.
+
 ### `documentation.github`
 This directory contains the downloaded backup of the GitHub wiki for this repository. Also, contains the `README.md` and other such files from the repo.
 

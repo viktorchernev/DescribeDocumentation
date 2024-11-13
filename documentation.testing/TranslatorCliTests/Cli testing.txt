@@ -1,0 +1,547 @@
+The commands I am writing to test the CLI follow this logic: `<operation> <io params> <passwords> <describe language params> <translation params> <logging params>`
+However, there is a set order only for the first two - <operation> and <io params>, and we always need to specify operation, followed by source code(s) aka input path, followed by result path aka output path. All other parameters are optional, and their order does not matter. Yet, they still fall neatly into this categorization, and I think it helpful.
+
+	a. `<operation>`
+	First, we specify the operation we want to perform - is it displaying help message, or is it to parse a single file, or is in to parse a folder full of files.
+
+	b. `<io params>`
+	Then, we specify the input and output paths. 
+	
+	c. `<passwords>`
+	Encryption related parameters come next - the input password, the output password and the log password.
+	If the input password is set, we will be trying to read encrypted describe source code files (.denc) using this password.
+	If the output password is set, we will encrypt the output file(s).
+	If the log password is set, we will encrypt the log file.
+
+	d. `<describe language params>`
+	These set the version of the Describe language to be used.
+	This is the preferred version, but if a file has a directive that sets it, the directive will have precedence.
+	
+	e. `<translation params>`
+	These set the translator to be used to obtain the result. 
+	Also, just a target language might be provided, so that the default translator for that language will be used.
+	If `beautify` is used and the translator supports "pretty" output, it will be used, resulting in a formatted/indented output.
+
+	f. `<logging params>`
+	Such as logging verbosity, log file path - which will indicate that we want the log saved to a text file (which will be filled with an encrypted blob of data if using log password as described above), and color theme for the CMD.
+
+
+
+1. Help
+`help [ theme= ( DBLUE | LBLUE | GREEN | PASTEL | EARTH | CONTRAST | DEFAULT | VIOLET | CYAN ) ]`
+`-h [ theme= ( DBLUE | LBLUE | GREEN | PASTEL | EARTH | CONTRAST | DEFAULT | VIOLET | CYAN ) ]`
+
+	help
+	-h
+	help theme=DBLUE
+	help theme=LBLUE
+	help theme=GREEN
+	help theme=PASTEL
+	help theme=EARTH
+	help theme=CONTRAST
+	help theme=DEFAULT
+	help theme=VIOLET
+	help theme=CYAN
+
+
+
+2. Encrypt File
+This operation is used to encrypt a plain-text describe source file.
+`encrypt-file PLAIN_PATH ENCRYPTED_PATH password=PASSWORD [ theme=<verb> ]`
+theme - DBLUE, LBLUE, GREEN, PASTEL, EARTH, CONTRAST, DEFAULT, VIOLET, CYAN
+
+	encrypt-file 
+	"C:\Users\Viktor Chernev\Desktop\testing\TestFiles\live_Radio\NovaNews.ds"
+	"C:\Users\Viktor Chernev\Desktop\testing\TestFiles\encrypted_files\NovaNews.denc"
+	password="R3dr19HThand76"
+	
+	encrypt-file 
+	"C:\Users\Viktor Chernev\Desktop\testing\TestFiles\live_Radio\NovaNews.ds"
+	"C:\Users\Viktor Chernev\Desktop\testing\TestFiles\encrypted_files\NovaNews.denc"
+	password="R3dr19HThand76" theme=DEFAULT
+
+
+
+3. Decrypt File
+This operation is used to decrypt a plain-text describe source file.
+`encrypt-file PLAIN_PATH ENCRYPTED_PATH password=PASSWORD [ theme=<verb> ]`
+theme - DBLUE, LBLUE, GREEN, PASTEL, EARTH, CONTRAST, DEFAULT, VIOLET, CYAN
+
+	decrypt-file 
+	"C:\Users\Viktor Chernev\Desktop\testing\TestFiles\encrypted_files\NovaNews.denc"
+	"C:\Users\Viktor Chernev\Desktop\testing\TestFiles\decrypted_files\NovaNews.ds"
+	password="R3dr19HThand76"
+	
+	decrypt-file 
+	"C:\Users\Viktor Chernev\Desktop\testing\TestFiles\encrypted_files\NovaNews.denc"
+	"C:\Users\Viktor Chernev\Desktop\testing\TestFiles\decrypted_files\NovaNews.ds"
+	password="R3dr19HThand76" theme=DEFAULT
+	
+	decrypt-file 
+	"C:\Users\Viktor Chernev\Desktop\testing\TestFiles\encrypted_files\NovaNews.blob"
+	"C:\Users\Viktor Chernev\Desktop\testing\TestFiles\decrypted_files\NovaNews.ds"
+	password="R3dr19HThand76" theme=DEFAULT
+
+
+
+4. Recrypt File 
+This operation is used to change the password of a file by decrypting it and encrypting it again.
+`recrypt-file PLAIN_PATH ENCRYPTED_PATH input-password=PASSWORD output-password=PASSWORD [ theme=<verb> ]`
+theme - DBLUE, LBLUE, GREEN, PASTEL, EARTH, CONTRAST, DEFAULT, VIOLET, CYAN
+
+	recrypt-file 
+	"C:\Users\Viktor Chernev\Desktop\testing\TestFiles\encrypted_files\NovaNews.denc"
+	"C:\Users\Viktor Chernev\Desktop\testing\TestFiles\recrypted_files\NovaNews.denc"
+	input-password="R3dr19HThand76" output-password="qwerty123"
+
+
+
+5. Parse File
+`parse-file PARSE_PATH RESULT_PATH [ input-password=PASSWORD ][ output-password=PASSWORD ][ log-password=PASSWORD ]
+[ language-version=<verb> | lang-ver=<verb> ][ translator = ( TARGET_LANGUAGE | TRANSLATOR_NAME )] [ beautify=<verb> ]
+[ verbosity=<verb> | log-verbosity=<verb> ][ logfile=LOG_PATH | log-file=LOG_PATH ] [ theme=<verb> ]`
+
+TARGET_LANGUAGE - JSON, HTML, XML, SQL
+TRANSLATOR_NAME - HTML_PLAIN, HTML_PARACORD, XML_PLAIN, SQL_FILEFILL, JSON_COMMONER, JSON_LISTIARY
+language-version - 0.6, 06, 0.7, 07, 0.8, 08, 0.9, 09, 1.0, 10, 1.1, 11
+lang-ver - 0.6, 06, 0.7, 07, 0.8, 08, 0.9, 09, 1.0, 10, 1.1, 11
+verbosity - l, low, m, medium, h, high
+beautify - true, false
+theme - DBLUE, LBLUE, GREEN, PASTEL, EARTH, CONTRAST, DEFAULT, VIOLET, CYAN
+
+
+	// log file save
+	parse-file 
+	"C:\Users\Viktor Chernev\Desktop\testing\TestFiles\live_Radio\NovaNews.ds"
+	"C:\Users\Viktor Chernev\Desktop\testing\TranslatorCliTests\json-low.json"
+	logfile="C:\Users\Viktor Chernev\Desktop\testing\TranslatorCliTests\json-low.log"
+	translator=JSON 
+	verbosity=low
+	
+	// test how beautify flag works
+	parse-file 
+	"C:\Users\Viktor Chernev\Desktop\testing\TestFiles\live_Radio\NovaNews.ds"
+	"C:\Users\Viktor Chernev\Desktop\testing\TranslatorCliTests\json-low-beautified.json"
+	logfile="C:\Users\Viktor Chernev\Desktop\testing\TranslatorCliTests\json-low-beautified.log"
+	translator=JSON beautify=true
+	verbosity=low
+	
+	// test how theme works
+	parse-file 
+	"C:\Users\Viktor Chernev\Desktop\testing\TestFiles\live_Radio\NovaNews.ds"
+	"C:\Users\Viktor Chernev\Desktop\testing\TranslatorCliTests\json-low-beautified.json"
+	logfile="C:\Users\Viktor Chernev\Desktop\testing\TranslatorCliTests\json-low-beautified.log"
+	translator=JSON beautify=true
+	verbosity=low theme=DBLUE
+	
+	// test medium verbosity
+	parse-file 
+	"C:\Users\Viktor Chernev\Desktop\testing\TestFiles\live_Radio\NovaNews.ds"
+	"C:\Users\Viktor Chernev\Desktop\testing\TranslatorCliTests\json-med-beautified.json"
+	logfile="C:\Users\Viktor Chernev\Desktop\testing\TranslatorCliTests\json-med-beautified.log"
+	translator=JSON beautify=true
+	verbosity=m theme=DBLUE
+	
+	// test high verbosity
+	parse-file 
+	"C:\Users\Viktor Chernev\Desktop\testing\TestFiles\live_Radio\NovaNews.ds"
+	"C:\Users\Viktor Chernev\Desktop\testing\TranslatorCliTests\json-high-beautified.json"
+	logfile="C:\Users\Viktor Chernev\Desktop\testing\TranslatorCliTests\json-high-beautified.log"
+	translator=JSON beautify=true
+	log-verbosity=high theme=DBLUE
+
+	// test language version on file with language-version directive
+	parse-file 
+	"C:\Users\Viktor Chernev\Desktop\testing\TestFiles\live_Radio\NovaNews.ds"
+	"C:\Users\Viktor Chernev\Desktop\testing\TranslatorCliTests\json-09-low-beautified.json"
+	logfile="C:\Users\Viktor Chernev\Desktop\testing\TranslatorCliTests\json-09-low-beautified.log"
+	language-version=0.9
+	translator=JSON beautify=true
+	log-verbosity=low theme=PASTEL
+	
+	// test language version on file without language-version directive
+	parse-file
+	"C:\Users\Viktor Chernev\Desktop\testing\TestFiles\TestFilesFor06\A_basic4.ds"
+	"C:\Users\Viktor Chernev\Desktop\testing\TranslatorCliTests\json-08-low-beautified.json"
+	logfile="C:\Users\Viktor Chernev\Desktop\testing\TranslatorCliTests\json-08-low-beautified.log"
+	language-version=0.8
+	translator=JSON beautify=true
+	log-verbosity=low theme=CONTRAST
+	
+	// test log password
+	parse-file 
+	"C:\Users\Viktor Chernev\Desktop\testing\TestFiles\live_Radio\NovaNews.ds"
+	"C:\Users\Viktor Chernev\Desktop\testing\TranslatorCliTests\json-low-beautified-Lpass.json"
+	logfile="C:\Users\Viktor Chernev\Desktop\testing\TranslatorCliTests\json-low-beautified-Lpass.log"
+	translator=JSON beautify=true
+	verbosity=low log-password="R3dr19HThand76"
+	
+	// test output password
+	parse-file 
+	"C:\Users\Viktor Chernev\Desktop\testing\TestFiles\live_Radio\NovaNews.ds"
+	"C:\Users\Viktor Chernev\Desktop\testing\TranslatorCliTests\json-low-beautified-OLpass.blob"
+	logfile="C:\Users\Viktor Chernev\Desktop\testing\TranslatorCliTests\json-low-beautified-OLpass.log"
+	translator=JSON beautify=true
+	verbosity=low 
+	log-password="R3dr19HThand76" output-password="R3dr19HThand76" 
+	
+	// test input password
+	parse-file 
+	"C:\Users\Viktor Chernev\Desktop\testing\TestFiles\encrypted_files\NovaNews.denc"
+	"C:\Users\Viktor Chernev\Desktop\testing\TranslatorCliTests\json-low-beautified-Ipass.json"
+	logfile="C:\Users\Viktor Chernev\Desktop\testing\TranslatorCliTests\json-low-beautified-Ipass.log"
+	translator=JSON beautify=true verbosity=low 
+	input-password="R3dr19HThand76"
+	
+	// test input password
+	parse-file 
+	"C:\Users\Viktor Chernev\Desktop\testing\TestFiles\encrypted_files\NovaNews.denc"
+	"C:\Users\Viktor Chernev\Desktop\testing\TranslatorCliTests\json-low-beautified-IOLpass.blob"
+	logfile="C:\Users\Viktor Chernev\Desktop\testing\TranslatorCliTests\json-low-beautified-IOLpass.log"
+	translator=JSON beautify=true verbosity=low 
+	log-password="R3dr19HThand76" output-password="R3dr19HThand76" input-password="R3dr19HThand76"
+	
+	// test JSON
+	parse-file
+	"C:\Users\Viktor Chernev\Desktop\testing\TestFiles\live_Radio\NovaNews.ds"
+	"C:\Users\Viktor Chernev\Desktop\testing\TranslatorCliTests\json-low-beautified.json"
+	logfile="C:\Users\Viktor Chernev\Desktop\testing\TranslatorCliTests\json-low-beautified.log"
+	translator=JSON beautify=true verbosity=low
+	
+	// test JSON_LISTIARY
+	parse-file
+	"C:\Users\Viktor Chernev\Desktop\testing\TestFiles\live_Radio\NovaNews.ds"
+	"C:\Users\Viktor Chernev\Desktop\testing\TranslatorCliTests\json_listiary-low-beautified.json"
+	logfile="C:\Users\Viktor Chernev\Desktop\testing\TranslatorCliTests\json_listiary-low-beautified.log"
+	translator=JSON_LISTIARY beautify=true verbosity=low
+
+	// test HTML
+	parse-file
+	"C:\Users\Viktor Chernev\Desktop\testing\TestFiles\live_Radio\NovaNews.ds"
+	"C:\Users\Viktor Chernev\Desktop\testing\TranslatorCliTests\html-low-beautified.html"
+	logfile="C:\Users\Viktor Chernev\Desktop\testing\TranslatorCliTests\html-low-beautified.log"
+	translator=HTML beautify=true verbosity=low
+
+	// test HTML_PLAIN
+	parse-file
+	"C:\Users\Viktor Chernev\Desktop\testing\TestFiles\live_Radio\NovaNews.ds"
+	"C:\Users\Viktor Chernev\Desktop\testing\TranslatorCliTests\html_plain-low-beautified.html"
+	logfile="C:\Users\Viktor Chernev\Desktop\testing\TranslatorCliTests\html_plain-low-beautified.log"
+	translator=HTML_PLAIN beautify=true verbosity=low
+	
+	// test HTML_PAGE
+	parse-file
+	"C:\Users\Viktor Chernev\Desktop\testing\TestFiles\live_Radio\NovaNews.ds"
+	"C:\Users\Viktor Chernev\Desktop\testing\TranslatorCliTests\html_page-low-beautified.html"
+	logfile="C:\Users\Viktor Chernev\Desktop\testing\TranslatorCliTests\html_page-low-beautified.log"
+	translator=HTML_PAGE beautify=true verbosity=low
+	
+	// test XML
+	parse-file
+	"C:\Users\Viktor Chernev\Desktop\testing\TestFiles\live_Radio\NovaNews.ds"
+	"C:\Users\Viktor Chernev\Desktop\testing\TranslatorCliTests\xml-low-beautified.xml"
+	logfile="C:\Users\Viktor Chernev\Desktop\testing\TranslatorCliTests\xml-low-beautified.log"
+	translator=XML beautify=true verbosity=low
+	
+	// test SQL
+	parse-file
+	"C:\Users\Viktor Chernev\Desktop\testing\TestFiles\live_Radio\NovaNews.ds"
+	"C:\Users\Viktor Chernev\Desktop\testing\TranslatorCliTests\sql_filefill-low-beautified.sql"
+	logfile="C:\Users\Viktor Chernev\Desktop\testing\TranslatorCliTests\sql_filefill-low-beautified.log"
+	translator=SQL_FILEFILL beautify=true verbosity=low
+
+
+
+6. Encrypt Folder
+This operation is used to encrypt a folder full of plain-text describe source files.
+`encrypt-folder PLAIN_PATH ENCRYPTED_PATH password=PASSWORD [ theme=<verb> ]`
+theme - DBLUE, LBLUE, GREEN, PASTEL, EARTH, CONTRAST, DEFAULT, VIOLET, CYAN
+
+	encrypt-folder 
+	"C:\Users\Viktor Chernev\Desktop\testing\TestFiles\live_Radio"
+	"C:\Users\Viktor Chernev\Desktop\testing\TestFiles\encrypted_files\live_Radio"
+	password="R3dr19HThand76"
+	
+	encrypt-folder 
+	"C:\Users\Viktor Chernev\Desktop\testing\TestFiles\live_Radio"
+	"C:\Users\Viktor Chernev\Desktop\testing\TestFiles\encrypted_files\live_Radio"
+	password="R3dr19HThand76" theme=DEFAULT
+
+
+
+7. Decrypt Folder
+
+This operation is used to decrypt a folder full of encrypted describe source files - ".denc".
+`decrypt-folder ENCRYPTED_PATH PLAIN_PATH password=PASSWORD [ theme=<verb> ]`
+theme - DBLUE, LBLUE, GREEN, PASTEL, EARTH, CONTRAST, DEFAULT, VIOLET, CYAN
+
+	decrypt-folder 
+	"C:\Users\Viktor Chernev\Desktop\testing\TestFiles\encrypted_files\live_Radio"
+	"C:\Users\Viktor Chernev\Desktop\testing\TestFiles\decrypted_files\live_Radio"
+	password="R3dr19HThand76"
+	
+	decrypt-folder 
+	"C:\Users\Viktor Chernev\Desktop\testing\TestFiles\encrypted_files\live_Radio"
+	"C:\Users\Viktor Chernev\Desktop\testing\TestFiles\decrypted_files\live_Radio"
+	password="R3dr19HThand76" theme=DBLUE
+
+
+
+8. Recrypt Folder
+This operation is used to recrypt a folder full of encrypted describe source files - ".denc".
+This is done in order to change the password.
+`recrypt-folder ENCRYPTED_PATH PLAIN_PATH input-password=PASSWORD output-password=PASSWORD [ theme=<verb> ]`
+theme - DBLUE, LBLUE, GREEN, PASTEL, EARTH, CONTRAST, DEFAULT, VIOLET, CYAN
+
+	recrypt-folder 
+	"C:\Users\Viktor Chernev\Desktop\testing\TestFiles\encrypted_files\live_Radio"
+	"C:\Users\Viktor Chernev\Desktop\testing\TestFiles\recrypted_files\live_Radio"
+	input-password="R3dr19HThand76" output-password="qwerty123"
+
+	recrypt-folder 
+	"C:\Users\Viktor Chernev\Desktop\testing\TestFiles\encrypted_files\live_Radio"
+	"C:\Users\Viktor Chernev\Desktop\testing\TestFiles\recrypted_files\live_Radio"
+	input-password="R3dr19HThand76" output-password="qwerty123" theme=EARTH
+
+
+
+9. Parse Folder
+`parse-folder PARSE_PATH RESULT_PATH [ dsonly=<verb> ][ toponly=<verb> ][ onerror= ( stop | ignore )]
+[ input-password=PASSWORD ][ output-password=PASSWORD ][ log-password=PASSWORD ]
+[ language-version=<verb> | lang-ver=<verb> ][ translator = ( TARGET_LANGUAGE | TRANSLATOR_NAME )] [ beautify=<verb> ]
+[ verbosity=<verb> | log-verbosity=<verb> ][ logfile=LOG_PATH | log-file=LOG_PATH ] [ theme=<verb> ]`
+
+dsonly - true, false
+toponly - true, false
+onerror - stop, ignore
+output-many - true, false
+TARGET_LANGUAGE - JSON, HTML, XML, SQL
+TRANSLATOR_NAME - HTML_PLAIN, HTML_PARACORD, XML_PLAIN, SQL_FILEFILL, JSON_COMMONER, JSON_LISTIARY
+language-version - 0.6, 06, 0.7, 07, 0.8, 08, 0.9, 09, 1.0, 10, 1.1, 11
+lang-ver - 0.6, 06, 0.7, 07, 0.8, 08, 0.9, 09, 1.0, 10, 1.1, 11
+verbosity - l, low, m, medium, h, high
+beautify - true, false
+theme - DBLUE, LBLUE, GREEN, PASTEL, EARTH, CONTRAST, DEFAULT, VIOLET, CYAN
+
+	// test how beautify flag works
+	parse-folder
+	"C:\Users\Viktor Chernev\Desktop\testing\TestFiles\live_Radio"
+	"C:\Users\Viktor Chernev\Desktop\testing\TranslatorCliTests\json-low.json"
+	logfile="C:\Users\Viktor Chernev\Desktop\testing\TranslatorCliTests\json-low.log"
+	translator=JSON verbosity=low beautify=true
+	
+	// test theme
+	parse-folder
+	"C:\Users\Viktor Chernev\Desktop\testing\TestFiles\live_Radio"
+	"C:\Users\Viktor Chernev\Desktop\testing\TranslatorCliTests\json-low-theme.json"
+	logfile="C:\Users\Viktor Chernev\Desktop\testing\TranslatorCliTests\json-low-theme.log"
+	translator=JSON verbosity=low beautify=true theme=CONTRAST
+
+	// test medium verbosity
+	parse-folder
+	"C:\Users\Viktor Chernev\Desktop\testing\TestFiles\live_Radio"
+	"C:\Users\Viktor Chernev\Desktop\testing\TranslatorCliTests\json-med.json"
+	logfile="C:\Users\Viktor Chernev\Desktop\testing\TranslatorCliTests\json-med.log"
+	translator=JSON verbosity=m beautify=true theme=DEFAULT
+	
+	// test high verbosity
+	parse-folder
+	"C:\Users\Viktor Chernev\Desktop\testing\TestFiles\live_Radio"
+	"C:\Users\Viktor Chernev\Desktop\testing\TranslatorCliTests\json-high.json"
+	logfile="C:\Users\Viktor Chernev\Desktop\testing\TranslatorCliTests\json-high.log"
+	translator=JSON verbosity=high beautify=true theme=PASTEL
+
+	// test dsonly
+	parse-folder
+	"C:\Users\Viktor Chernev\Desktop\testing\TestFiles\live_Radio"
+	"C:\Users\Viktor Chernev\Desktop\testing\TranslatorCliTests\json-med-dsonly.json"
+	logfile="C:\Users\Viktor Chernev\Desktop\testing\TranslatorCliTests\json-med-dsonly.log"
+	dsonly=true
+	translator=JSON verbosity=m beautify=true theme=EARTH
+	
+	// test toponly
+	parse-folder
+	"C:\Users\Viktor Chernev\Desktop\testing\TestFiles\live_Radio"
+	"C:\Users\Viktor Chernev\Desktop\testing\TranslatorCliTests\json-med-toponly.json"
+	logfile="C:\Users\Viktor Chernev\Desktop\testing\TranslatorCliTests\json-med-toponly.log"
+	dsonly=true toponly=true
+	translator=JSON verbosity=m beautify=true theme=GREEN
+
+	// test language version on folder with language-version directive
+	parse-folder
+	"C:\Users\Viktor Chernev\Desktop\testing\TestFiles\live_Radio"
+	"C:\Users\Viktor Chernev\Desktop\testing\TranslatorCliTests\json-med-10l.json"
+	logfile="C:\Users\Viktor Chernev\Desktop\testing\TranslatorCliTests\json-med-10l.log"
+	language-version=0.7
+	translator=JSON verbosity=m beautify=true theme=GREEN
+	
+	// test language version on folder without language-version directive
+	parse-folder
+	"C:\Users\Viktor Chernev\Desktop\testing\TestFiles\TestFilesFor06"
+	"C:\Users\Viktor Chernev\Desktop\testing\TranslatorCliTests\json-med-06.json"
+	logfile="C:\Users\Viktor Chernev\Desktop\testing\TranslatorCliTests\json-med-06.log"
+	toponly=false onerror=ignore
+	language-version=0.6
+	translator=JSON verbosity=m beautify=true theme=GREEN
+
+	// test log password
+	parse-folder
+	"C:\Users\Viktor Chernev\Desktop\testing\TestFiles\TestFilesFor06"
+	"C:\Users\Viktor Chernev\Desktop\testing\TranslatorCliTests\json-med-06-Lpass.json"
+	logfile="C:\Users\Viktor Chernev\Desktop\testing\TranslatorCliTests\json-med-06-Lpass.log" log-password="R3dr19HThand76"
+	toponly=false onerror=ignore
+	language-version=0.6
+	translator=JSON verbosity=m beautify=true theme=GREEN
+
+	// test output password
+	parse-folder
+	"C:\Users\Viktor Chernev\Desktop\testing\TestFiles\TestFilesFor06"
+	"C:\Users\Viktor Chernev\Desktop\testing\TranslatorCliTests\json-med-06-LOpass.json"
+	logfile="C:\Users\Viktor Chernev\Desktop\testing\TranslatorCliTests\json-med-06-LOpass.log" 
+	log-password="R3dr19HThand76" output-password="R3dr19HThand76"
+	toponly=false onerror=ignore
+	language-version=0.6
+	translator=JSON verbosity=m beautify=true theme=GREEN
+	
+	// test output password
+	parse-folder
+	"C:\Users\Viktor Chernev\Desktop\testing\TestFiles\TestFilesFor06"
+	"C:\Users\Viktor Chernev\Desktop\testing\TranslatorCliTests\json-med-06-Opass.json"
+	logfile="C:\Users\Viktor Chernev\Desktop\testing\TranslatorCliTests\json-med-06-Opass.log" 
+	output-password="R3dr19HThand76"
+	toponly=false onerror=ignore
+	language-version=0.6
+	translator=JSON verbosity=m beautify=true theme=GREEN
+	
+	// test input password
+	parse-folder
+	"C:\Users\Viktor Chernev\Desktop\testing\TestFiles\encrypted_files\live_Radio"
+	"C:\Users\Viktor Chernev\Desktop\testing\TranslatorCliTests\json-med-ILOpass.json"
+	logfile="C:\Users\Viktor Chernev\Desktop\testing\TranslatorCliTests\json-med-ILOpass.log" 
+	log-password="R3dr19HThand76" output-password="R3dr19HThand76" input-password="R3dr19HThand76"
+	toponly=false onerror=ignore
+	translator=JSON verbosity=m beautify=true
+
+	// test input password
+	parse-folder
+	"C:\Users\Viktor Chernev\Desktop\testing\TestFiles\encrypted_files\live_Radio"
+	"C:\Users\Viktor Chernev\Desktop\testing\TranslatorCliTests\json-med-ILpass.json"
+	logfile="C:\Users\Viktor Chernev\Desktop\testing\TranslatorCliTests\json-med-ILpass.log" 
+	log-password="R3dr19HThand76" input-password="R3dr19HThand76"
+	toponly=false onerror=ignore
+	translator=JSON verbosity=m beautify=true
+
+	// test JSON_LISTIARY
+	parse-folder
+	"C:\Users\Viktor Chernev\Desktop\testing\TestFiles\live_Radio"
+	"C:\Users\Viktor Chernev\Desktop\testing\TranslatorCliTests\json_listiary-med-toponly.json"
+	logfile="C:\Users\Viktor Chernev\Desktop\testing\TranslatorCliTests\json_listiary-med-toponly.log"
+	dsonly=true translator=JSON_LISTIARY verbosity=m beautify=true
+	
+	// test HTML
+	parse-folder
+	"C:\Users\Viktor Chernev\Desktop\testing\TestFiles\live_Radio"
+	"C:\Users\Viktor Chernev\Desktop\testing\TranslatorCliTests\html-med-toponly.html"
+	logfile="C:\Users\Viktor Chernev\Desktop\testing\TranslatorCliTests\html-med-toponly.log"
+	dsonly=true toponly=true translator=HTML verbosity=m beautify=true
+	
+	// test HTML_PLAIN
+	parse-folder
+	"C:\Users\Viktor Chernev\Desktop\testing\TestFiles\live_Radio"
+	"C:\Users\Viktor Chernev\Desktop\testing\TranslatorCliTests\html_plain-med-toponly.html"
+	logfile="C:\Users\Viktor Chernev\Desktop\testing\TranslatorCliTests\html_plain-med-toponly.log"
+	dsonly=true toponly=true translator=HTML_PLAIN verbosity=m beautify=true
+	
+	// test HTML
+	parse-folder
+	"C:\Users\Viktor Chernev\Desktop\testing\TestFiles\live_Radio"
+	"C:\Users\Viktor Chernev\Desktop\testing\TranslatorCliTests\html-med.html"
+	logfile="C:\Users\Viktor Chernev\Desktop\testing\TranslatorCliTests\html-med.log"
+	dsonly=true toponly=false translator=HTML verbosity=m beautify=true
+	
+	// test HTML_PLAIN
+	parse-folder
+	"C:\Users\Viktor Chernev\Desktop\testing\TestFiles\live_Radio"
+	"C:\Users\Viktor Chernev\Desktop\testing\TranslatorCliTests\html_plain-med.html"
+	logfile="C:\Users\Viktor Chernev\Desktop\testing\TranslatorCliTests\html_plain-med.log"
+	dsonly=true toponly=false translator=HTML_PLAIN verbosity=m beautify=true
+	
+	// test HTML_PAGE
+	parse-folder
+	"C:\Users\Viktor Chernev\Desktop\testing\TestFiles\live_Radio"
+	"C:\Users\Viktor Chernev\Desktop\testing\TranslatorCliTests\html_page-med.html"
+	logfile="C:\Users\Viktor Chernev\Desktop\testing\TranslatorCliTests\html_page-med.log"
+	dsonly=true toponly=false translator=HTML_PAGE verbosity=m beautify=true
+	
+	// test 06, 07, 08, 09, 10, 11
+	parse-folder
+	"C:\Users\Viktor Chernev\Desktop\testing\TestFiles\TestFilesFor06"
+	"C:\Users\Viktor Chernev\Desktop\testing\TranslatorCliTests\html_plain-med-06.html"
+	logfile="C:\Users\Viktor Chernev\Desktop\testing\TranslatorCliTests\html_plain-med-06.log"
+	language-version=0.6
+	dsonly=true toponly=false translator=HTML_PLAIN verbosity=m beautify=true
+	
+	parse-folder
+	"C:\Users\Viktor Chernev\Desktop\testing\TestFiles\TestFilesFor07"
+	"C:\Users\Viktor Chernev\Desktop\testing\TranslatorCliTests\html_plain-med-07.html"
+	logfile="C:\Users\Viktor Chernev\Desktop\testing\TranslatorCliTests\html_plain-med-07.log"
+	language-version=0.7
+	dsonly=true toponly=false translator=HTML_PLAIN verbosity=m beautify=true
+	
+	parse-folder
+	"C:\Users\Viktor Chernev\Desktop\testing\TestFiles\TestFilesFor08"
+	"C:\Users\Viktor Chernev\Desktop\testing\TranslatorCliTests\html_plain-med-08.html"
+	logfile="C:\Users\Viktor Chernev\Desktop\testing\TranslatorCliTests\html_plain-med-08.log"
+	language-version=0.8
+	dsonly=true toponly=false translator=HTML_PLAIN verbosity=m beautify=true
+	
+	parse-folder
+	"C:\Users\Viktor Chernev\Desktop\testing\TestFiles\TestFilesFor09"
+	"C:\Users\Viktor Chernev\Desktop\testing\TranslatorCliTests\html_plain-med-09.html"
+	logfile="C:\Users\Viktor Chernev\Desktop\testing\TranslatorCliTests\html_plain-med-09.log"
+	language-version=0.9
+	dsonly=true toponly=false translator=HTML_PLAIN verbosity=m beautify=true
+	
+	parse-folder
+	"C:\Users\Viktor Chernev\Desktop\testing\TestFiles\TestFilesFor10"
+	"C:\Users\Viktor Chernev\Desktop\testing\TranslatorCliTests\html_plain-med-10.html"
+	logfile="C:\Users\Viktor Chernev\Desktop\testing\TranslatorCliTests\html_plain-med-10.log"
+	language-version=1.0
+	dsonly=true toponly=false translator=HTML_PLAIN verbosity=m beautify=true
+	
+	parse-folder
+	"C:\Users\Viktor Chernev\Desktop\testing\TestFiles\TestFilesFor11"
+	"C:\Users\Viktor Chernev\Desktop\testing\TranslatorCliTests\html_plain-med-11.html"
+	logfile="C:\Users\Viktor Chernev\Desktop\testing\TranslatorCliTests\html_plain-med-11.log"
+	language-version=1.1
+	dsonly=true toponly=false translator=HTML_PLAIN verbosity=m beautify=true
+	
+	parse-folder
+	"C:\Users\Viktor Chernev\Desktop\testing\TestFiles\TestFilesFor07"
+	"C:\Users\Viktor Chernev\Desktop\testing\TranslatorCliTests\html_plain-med-07.html"
+	logfile="C:\Users\Viktor Chernev\Desktop\testing\TranslatorCliTests\html_plain-med-07.log"
+	language-version=1.2
+	dsonly=true toponly=false translator=HTML_PLAIN verbosity=m beautify=true
+	
+	// test XML
+	parse-folder
+	"C:\Users\Viktor Chernev\Desktop\testing\TestFiles\live_Radio"
+	"C:\Users\Viktor Chernev\Desktop\testing\TranslatorCliTests\xml-med.xml"
+	logfile="C:\Users\Viktor Chernev\Desktop\testing\TranslatorCliTests\xml-med.log"
+	dsonly=true toponly=false translator=XML verbosity=m beautify=true
+	
+	// test SQL
+	parse-folder
+	"C:\Users\Viktor Chernev\Desktop\testing\TestFiles\live_Radio"
+	"C:\Users\Viktor Chernev\Desktop\testing\TranslatorCliTests\sql-med.sql"
+	logfile="C:\Users\Viktor Chernev\Desktop\testing\TranslatorCliTests\sql-med.log"
+	dsonly=true toponly=false translator=SQL verbosity=m beautify=true
+	
+
+
+10. Parse Many
+The parse-many command is intended to parse many files at the same time, outputting many different files as results.
+It is the equivalent of calling parse-file many times over. However, it has not been implemented yet, so it just outputs a 
+message saying as much, at the moment.
+
+	parse-many

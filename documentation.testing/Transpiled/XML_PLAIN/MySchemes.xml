@@ -1,0 +1,132 @@
+<document>
+  <timestamp>Built on 04 October 2024, 17:57:44.111 (UTC)</timestamp>
+  <version>Built with Describe Compiler version 1.0</version>
+  <data>
+    <ul class="listree">
+      <production>
+        <titleItem>understanding-level of topic</titleItem>
+        <bodyItems>
+          <production>
+            <titleItem>No knowledge</titleItem>
+            <bodyItems>
+              <item>
+                <htmlStyle>color: green; font-style: italic;</htmlStyle>
+                <type>basic</type>
+                <content>0</content>
+                <links></links>
+              </item>
+              <item>
+                <htmlStyle>color: green; font-style: italic;</htmlStyle>
+                <type>basic</type>
+                <content>No exposure to the topic.</content>
+                <links></links>
+              </item>
+            </bodyItems>
+          </production>
+          <production>
+            <titleItem>Superficial knowledge</titleItem>
+            <bodyItems>
+              <item>
+                <htmlStyle>color: green; font-style: italic;</htmlStyle>
+                <type>basic</type>
+                <content>1</content>
+                <links></links>
+              </item>
+              <item>
+                <htmlStyle>color: green; font-style: italic;</htmlStyle>
+                <type>basic</type>
+                <content>Basic awareness of the topic, possibly through casual exposure, but without much understanding.</content>
+                <links></links>
+              </item>
+            </bodyItems>
+          </production>
+          <production>
+            <titleItem>Familiarity</titleItem>
+            <bodyItems>
+              <item>
+                <htmlStyle>color: green; font-style: italic;</htmlStyle>
+                <type>basic</type>
+                <content>2</content>
+                <links></links>
+              </item>
+              <item>
+                <htmlStyle>color: green; font-style: italic;</htmlStyle>
+                <type>basic</type>
+                <content>Understands the basic concepts and terminology, can follow general discussions, but lacks in-depth knowledge.</content>
+                <links></links>
+              </item>
+            </bodyItems>
+          </production>
+          <production>
+            <titleItem>Competency</titleItem>
+            <bodyItems>
+              <item>
+                <htmlStyle>color: green; font-style: italic;</htmlStyle>
+                <type>basic</type>
+                <content>3</content>
+                <links></links>
+              </item>
+              <item>
+                <htmlStyle>color: green; font-style: italic;</htmlStyle>
+                <type>basic</type>
+                <content>Can engage in more detailed conversations, understands key principles, and can apply basic concepts with some guidance.</content>
+                <links></links>
+              </item>
+            </bodyItems>
+          </production>
+          <production>
+            <titleItem>Proficiency</titleItem>
+            <bodyItems>
+              <item>
+                <htmlStyle>color: green; font-style: italic;</htmlStyle>
+                <type>basic</type>
+                <content>4</content>
+                <links></links>
+              </item>
+              <item>
+                <htmlStyle>color: green; font-style: italic;</htmlStyle>
+                <type>basic</type>
+                <content>Has strong understanding of the topic, can explain it clearly to others, solve common problems, and work independently.</content>
+                <links></links>
+              </item>
+            </bodyItems>
+          </production>
+          <production>
+            <titleItem>Expertise</titleItem>
+            <bodyItems>
+              <item>
+                <htmlStyle>color: green; font-style: italic;</htmlStyle>
+                <type>basic</type>
+                <content>5</content>
+                <links></links>
+              </item>
+              <item>
+                <htmlStyle>color: green; font-style: italic;</htmlStyle>
+                <type>basic</type>
+                <content>Deep and comprehensive knowledge of the topic, able to handle complex problems, innovate solutions, and teach others at a high level.</content>
+                <links></links>
+              </item>
+            </bodyItems>
+          </production>
+          <production>
+            <titleItem>Mastery</titleItem>
+            <bodyItems>
+              <item>
+                <htmlStyle>color: green; font-style: italic;</htmlStyle>
+                <type>basic</type>
+                <content>6</content>
+                <links></links>
+              </item>
+              <item>
+                <htmlStyle>color: green; font-style: italic;</htmlStyle>
+                <type>basic</type>
+                <content>Recognized authority in the topic, capable of contributing new ideas, leading advancements, and pushing the boundaries of the subject.</content>
+                <links></links>
+              </item>
+            </bodyItems>
+          </production>
+        </bodyItems>
+      </production>
+    </ul>
+  </data>
+</document>

@@ -1,0 +1,12 @@
+cd "C:\Users\Viktor Chernev\Desktop\testing\!TestRelease"
+DescribeTranspiler.CLI help
+
+DescribeTranspiler.CLI parse-file "C:\Users\Viktor Chernev\Desktop\@Ds\MyLife\!MySchemes\ULOT.txt" "C:\Users\Viktor Chernev\Desktop\testing\!compiled\JSON_BASIC\MySchemes.json" translator=JSON_BASIC beautify=true verbosity=h log-file="C:\Users\Viktor Chernev\Desktop\testing\!compiled\JSON_BASIC\MySchemes.log" theme="DBLUE"
+
+DescribeTranspiler.CLI parse-file "C:\Users\Viktor Chernev\Desktop\@Ds\MyLife\!MySchemes\ULOT.txt" "C:\Users\Viktor Chernev\Desktop\testing\!compiled\JSON_BASIC\MySchemes.json" translator=JSON_BASIC beautify=true verbosity=h logfile="C:\Users\Viktor Chernev\Desktop\testing\!compiled\JSON_BASIC\MySchemes.log" theme="DBLUE"
+
+DescribeTranspiler.CLI parse-file "C:\Users\Viktor Chernev\Desktop\@Ds\MyLife\MyDiet\myHealthyFoodTypes.txt" "C:\Users\Viktor Chernev\Desktop\testing\!compiled\JSON_BASIC\myHealthyFoodTypes.json" translator=JSON_BASIC beautify=true verbosity=h logfile="C:\Users\Viktor Chernev\Desktop\testing\!compiled\JSON_BASIC\myHealthyFoodTypes.log" theme="DBLUE"
+
+DescribeTranspiler.CLI parse-file "C:\Users\Viktor Chernev\Desktop\@Ds\MyLife\MyFinance\myTaxes.txt" "C:\Users\Viktor Chernev\Desktop\testing\!compiled\JSON_BASIC\MyFinance.json" translator=JSON_BASIC beautify=true verbosity=h logfile="C:\Users\Viktor Chernev\Desktop\testing\!compiled\JSON_BASIC\MyFinance.log" theme="DBLUE"
+
+DescribeTranspiler.CLI parse-folder "C:\Users\Viktor Chernev\Desktop\@Ds\MyLife" "C:\Users\Viktor Chernev\Desktop\testing\!compiled\JSON_BASIC\@MyLife.json" translator=JSON_BASIC beautify=true verbosity=h logfile="C:\Users\Viktor Chernev\Desktop\testing\!compiled\JSON_BASIC\@MyLife.log" dsonly=false toponly=false onerror=ignore

@@ -1,0 +1,37 @@
+<document>
+  <timestamp>Built on 10 September 2024, 20:32:31.722 (UTC)</timestamp>
+  <version>Built with Describe Compiler version 1.0</version>
+  <data>
+    <ul class="listree">
+      <production>
+        <titleItem>Nova News playlist</titleItem>
+        <bodyItems>
+          <item>
+            <htmlStyle>color: green; font-style: italic;</htmlStyle>
+            <type>comment</type>
+            <content>April 2024</content>
+            <links></links>
+          </item>
+          <item>
+            <htmlStyle>color: green; font-style: italic;</htmlStyle>
+            <type>basic</type>
+            <content>Monday 15</content>
+            <links></links>
+          </item>
+          <item>
+            <htmlStyle>color: green; font-style: italic;</htmlStyle>
+            <type>basic</type>
+            <content>Tuesday 16</content>
+            <links></links>
+          </item>
+          <item>
+            <htmlStyle>color: green; font-style: italic;</htmlStyle>
+            <type>basic</type>
+            <content>Wednesday 17</content>
+            <links></links>
+          </item>
+        </bodyItems>
+      </production>
+    </ul>
+  </data>
+</document>

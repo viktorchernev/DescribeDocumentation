@@ -1,0 +1,51 @@
+{
+  "items": [
+    {
+      "name": "branch",
+      "filename": "C:\\Users\\Viktor Chernev\\Desktop\\testing\\TestFiles\\live_Radio\\NovaNews.ds",
+      "text": "Nova News playlist",
+      "id": "l.5FHEST7E.novanews",
+      "links": [],
+      "decorators": [],
+      "items": [
+        {
+          "name": "leaf",
+          "text": "April 2024",
+          "id": "l.5FHEST7E.1JAFDU5Y",
+          "links": [],
+          "decorators": [],
+          "type": "comment"
+        },
+        {
+          "name": "leaf",
+          "text": "Monday 15",
+          "id": "radiowatch.bg.novanews.20240415",
+          "links": [],
+          "decorators": [],
+          "type": "item"
+        },
+        {
+          "name": "leaf",
+          "text": "Tuesday 16",
+          "id": "radiowatch.bg.novanews.20240416",
+          "links": [],
+          "decorators": [],
+          "type": "item"
+        },
+        {
+          "name": "leaf",
+          "text": "Wednesday 17",
+          "id": "radiowatch.bg.novanews.20240417",
+          "links": [],
+          "decorators": [],
+          "type": "item"
+        }
+      ],
+      "type": "item"
+    }
+  ],
+  "timestamp": "Built on 10 September 2024, 21:06:34.973 (UTC)",
+  "version": "Built with Describe Compiler version 1.0",
+  "short_timestamp": "10 Sep 2024, 21:06:35",
+  "short_version": "Describe Compiler v 1.0"
+}

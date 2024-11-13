@@ -1,0 +1,22 @@
+   /\\\\     /\\\\     /\\\\     /\\\\     /\\\\     /\\\\     /\\\\     /\\\\  
+  /  \\\\   /  \\\\   /  \\\\   /  \\\\   /  \\\\   _\ \\\\   /  \\\\   /  \\\\ 
+ / /\ \\\\ /  \ \\\\ /\ \ \\\\ / /\ \\\\ /  \ \\\\ /\/  \\\\ /  \ \\\\ /  \ \\\\
+ \ \/ //// \ \ \//// \ \ \//// \ \\\//// \|   //// \  /\//// \ \  //// \ \ \////
+  \  ////   \ \////   \  ////   \ \\\\    | \////   \ \\\\    \  ////   \ \//// 
+   \////     \////     \////     \////     \||||     \////     \////     \////  
+
+> parse-file "C:\Users\Viktor Chernev\Desktop\testing\TestFiles\TestFilesFor06\A_basic4.ds" "C:\Users\Viktor Chernev\Desktop\testing\TranslatorCliTests\json-08-low-beautified.json" logfile="C:\Users\Viktor Chernev\Desktop\testing\TranslatorCliTests\json-08-low-beautified.log" language-version=0.8 translator=JSON beautify=true log-verbosity=low theme=CONTRAST
+--------------------------------------------------
+Initializing Describe Transpiler v1.0
+Verbosity set to: Low
+Language version set to: Describe Lines - v1.0
+Describe Transpiler initialized.
+Language version set to: Describe Links - v0.8
+Translator initialized - using template "JSON_COMMONER"
+Starting a 'File -> Unfold' operation...
+"C:\Users\Viktor Chernev\Desktop\testing\TestFiles\TestFilesFor06\A_basic4.ds" - parsed successfully
+Parser red 97 characters, into 12 tokens.
+Those were translated to 1 productions, containing 5 entries.
+All Files: 1, Succeeded: 1, Failed: 0, Errors: 0
+--------------------------------------------------
+Task completed successfully. Press any key to exit.

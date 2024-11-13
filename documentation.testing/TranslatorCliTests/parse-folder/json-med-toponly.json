@@ -1,0 +1,476 @@
+{
+  "items": [
+    {
+      "name": "branch",
+      "filename": ".radiowatch.ds",
+      "text": "Radio playlists",
+      "id": "radiowatch.rnode",
+      "links": [],
+      "decorators": [],
+      "items": [
+        {
+          "name": "leaf",
+          "text": "Bulgarian",
+          "id": "@MCD806.3XBG44QA",
+          "links": [],
+          "decorators": [],
+          "type": "comment"
+        },
+        {
+          "name": "branch",
+          "filename": "Radio1Rock.ds",
+          "text": "Radio 1 Rock playlist",
+          "id": "radiowatch.bg.onerock",
+          "links": [],
+          "decorators": [],
+          "items": [
+            {
+              "name": "leaf",
+              "text": "April 2024",
+              "id": "@IUCVP9.PD0GP2FS",
+              "links": [],
+              "decorators": [],
+              "type": "comment"
+            },
+            {
+              "name": "leaf",
+              "text": "Monday 15",
+              "id": "radiowatch.bg.onerock.20240415",
+              "links": [],
+              "decorators": [],
+              "type": "item"
+            },
+            {
+              "name": "leaf",
+              "text": "Tuesday 16",
+              "id": "radiowatch.bg.onerock.20240416",
+              "links": [],
+              "decorators": [],
+              "type": "item"
+            },
+            {
+              "name": "leaf",
+              "text": "Wednesday 17",
+              "id": "radiowatch.bg.onerock.20240417",
+              "links": [],
+              "decorators": [],
+              "type": "item"
+            }
+          ],
+          "type": "item"
+        },
+        {
+          "name": "branch",
+          "filename": "Energy.ds",
+          "text": "Radio Energy playlist",
+          "id": "radiowatch.bg.energy",
+          "links": [],
+          "decorators": [],
+          "items": [
+            {
+              "name": "leaf",
+              "text": "April 2024",
+              "id": "@SHFQTI.BV07CSK5",
+              "links": [],
+              "decorators": [],
+              "type": "comment"
+            },
+            {
+              "name": "leaf",
+              "text": "Monday 15",
+              "id": "radiowatch.bg.energy.20240415",
+              "links": [],
+              "decorators": [],
+              "type": "item"
+            },
+            {
+              "name": "leaf",
+              "text": "Tuesday 16",
+              "id": "radiowatch.bg.energy.20240416",
+              "links": [],
+              "decorators": [],
+              "type": "item"
+            },
+            {
+              "name": "leaf",
+              "text": "Wednesday 17",
+              "id": "radiowatch.bg.energy.20240417",
+              "links": [],
+              "decorators": [],
+              "type": "item"
+            }
+          ],
+          "type": "item"
+        },
+        {
+          "name": "branch",
+          "filename": "NovaNews.ds",
+          "text": "Nova News playlist",
+          "id": "radiowatch.bg.novanews",
+          "links": [],
+          "decorators": [],
+          "items": [
+            {
+              "name": "leaf",
+              "text": "April 2024",
+              "id": "@XLK37C.2GU0PIBA",
+              "links": [],
+              "decorators": [],
+              "type": "comment"
+            },
+            {
+              "name": "leaf",
+              "text": "Monday 15",
+              "id": "radiowatch.bg.novanews.20240415",
+              "links": [],
+              "decorators": [],
+              "type": "item"
+            },
+            {
+              "name": "leaf",
+              "text": "Tuesday 16",
+              "id": "radiowatch.bg.novanews.20240416",
+              "links": [],
+              "decorators": [],
+              "type": "item"
+            },
+            {
+              "name": "leaf",
+              "text": "Wednesday 17",
+              "id": "radiowatch.bg.novanews.20240417",
+              "links": [],
+              "decorators": [],
+              "type": "item"
+            }
+          ],
+          "type": "item"
+        },
+        {
+          "name": "branch",
+          "filename": "City.ds",
+          "text": "Radio City playlist",
+          "id": "radiowatch.bg.city",
+          "links": [],
+          "decorators": [],
+          "items": [
+            {
+              "name": "leaf",
+              "text": "April 2024",
+              "id": "@CQRMIJ.5KPDK6AB",
+              "links": [],
+              "decorators": [],
+              "type": "comment"
+            },
+            {
+              "name": "leaf",
+              "text": "Monday 15",
+              "id": "radiowatch.bg.city.20240415",
+              "links": [],
+              "decorators": [],
+              "type": "item"
+            },
+            {
+              "name": "leaf",
+              "text": "Tuesday 16",
+              "id": "radiowatch.bg.city.20240416",
+              "links": [],
+              "decorators": [],
+              "type": "item"
+            },
+            {
+              "name": "leaf",
+              "text": "Wednesday 17",
+              "id": "radiowatch.bg.city.20240417",
+              "links": [],
+              "decorators": [],
+              "type": "item"
+            }
+          ],
+          "type": "item"
+        },
+        {
+          "name": "branch",
+          "filename": "Veselina.ds",
+          "text": "Radio Veselina playlist",
+          "id": "radiowatch.bg.veselina",
+          "links": [],
+          "decorators": [],
+          "items": [
+            {
+              "name": "leaf",
+              "text": "April 2024",
+              "id": "@LLLUOX.MMPQLGI6",
+              "links": [],
+              "decorators": [],
+              "type": "comment"
+            },
+            {
+              "name": "leaf",
+              "text": "Monday 15",
+              "id": "radiowatch.bg.veselina.20240415",
+              "links": [],
+              "decorators": [],
+              "type": "item"
+            },
+            {
+              "name": "leaf",
+              "text": "Tuesday 16",
+              "id": "radiowatch.bg.veselina.20240416",
+              "links": [],
+              "decorators": [],
+              "type": "item"
+            },
+            {
+              "name": "leaf",
+              "text": "Wednesday 17",
+              "id": "radiowatch.bg.veselina.20240417",
+              "links": [],
+              "decorators": [],
+              "type": "item"
+            }
+          ],
+          "type": "item"
+        }
+      ],
+      "type": "item"
+    },
+    {
+      "name": "branch",
+      "filename": ".radiowatch.ds",
+      "text": "Radio playlists",
+      "id": "radiowatch.rnode2",
+      "links": [],
+      "decorators": [],
+      "items": [
+        {
+          "name": "leaf",
+          "text": "Bulgarian",
+          "id": "@MCD806.3AUW15NC",
+          "links": [],
+          "decorators": [],
+          "type": "comment"
+        },
+        {
+          "name": "branch",
+          "filename": "Radio1Rock.ds",
+          "text": "Radio 1 Rock playlist",
+          "id": "radiowatch.bg.onerock",
+          "links": [],
+          "decorators": [],
+          "items": [
+            {
+              "name": "leaf",
+              "text": "April 2024",
+              "id": "@IUCVP9.PD0GP2FS",
+              "links": [],
+              "decorators": [],
+              "type": "comment"
+            },
+            {
+              "name": "leaf",
+              "text": "Monday 15",
+              "id": "radiowatch.bg.onerock.20240415",
+              "links": [],
+              "decorators": [],
+              "type": "item"
+            },
+            {
+              "name": "leaf",
+              "text": "Tuesday 16",
+              "id": "radiowatch.bg.onerock.20240416",
+              "links": [],
+              "decorators": [],
+              "type": "item"
+            },
+            {
+              "name": "leaf",
+              "text": "Wednesday 17",
+              "id": "radiowatch.bg.onerock.20240417",
+              "links": [],
+              "decorators": [],
+              "type": "item"
+            }
+          ],
+          "type": "item"
+        },
+        {
+          "name": "branch",
+          "filename": "Energy.ds",
+          "text": "Radio Energy playlist",
+          "id": "radiowatch.bg.energy",
+          "links": [],
+          "decorators": [],
+          "items": [
+            {
+              "name": "leaf",
+              "text": "April 2024",
+              "id": "@SHFQTI.BV07CSK5",
+              "links": [],
+              "decorators": [],
+              "type": "comment"
+            },
+            {
+              "name": "leaf",
+              "text": "Monday 15",
+              "id": "radiowatch.bg.energy.20240415",
+              "links": [],
+              "decorators": [],
+              "type": "item"
+            },
+            {
+              "name": "leaf",
+              "text": "Tuesday 16",
+              "id": "radiowatch.bg.energy.20240416",
+              "links": [],
+              "decorators": [],
+              "type": "item"
+            },
+            {
+              "name": "leaf",
+              "text": "Wednesday 17",
+              "id": "radiowatch.bg.energy.20240417",
+              "links": [],
+              "decorators": [],
+              "type": "item"
+            }
+          ],
+          "type": "item"
+        },
+        {
+          "name": "branch",
+          "filename": "NovaNews.ds",
+          "text": "Nova News playlist",
+          "id": "radiowatch.bg.novanews",
+          "links": [],
+          "decorators": [],
+          "items": [
+            {
+              "name": "leaf",
+              "text": "April 2024",
+              "id": "@XLK37C.2GU0PIBA",
+              "links": [],
+              "decorators": [],
+              "type": "comment"
+            },
+            {
+              "name": "leaf",
+              "text": "Monday 15",
+              "id": "radiowatch.bg.novanews.20240415",
+              "links": [],
+              "decorators": [],
+              "type": "item"
+            },
+            {
+              "name": "leaf",
+              "text": "Tuesday 16",
+              "id": "radiowatch.bg.novanews.20240416",
+              "links": [],
+              "decorators": [],
+              "type": "item"
+            },
+            {
+              "name": "leaf",
+              "text": "Wednesday 17",
+              "id": "radiowatch.bg.novanews.20240417",
+              "links": [],
+              "decorators": [],
+              "type": "item"
+            }
+          ],
+          "type": "item"
+        },
+        {
+          "name": "branch",
+          "filename": "City.ds",
+          "text": "Radio City playlist",
+          "id": "radiowatch.bg.city",
+          "links": [],
+          "decorators": [],
+          "items": [
+            {
+              "name": "leaf",
+              "text": "April 2024",
+              "id": "@CQRMIJ.5KPDK6AB",
+              "links": [],
+              "decorators": [],
+              "type": "comment"
+            },
+            {
+              "name": "leaf",
+              "text": "Monday 15",
+              "id": "radiowatch.bg.city.20240415",
+              "links": [],
+              "decorators": [],
+              "type": "item"
+            },
+            {
+              "name": "leaf",
+              "text": "Tuesday 16",
+              "id": "radiowatch.bg.city.20240416",
+              "links": [],
+              "decorators": [],
+              "type": "item"
+            },
+            {
+              "name": "leaf",
+              "text": "Wednesday 17",
+              "id": "radiowatch.bg.city.20240417",
+              "links": [],
+              "decorators": [],
+              "type": "item"
+            }
+          ],
+          "type": "item"
+        },
+        {
+          "name": "branch",
+          "filename": "Veselina.ds",
+          "text": "Radio Veselina playlist",
+          "id": "radiowatch.bg.veselina",
+          "links": [],
+          "decorators": [],
+          "items": [
+            {
+              "name": "leaf",
+              "text": "April 2024",
+              "id": "@LLLUOX.MMPQLGI6",
+              "links": [],
+              "decorators": [],
+              "type": "comment"
+            },
+            {
+              "name": "leaf",
+              "text": "Monday 15",
+              "id": "radiowatch.bg.veselina.20240415",
+              "links": [],
+              "decorators": [],
+              "type": "item"
+            },
+            {
+              "name": "leaf",
+              "text": "Tuesday 16",
+              "id": "radiowatch.bg.veselina.20240416",
+              "links": [],
+              "decorators": [],
+              "type": "item"
+            },
+            {
+              "name": "leaf",
+              "text": "Wednesday 17",
+              "id": "radiowatch.bg.veselina.20240417",
+              "links": [],
+              "decorators": [],
+              "type": "item"
+            }
+          ],
+          "type": "item"
+        }
+      ],
+      "type": "item"
+    }
+  ],
+  "timestamp": "Built on 11 September 2024, 18:11:38.646 (UTC)",
+  "version": "Built with Describe Compiler version 1.0",
+  "short_timestamp": "11 Sep 2024, 18:11:38",
+  "short_version": "Describe Compiler v 1.0"
+}

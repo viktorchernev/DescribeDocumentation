@@ -1,0 +1,51 @@
+{
+  "items": [
+    {
+      "name": "branch",
+      "filename": "C:\\Users\\Viktor Chernev\\Desktop\\testing\\TestFiles\\TestFilesFor06\\A_basic4.ds",
+      "text": "fabrics",
+      "id": "l.XRP7GDSK.WN2T8MYF",
+      "links": [],
+      "decorators": [],
+      "items": [
+        {
+          "name": "leaf",
+          "text": "wool fabrics",
+          "id": "l.XRP7GDSK.VB0XV525",
+          "links": [],
+          "decorators": [],
+          "type": "item"
+        },
+        {
+          "name": "leaf",
+          "text": "cotton fabrics",
+          "id": "l.XRP7GDSK.K2AMC5EW",
+          "links": [],
+          "decorators": [],
+          "type": "item"
+        },
+        {
+          "name": "leaf",
+          "text": "silk fabrics",
+          "id": "l.XRP7GDSK.006P3L78",
+          "links": [],
+          "decorators": [],
+          "type": "item"
+        },
+        {
+          "name": "leaf",
+          "text": "synthetic fabrics",
+          "id": "l.XRP7GDSK.PTVA5TM2",
+          "links": [],
+          "decorators": [],
+          "type": "item"
+        }
+      ],
+      "type": "item"
+    }
+  ],
+  "timestamp": "Built on 10 September 2024, 21:05:41.071 (UTC)",
+  "version": "Built with Describe Compiler version 1.0",
+  "short_timestamp": "10 Sep 2024, 21:05:41",
+  "short_version": "Describe Compiler v 1.0"
+}

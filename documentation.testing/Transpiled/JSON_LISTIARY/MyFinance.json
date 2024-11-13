@@ -1,0 +1,213 @@
+{
+  "items": [
+    {
+      "name": "branch",
+      "filename": "C:\\Users\\Viktor Chernev\\Desktop\\@Ds\\MyLife\\MyFinance\\myTaxes.txt",
+      "text": "My Finance",
+      "id": "my.finance.rnode",
+      "links": [],
+      "decorators": [],
+      "items": [
+        {
+          "name": "branch",
+          "filename": "C:\\Users\\Viktor Chernev\\Desktop\\@Ds\\MyLife\\MyFinance\\myTaxes.txt",
+          "text": "monthly expenses",
+          "id": "@Y530H3.I01OBRYR",
+          "links": [],
+          "decorators": [],
+          "items": [
+            {
+              "name": "leaf",
+              "text": "2x toilet paper (13)",
+              "id": "@Y530H3.70RIV21F",
+              "links": [],
+              "decorators": [],
+              "type": "item"
+            },
+            {
+              "name": "leaf",
+              "text": "drink cups (6)",
+              "id": "@Y530H3.OM64EL3G",
+              "links": [],
+              "decorators": [],
+              "type": "item"
+            },
+            {
+              "name": "leaf",
+              "text": "2x liquid soap (3)",
+              "id": "@Y530H3.M4WHP1M2",
+              "links": [],
+              "decorators": [],
+              "type": "item"
+            },
+            {
+              "name": "leaf",
+              "text": "2x soap bars (3)",
+              "id": "@Y530H3.6MD5346P",
+              "links": [],
+              "decorators": [],
+              "type": "item"
+            },
+            {
+              "name": "leaf",
+              "text": "2x dish-washing liquid (3)",
+              "id": "@Y530H3.L9ESX5LQ",
+              "links": [],
+              "decorators": [],
+              "type": "item"
+            },
+            {
+              "name": "leaf",
+              "text": "cosmetics",
+              "id": "@Y530H3.2FD9QTNU",
+              "links": [],
+              "decorators": [],
+              "type": "nlcomment"
+            },
+            {
+              "name": "leaf",
+              "text": "shampoo (7)",
+              "id": "@Y530H3.HHD9WC12",
+              "links": [],
+              "decorators": [],
+              "type": "item"
+            },
+            {
+              "name": "leaf",
+              "text": "dry deo stick (7)",
+              "id": "@Y530H3.37HEH6R9",
+              "links": [],
+              "decorators": [],
+              "type": "item"
+            },
+            {
+              "name": "leaf",
+              "text": "cotton swabs (5)",
+              "id": "@Y530H3.8743VPBS",
+              "links": [],
+              "decorators": [],
+              "type": "item"
+            }
+          ],
+          "type": "item"
+        },
+        {
+          "name": "branch",
+          "filename": "C:\\Users\\Viktor Chernev\\Desktop\\@Ds\\MyLife\\MyFinance\\myTaxes.txt",
+          "text": "monthly taxes",
+          "id": "@Y530H3.5HC6V9JE",
+          "links": [],
+          "decorators": [],
+          "items": [
+            {
+              "name": "leaf",
+              "text": "inet - 05 (22)",
+              "id": "@Y530H3.B6IK60SH",
+              "links": [],
+              "decorators": [],
+              "color": "blue",
+              "type": "item"
+            },
+            {
+              "name": "leaf",
+              "text": "phone minutes (12)",
+              "id": "@Y530H3.KSXBHQ75",
+              "links": [],
+              "decorators": [],
+              "color": "blue",
+              "type": "item"
+            },
+            {
+              "name": "leaf",
+              "type": "empty"
+            },
+            {
+              "name": "leaf",
+              "text": "* water",
+              "id": "@Y530H3.4GT1XFG0",
+              "links": [],
+              "decorators": [],
+              "color": "gray",
+              "type": "item"
+            },
+            {
+              "name": "leaf",
+              "text": "* electricity",
+              "id": "@Y530H3.VO3BPDLO",
+              "links": [],
+              "decorators": [],
+              "color": "gray",
+              "type": "item"
+            },
+            {
+              "name": "leaf",
+              "text": "* building entrance fee",
+              "id": "@Y530H3.OSAEZH5F",
+              "links": [],
+              "decorators": [],
+              "color": "gray",
+              "type": "item"
+            }
+          ],
+          "type": "item"
+        },
+        {
+          "name": "branch",
+          "filename": "C:\\Users\\Viktor Chernev\\Desktop\\@Ds\\MyLife\\MyFinance\\myTaxes.txt",
+          "text": "upcoming taxes",
+          "id": "@Y530H3.PP74G68U",
+          "links": [],
+          "decorators": [],
+          "items": [
+            {
+              "name": "leaf",
+              "text": "Github - 22 Nov 2024 (48 $)",
+              "id": "@Y530H3.E1MJGVGA",
+              "links": [],
+              "decorators": [],
+              "color": "red",
+              "type": "item"
+            },
+            {
+              "name": "leaf",
+              "text": "Jump.bg - 04 Jan 2025 (100)",
+              "id": "@Y530H3.4YT2XE94",
+              "links": [],
+              "decorators": [],
+              "color": "red",
+              "type": "item"
+            },
+            {
+              "name": "leaf",
+              "type": "empty"
+            },
+            {
+              "name": "leaf",
+              "text": "* chatGPT (50)",
+              "id": "@Y530H3.03MK8GTD",
+              "links": [],
+              "decorators": [],
+              "color": "gray",
+              "type": "item"
+            },
+            {
+              "name": "leaf",
+              "text": "* boosteroid (20)",
+              "id": "@Y530H3.GI55W8QD",
+              "links": [],
+              "decorators": [],
+              "color": "gray",
+              "type": "item"
+            }
+          ],
+          "type": "item"
+        }
+      ],
+      "type": "item"
+    }
+  ],
+  "timestamp": "Built on 04 October 2024, 18:50:44.905 (UTC)",
+  "version": "Built with Describe Compiler version 1.0",
+  "short_timestamp": "04 Oct 2024, 18:50:44",
+  "short_version": "Describe Compiler v 1.0"
+}

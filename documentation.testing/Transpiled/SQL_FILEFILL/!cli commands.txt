@@ -1,0 +1,12 @@
+cd "C:\Users\Viktor Chernev\Desktop\testing\!TestRelease"
+DescribeTranspiler.CLI help
+
+DescribeTranspiler.CLI parse-file "C:\Users\Viktor Chernev\Desktop\@Ds\MyLife\!MySchemes\ULOT.txt" "C:\Users\Viktor Chernev\Desktop\testing\!compiled\SQL_FILEFILL\MySchemes.sql" translator=sql_filefill beautify=true verbosity=h log-file="C:\Users\Viktor Chernev\Desktop\testing\!compiled\SQL_FILEFILL\MySchemes.log" theme="DBLUE"
+
+DescribeTranspiler.CLI parse-file "C:\Users\Viktor Chernev\Desktop\@Ds\MyLife\!MySchemes\ULOT.txt" "C:\Users\Viktor Chernev\Desktop\testing\!compiled\SQL_FILEFILL\MySchemes.sql" translator=sql_filefill beautify=true verbosity=h logfile="C:\Users\Viktor Chernev\Desktop\testing\!compiled\SQL_FILEFILL\MySchemes.log" theme="DBLUE"
+
+DescribeTranspiler.CLI parse-file "C:\Users\Viktor Chernev\Desktop\@Ds\MyLife\MyDiet\myHealthyFoodTypes.txt" "C:\Users\Viktor Chernev\Desktop\testing\!compiled\SQL_FILEFILL\myHealthyFoodTypes.sql" translator=sql_filefill beautify=true verbosity=h logfile="C:\Users\Viktor Chernev\Desktop\testing\!compiled\SQL_FILEFILL\myHealthyFoodTypes.log" theme="DBLUE"
+
+DescribeTranspiler.CLI parse-file "C:\Users\Viktor Chernev\Desktop\@Ds\MyLife\MyFinance\myTaxes.txt" "C:\Users\Viktor Chernev\Desktop\testing\!compiled\SQL_FILEFILL\MyFinance.sql" translator=sql_filefill beautify=true verbosity=h logfile="C:\Users\Viktor Chernev\Desktop\testing\!compiled\SQL_FILEFILL\MyFinance.log" theme="DBLUE"
+
+DescribeTranspiler.CLI parse-folder "C:\Users\Viktor Chernev\Desktop\@Ds\MyLife" "C:\Users\Viktor Chernev\Desktop\testing\!compiled\SQL_FILEFILL\@MyLife.sql" translator=sql_filefill beautify=true verbosity=h logfile="C:\Users\Viktor Chernev\Desktop\testing\!compiled\SQL_FILEFILL\@MyLife.log" dsonly=false toponly=false onerror=ignore
