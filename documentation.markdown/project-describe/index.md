@@ -4,7 +4,7 @@
 
 layout: page
 title: Describe Language Documentation
-# permalink: /language/
+permalink: /language/
 exclude: true
 ---
 <br>
