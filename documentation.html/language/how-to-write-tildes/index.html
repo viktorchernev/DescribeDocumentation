@@ -31,7 +31,23 @@
           </span>
         </label>
 
-        <div class="trigger"></div>
+        <div class="trigger">
+          
+            <a class="page-link" href="/language/how-to-write/">Language Home</a>
+          
+            <a class="page-link" href="/language/how-to-compile/">Compiler Home</a>
+          
+            <a class="page-link" href="/language/reference/">Tech Reference</a>
+          
+            <a class="page-link" href="/language/">About Describe</a>
+          
+            <a class="page-link" href="/listiary/">About Listiary</a>
+          
+            <a class="page-link" href="https://library.listiary.com/">Describe Library</a>
+          
+            <a class="page-link" href="/language/site-map/">Site Map</a>
+          
+        </div>
       </nav></div>
 </header>
 <main class="page-content" aria-label="Content">
@@ -43,9 +59,12 @@
   </header>
 
   <div class="post-content">
-    <p><br />Tildes, aka “tilde inversions” or simply “inversions” are an alternative way to add data to an entry, without using decorators, as decorators are not suitable for long texts.  To write a tilde inversion, simply put a tilde symbol <code class="language-plaintext highlighter-rouge">~</code> in front of the entry that you wish to invert. The inverted entry is no longer part of the production, but refers solely to the head of the production now.</p>
+    <p><br />Tildes, aka “tilde inversions” or simply “inversions” are an alternative way to add data to an entry, without using decorators, as decorators are not convenient for long texts. To write a tilde inversion, simply put a tilde symbol <code class="language-plaintext highlighter-rouge">~</code> in front of the entry that you wish to invert. The inverted entry is no longer part of the production, but refers solely to the head of the production now.</p>
 
-<p>The example below illustrate how to use inversions. In the first example, we use inversions to add shorter versions to some items in a list, including the head. In the second example, we achieve the same with decorators:</p>
+<p>What happens behind the scenes is that the inversion is added as a decorator to the item, with the tag of the inversion being the name of the decorator. (However, this is not fully implemented yet, and the tilde inversions are added as items at the moment, as a hack around. The feature will be implemented in the next releases)</p>
+
+<p>The example below illustrate how to use inversions. In the first example, we use inversions to add shorter versions to some items in a list, including the head. In the second example, we achieve the same with decorators:
+<br /><br /></p>
 
 <p><span style="color:blue"><em>Example (tilde inversions):</em></span></p>
 <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Harry Potter books -&gt;

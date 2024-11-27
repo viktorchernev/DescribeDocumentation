@@ -31,7 +31,23 @@
           </span>
         </label>
 
-        <div class="trigger"></div>
+        <div class="trigger">
+          
+            <a class="page-link" href="/language/how-to-write/">Language Home</a>
+          
+            <a class="page-link" href="/language/how-to-compile/">Compiler Home</a>
+          
+            <a class="page-link" href="/language/reference/">Tech Reference</a>
+          
+            <a class="page-link" href="/language/">About Describe</a>
+          
+            <a class="page-link" href="/listiary/">About Listiary</a>
+          
+            <a class="page-link" href="https://library.listiary.com/">Describe Library</a>
+          
+            <a class="page-link" href="/language/site-map/">Site Map</a>
+          
+        </div>
       </nav></div>
 </header>
 <main class="page-content" aria-label="Content">
@@ -43,7 +59,11 @@
   </header>
 
   <div class="post-content">
-    <p><br />The DescribeParser project contains all the classes needed to parse Describe code. First of all, we can find lexers and parsers for different versions of the Describe language in the namespace <code class="language-plaintext highlighter-rouge">DescribeParser.Parsers</code>. Those lexers and parsers are generated with the ANTLR4 tool (.jar), and rely on the ANTLR runtime (<a href="/tanspiler/antlr/">project antlr</a>). We neither unit-test them, nor care too much how they work internally, as the functionality is readily provided as is. After we use a lexer and a parser we have a context object, that is esentially the parse tree from the parse operation. We use the visitors in the <code class="language-plaintext highlighter-rouge">DescribeParser.Visitors</code> namespace to translate the root context class either to an Unfold structure, or to a real Abstract Syntax Tree (AST), which are housed in the <code class="language-plaintext highlighter-rouge">DescribeParser.Unfold</code> and <code class="language-plaintext highlighter-rouge">DescribeParser.Ast</code> namespaces, respectingly.</p>
+    <p><br />The DescribeParser project contains all the classes needed to parse Describe code.</p>
+
+<p>First of all, we can find lexers and parsers for different versions of the Describe language in the namespace <code class="language-plaintext highlighter-rouge">DescribeParser.Parsers</code>. Those lexers and parsers are generated with the ANTLR4 tool (.jar), and rely on the ANTLR runtime (<a href="/tanspiler/antlr/">project antlr</a>). We neither unit-test them, nor care too much how they work internally, as the functionality is readily provided as is.</p>
+
+<p>After we use a lexer and a parser we have a context object, that is essentially the parse tree from the parse operation. We use the visitors in the <code class="language-plaintext highlighter-rouge">DescribeParser.Visitors</code> namespace to translate the root context class either to an Unfold structure, or to a real Abstract Syntax Tree (AST), which are housed in the <code class="language-plaintext highlighter-rouge">DescribeParser.Unfold</code> and <code class="language-plaintext highlighter-rouge">DescribeParser.Ast</code> namespaces, respectively.</p>
 
 <p>Last but not least, we have the <code class="language-plaintext highlighter-rouge">IDescribeParseJob</code> interface and the <code class="language-plaintext highlighter-rouge">SimpleParseJob</code> class, used to store intermediate data during a parse operation.</p>
 

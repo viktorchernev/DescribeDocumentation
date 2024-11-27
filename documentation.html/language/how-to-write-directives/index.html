@@ -31,7 +31,23 @@
           </span>
         </label>
 
-        <div class="trigger"></div>
+        <div class="trigger">
+          
+            <a class="page-link" href="/language/how-to-write/">Language Home</a>
+          
+            <a class="page-link" href="/language/how-to-compile/">Compiler Home</a>
+          
+            <a class="page-link" href="/language/reference/">Tech Reference</a>
+          
+            <a class="page-link" href="/language/">About Describe</a>
+          
+            <a class="page-link" href="/listiary/">About Listiary</a>
+          
+            <a class="page-link" href="https://library.listiary.com/">Describe Library</a>
+          
+            <a class="page-link" href="/language/site-map/">Site Map</a>
+          
+        </div>
       </nav></div>
 </header>
 <main class="page-content" aria-label="Content">
@@ -43,11 +59,15 @@
   </header>
 
   <div class="post-content">
-    <p><br />Directives are commands for the preprocessor that affect the preprocessing or the compilation process for the given source file. In Describe, directives are written as a list, titled “directives”. Each directive is an entry in the list. The text of the entry is the name of the directive, and the tag of the entry is the value. The directives list, if present, must be the first list in the source file.</p>
+    <p><br />Directives are commands for the preprocessor that affect the preprocessing or the compilation process for the given source file. In Describe, directives are written as a regular list, titled “directives”. Each directive is an entry in the list. The text of the entry is the name of the directive, and the tag of the entry is the value. The directives list, if present, must be the first list in the source file.</p>
 
 <p>A list of directives and instructions for their use follows:</p>
 
 <ul>
+  <li>
+    <p><span style="color:blue"><strong><em>language-version</em></strong> <code class="language-plaintext highlighter-rouge">language-version &lt;1.0&gt;</code></span><br />
+The language-version directive is used to set, well, the language version for the current file. It overrides the Command line flag, in the CLI App.</p>
+  </li>
   <li>
     <p><span style="color:blue"><strong><em>namespace</em></strong> <code class="language-plaintext highlighter-rouge">namespace &lt;name.ofNamespace&gt;</code></span><br />
 The namespace directive is related to the dot notation addressing scheme. It is used to set the current namespace for the file, which is then added as a prefix to tag ids (for more info see “Addressing schemes”).</p>
@@ -56,21 +76,18 @@ The namespace directive is related to the dot notation addressing scheme. It is 
     <p><span style="color:blue"><strong><em>verbosity</em></strong> <code class="language-plaintext highlighter-rouge">verbosity &lt;high&gt;</code></span><br />
 The verbosity directive is used to set the parser verbosity for the file. The values are <code class="language-plaintext highlighter-rouge">high</code> or <code class="language-plaintext highlighter-rouge">h</code>, <code class="language-plaintext highlighter-rouge">medium</code> or <code class="language-plaintext highlighter-rouge">m</code> and <code class="language-plaintext highlighter-rouge">low</code> or <code class="language-plaintext highlighter-rouge">l</code>.</p>
   </li>
-  <li>
-    <p><span style="color:blue"><strong><em>version</em></strong> <code class="language-plaintext highlighter-rouge">language-version &lt;1.1&gt;</code></span><br />
-The language-version directive is used to indicate the Describe language version to be compiled against. Possible values are <code class="language-plaintext highlighter-rouge">1.1</code>, <code class="language-plaintext highlighter-rouge">1.0</code>, <code class="language-plaintext highlighter-rouge">0.9</code>, <code class="language-plaintext highlighter-rouge">0.8</code>, <code class="language-plaintext highlighter-rouge">0.7</code> and <code class="language-plaintext highlighter-rouge">0.6</code>.</p>
-  </li>
-  <li>
-    <p><span style="color:orange"><strong><em>replace</em></strong> <code class="language-plaintext highlighter-rouge">replace &lt;"text"|"newText"&gt;</code> *EXPERIMENTAL</span><br />
-The replace directive is used to replace all occurrences of some text with other text before parsing the source file. The quotes are optional.</p>
-  </li>
-  <li>
-    <p><span style="color:orange"><strong><em>regex-replace</em></strong> <code class="language-plaintext highlighter-rouge">regex-replace &lt;"pattern"|"newText"&gt;</code> *EXPERIMENTAL</span><br />
-The regex-replace directive is used to replace all occurrences of some regular expression pattern with some text before parsing the source file. The quotes are optional.</p>
-  </li>
 </ul>
 
-<p><span style="color:blue">In the example below, we have a source file utilizing the verbosity directive to set parser log verbosity to high, and the namespace directive, indicating the current namespace under the dot notation addressing scheme:</span></p>
+<!--
+* <span style="color:orange">**_replace_** ```replace <"text"|"newText">``` *EXPERIMENTAL</span><br>
+The replace directive is used to replace all occurances of some text with other text before parsing the source file. The quotes are optional.
+
+* <span style="color:orange">**_regex-replace_** ```regex-replace <"pattern"|"newText">``` *EXPERIMENTAL</span><br>
+The regex-replace directive is used to replace all occurances of some regular expression pattern with some text before parsing the source file. The quotes are optional.  
+-->
+
+<p><br /><br />
+<span style="color:blue">In the example below, we have a source file utilizing the verbosity directive to set parser log verbosity to high, and the namespace directive, indicating the current namespace under the dot notation addressing scheme:</span></p>
 <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>directives -&gt; 
 
 	verbosity &lt;high&gt;,

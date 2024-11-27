@@ -31,7 +31,23 @@
           </span>
         </label>
 
-        <div class="trigger"></div>
+        <div class="trigger">
+          
+            <a class="page-link" href="/language/how-to-write/">Language Home</a>
+          
+            <a class="page-link" href="/language/how-to-compile/">Compiler Home</a>
+          
+            <a class="page-link" href="/language/reference/">Tech Reference</a>
+          
+            <a class="page-link" href="/language/">About Describe</a>
+          
+            <a class="page-link" href="/listiary/">About Listiary</a>
+          
+            <a class="page-link" href="https://library.listiary.com/">Describe Library</a>
+          
+            <a class="page-link" href="/language/site-map/">Site Map</a>
+          
+        </div>
       </nav></div>
 </header>
 <main class="page-content" aria-label="Content">
@@ -43,84 +59,27 @@
   </header>
 
   <div class="post-content">
-    <p><br />The Describe Compiler CLI is a text-based app that provides a command line interface for the API compiler, so that users can compile Describe source files on the command line. The app is licensed under the <a href="https://www.gnu.org/licenses/agpl-3.0">AGPL v3</a> public license.</p>
+    <p><br />The Describe Compiler CLI is a text-based app that provides a command line interface for the API compiler, so that users can compile Describe source files on the command line. The app is licensed under the <a href="https://www.gnu.org/licenses/agpl-3.0">AGPL v3</a> public license, and is currently available only for Windows, utilizing the .Net 8.0. Linux build will probably be available in the near future as well.<br /></p>
 
-<h3 id="help">help</h3>
+<p><em>A list of commands:</em></p>
 
-<p><code class="language-plaintext highlighter-rouge">DescribeCompilerCLI help</code><br />
-<code class="language-plaintext highlighter-rouge">DescribeCompilerCLI -h</code><br /></p>
+<p><a href="/language/how-to-compile/cli/help/">help</a><br />
+<a href="/language/how-to-compile/cli/parse-file/">parse-file</a><br />
+<a href="/language/how-to-compile/cli/parse-folder/">parse-folder</a><br />
+<a href="/language/how-to-compile/cli/encrypt-file/">encrypt-file</a><br />
+<a href="/language/how-to-compile/cli/decrypt-file/">decrypt-file</a><br />
+<a href="/language/how-to-compile/cli/recrypt-file/">recrypt-file</a><br />
+<a href="/language/how-to-compile/cli/encrypt-folder/">encrypt-folder</a><br />
+<a href="/language/how-to-compile/cli/decrypt-folder/">decrypt-folder</a><br />
+<a href="/language/how-to-compile/cli/recrypt-folder/">recrypt-folder</a><br /><br /></p>
 
-<p><span style="color:orange"><em>help | -h</em></span><br /></p>
+<h3 id="screenshots">Screenshots</h3>
+<p>These are some screenshots of the CLI tool running.</p>
 
-<p>The help command is used to display usage / help message</p>
-
-<h3 id="parse-file">parse-file</h3>
-
-<p><code class="language-plaintext highlighter-rouge">DescribeCompilerCLI parse-file "C:\parse\path\input.ds" "C:\result\path\output.json"</code><br />
-<code class="language-plaintext highlighter-rouge">translator=JSON verbosity=low logfile="C:\parse\path\log.txt"</code><br /> <!-- artifacts=use artifacts-path="C:\artifacts\path\input.dart" --></p>
-
-<p><span style="color:orange"><em>parse-file PARSE_PATH RESULT_PATH [translator = ( TARGET_LANGUAGE | TRANSLATOR_NAME )] [verbosity= ( l | low | m | medium |h | high)| log-verbosity= ( l | low | m | medium | h | high)][logfile=LOG_PATH]</em></span><br /></p>
-
-<p>The parse-file command is used to parse a single file. First we specify the command, followed by the source file to be parsed and the output file path. Anything after that is optional.</p>
-
-<ul>
-  <li>
-    <p><span style="color:blue"><strong><em>translator</em></strong></span><br />
-Either the desired output language or the name of the translator to be used.</p>
-  </li>
-  <li>
-    <p><span style="color:blue"><strong><em>verbosity</em></strong></span><br />
-The log verbosity of the app. Same as <code class="language-plaintext highlighter-rouge">log-verbosity</code>. <code class="language-plaintext highlighter-rouge">l</code> or <code class="language-plaintext highlighter-rouge">low</code> for low verbosity, <code class="language-plaintext highlighter-rouge">m</code> or <code class="language-plaintext highlighter-rouge">medium</code> for medium verbosity or <code class="language-plaintext highlighter-rouge">h</code> or <code class="language-plaintext highlighter-rouge">high</code> for high verbosity. Low is default.</p>
-  </li>
-</ul>
-
-<!--
-* <span style="color:orange">**_artifacts - NOT IMPLEMENTED_**</span> - Whether to use artifacts. ```m``` or ```makeonly``` will only create new and overwrite existing artifacts, but will not consume them, ```t``` or ```takeonly``` will only consume but not create or update them, ```u``` or ```use``` will both use available or valid artifacts while updating invalid ones and creating new artifacts when not available, and ```n``` or ```no``` will ignore artifacts all-together. Default is no.
-
-* <span style="color:orange">**_ARTIFACTS_PATH - NOT IMPLEMENTED_**</span> - Specifies the path of directory to store artifacts in.
--->
-
-<ul>
-  <li><span style="color:blue"><strong><em>logfile</em></strong></span><br />
-Specifies path of directory or file to output logs to. If not specified, logs will be outputted only to the console, which is the default.</li>
-</ul>
-
-<h3 id="parse-folder">parse-folder</h3>
-
-<p><code class="language-plaintext highlighter-rouge">DescribeCompilerCLI parse-folder "C:\parse\path\input\" "C:\result\path\output.json"</code><br />
-<code class="language-plaintext highlighter-rouge">translator=JSON dsonly=true toponly=false onerror=ignore</code><br />
-<code class="language-plaintext highlighter-rouge">verbosity=low logfile="C:\parse\path\log.txt"</code><br /></p>
-
-<p><span style="color:orange"><em>parse-folder PARSE_PATH RESULT_PATH [translator = ( TARGET_LANGUAGE | TRANSLATOR_NAME )][dsonly= ( true | false ) ][toponly= ( true | false ) ][onerror= ( stop | ignore )][verbosity= ( l | low | m | medium |h | high)| log-verbosity= ( l | low | m | medium | h | high)][logfile=LOG_PATH]</em></span><br /></p>
-
-<p>The parse-folder command is used to parse a directory full of Describe source files (.ds files). First we specify the command, followed by the source directory to be parsed and the output file path. Anything after that is optional.</p>
-
-<ul>
-  <li>
-    <p><span style="color:blue"><strong><em>translator</em></strong></span><br />
-Either the desired output language or the name of the translator to be used.</p>
-  </li>
-  <li>
-    <p><span style="color:blue"><strong><em>dsonly</em></strong></span><br />
-Whether to omit files that are not Describe source files (.DS). <code class="language-plaintext highlighter-rouge">true</code> or <code class="language-plaintext highlighter-rouge">false</code>. Default is true.</p>
-  </li>
-  <li>
-    <p><span style="color:blue"><strong><em>toponly</em></strong></span><br />
-Whether to parse files in child directories or not. <code class="language-plaintext highlighter-rouge">true</code> or <code class="language-plaintext highlighter-rouge">false</code>. Default is false.</p>
-  </li>
-  <li>
-    <p><span style="color:blue"><strong><em>onerror</em></strong></span><br />
-What to do when there is an error in source code. <code class="language-plaintext highlighter-rouge">stop</code> or <code class="language-plaintext highlighter-rouge">ignore</code>. Default is stop.</p>
-  </li>
-  <li>
-    <p><span style="color:blue"><strong><em>verbosity</em></strong></span><br />
-The log verbosity of the app. Same as <code class="language-plaintext highlighter-rouge">log-verbosity</code>. <code class="language-plaintext highlighter-rouge">l</code> or <code class="language-plaintext highlighter-rouge">low</code> for low verbosity, <code class="language-plaintext highlighter-rouge">m</code> or <code class="language-plaintext highlighter-rouge">medium</code> for medium verbosity or <code class="language-plaintext highlighter-rouge">h</code> or <code class="language-plaintext highlighter-rouge">high</code> for high verbosity. Low is default.</p>
-  </li>
-  <li>
-    <p><span style="color:blue"><strong><em>logfile</em></strong></span><br />
-Specifies path of directory or file to output logs to. If not specified, logs will be outputted only to the console, which is the default.</p>
-  </li>
-</ul>
+<p><a href="https://github.com/viktorchernev/DescribeCompiler/wiki/Output%E2%80%90l">CLI - Low verbosity</a><br />
+<a href="https://github.com/viktorchernev/DescribeCompiler/wiki/Output%E2%80%90m">CLI - Medium verbosity</a><br />
+<a href="https://github.com/viktorchernev/DescribeCompiler/wiki/Output%E2%80%90h">CLI - High verbosity</a><br />
+<a href="https://github.com/viktorchernev/DescribeCompiler/wiki/output-themes">CLI - Themes</a><br /></p>
 
 <p><br /></p>
 <h3 id="links">Links</h3>

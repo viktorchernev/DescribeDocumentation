@@ -31,7 +31,23 @@
           </span>
         </label>
 
-        <div class="trigger"></div>
+        <div class="trigger">
+          
+            <a class="page-link" href="/language/how-to-write/">Language Home</a>
+          
+            <a class="page-link" href="/language/how-to-compile/">Compiler Home</a>
+          
+            <a class="page-link" href="/language/reference/">Tech Reference</a>
+          
+            <a class="page-link" href="/language/">About Describe</a>
+          
+            <a class="page-link" href="/listiary/">About Listiary</a>
+          
+            <a class="page-link" href="https://library.listiary.com/">Describe Library</a>
+          
+            <a class="page-link" href="/language/site-map/">Site Map</a>
+          
+        </div>
       </nav></div>
 </header>
 <main class="page-content" aria-label="Content">
@@ -43,87 +59,24 @@
   </header>
 
   <div class="post-content">
-    <p><br />The Describe Compiler AWS is Amazon Web Services Lambda function project. It is built for hosting the Describe Compiler as a micro-service, in the form of a lambda function. The project is licensed under the <a href="https://www.gnu.org/licenses/agpl-3.0">AGPL v3</a> public license.</p>
+    <p><br />The Describe Compiler AWS is an Amazon Web Services Lambda function project. It is built for hosting the Describe Compiler as a microservice, in the form of a lambda function. The project is licensed under the AGPL v3 public license.<br /></p>
 
-<p>Project is under development. Here is how we call it from PHP, at the moment.</p>
+<p>The DescribeTranspiler.AWS Visual studio project contains few Amazon lambda functions that we upload to AWS Lambda and configure with HTTP APIs in the ASW API Gateway, in order to host the Describe Markup Language Transpiler as a micro-service, invoke-able from a URL.
+The way this works is as follows:</p>
 
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>//get all the articles
-$code = "";
-$sql = "SELECT name, content, timestamp FROM files";
-echo "Executing query - '" . $sql . "'&lt;br&gt;";
-$result = mysqli_query($conn, $sql);
-if($result == false || mysqli_num_rows($result) &lt; 1) die("Query result is false");
-while ($row = mysqli_fetch_assoc($result))
-{
-	$code .= $row['name'] . "~~N~~" . $row['content'] . "~~~FILE~~~";
-}
+<p>a) User makes a POST request on the HTTP API url.<br />
+b) Lambda function is triggered, receiving the data from the POST request.<br />
+c) Lambda decodes the base64 body of that request.<br />
+d) Lambda reads data from that request body to variables and checks some of it.<br />
+e) Lambda uses Arguments class functions to fill up the Datnik class with the before-mentioned data.<br />
+f) Lambda calls MainFunctions to do the compilation.<br />
+g) MainFunctions.Compile uses the data inside the Datnik to compile the source code.<br />
+h) Lambda gets the result and base64 encodes it.<br />
+i) Lambda prepares the response object and returns it.<br />
+j) HTTP API response is returned.<br /><br /></p>
 
-// test POST
-$base64 = base64_encode($code);
-$base64Name = base64_encode("MULTISTRING");
-$result = doPostRequest('https://??????????.execute-api.eu-north-1.amazonaws.com/', $base64, $base64Name);
-var_dump($result);
-logPostResponse($result);
-die("&lt;br&gt;End Testing POST.");
-
-// functions
-function doPostRequest($url, $code, $filename) {
-
-	//https://stackoverflow.com/questions/5647461/how-do-i-send-a-post-request-with-php
-	$data = [
-		'command' =&gt; 'multi-parse', 
-		'verbosity' =&gt; 'low',
-		'translator' =&gt; 'JSON',
-		'filename' =&gt; $filename,
-		'code' =&gt; $code
-	];
-
-	// use key 'http' even if you send the request to https://...
-	$options = [
-		'http' =&gt; [
-			'header' =&gt; "Content-type: application/x-www-form-urlencoded\r\n",
-			'method' =&gt; 'POST',
-			'content' =&gt; http_build_query($data),
-		],
-	];
-
-	$context = stream_context_create($options);
-	$result = file_get_contents($url, false, $context);
-	return $result;
-}
-function logPostResponse($response) {
-
-	if ($response == null) 
-	{
-		echo "ERROR : &lt;span style='color:blue'&gt;response is NULL&lt;/span&gt;&lt;br /&gt;";
-		return;
-	}
-
-	//echo $response;
-	//var_dump($jArr);
-	$jArr = json_decode($response, true);
-
-	//json.Result
-	if ($jArr["Result"] == null) echo "Result : &lt;span style='color:blue'&gt;NULL&lt;/span&gt;&lt;br /&gt;";
-	else echo "Result : &lt;span style='color:blue'&gt;" . $jArr["Result"] . "&lt;/span&gt;&lt;br /&gt;";
-	//echo "&lt;br /&gt;";
-
-	//json.Command
-	if ($jArr["Command"] == null) echo "Command : &lt;span style='color:blue'&gt;NULL&lt;/span&gt;&lt;br /&gt;";
-	else echo "Command : &lt;span style='color:blue'&gt;" . $jArr["Command"] . "&lt;/span&gt;&lt;br /&gt;";
-	echo "&lt;br /&gt;&lt;br /&gt;";
-
-	//json.Logs
-	if ($jArr["Logs"] == null) echo "Logs : &lt;span style='color:blue'&gt;NULL&lt;/span&gt;&lt;br /&gt;";
-	else echo "Logs :&lt;br /&gt;&lt;span style='color:green'&gt;" . $jArr["Logs"] . "&lt;/span&gt;&lt;br /&gt;&lt;br /&gt;";
-	echo "&lt;br /&gt;";
-	
-	//json.Json
-	if ($jArr["Json"] == null) echo "Json : &lt;span style='color:blue'&gt;NULL&lt;/span&gt;&lt;br /&gt;";
-	else echo "Json :&lt;br /&gt;&lt;span style='color:blue'&gt;" . $jArr["Json"] . "&lt;/span&gt;&lt;br /&gt;";
-	echo "&lt;br /&gt;";
-}
-</code></pre></div></div>
+<p><a href="/language/how-to-compile/aws/api-gateway/">Configuring the API Gateway</a><br /> 
+<a href="/language/how-to-compile/aws/tech-overview/">Technical overview</a></p>
 
 <p><br /></p>
 <h3 id="links">Links</h3>

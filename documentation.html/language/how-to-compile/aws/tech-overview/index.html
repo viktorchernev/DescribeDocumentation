@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1"><!-- Begin Jekyll SEO tag v2.8.0 -->
+<title>AWS - Tech Overview | Documentation</title>
+<meta name="generator" content="Jekyll v4.3.3" />
+<meta property="og:title" content="AWS - Tech Overview" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="Describe Compiler Documentation" />
+<meta property="og:description" content="Describe Compiler Documentation" />
+<link rel="canonical" href="http://localhost:4000/language/how-to-compile/aws/tech-overview/" />
+<meta property="og:url" content="http://localhost:4000/language/how-to-compile/aws/tech-overview/" />
+<meta property="og:site_name" content="Documentation" />
+<meta property="og:type" content="website" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="AWS - Tech Overview" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"WebPage","description":"Describe Compiler Documentation","headline":"AWS - Tech Overview","url":"http://localhost:4000/language/how-to-compile/aws/tech-overview/"}</script>
+<!-- End Jekyll SEO tag -->
+<link rel="stylesheet" href="/assets/main.css"><link type="application/atom+xml" rel="alternate" href="http://localhost:4000/feed.xml" title="Documentation" /></head>
+<body><header class="site-header" role="banner">
+
+  <div class="wrapper"><a class="site-title" rel="author" href="/">Documentation</a><nav class="site-nav">
+        <input type="checkbox" id="nav-trigger" class="nav-trigger" />
+        <label for="nav-trigger">
+          <span class="menu-icon">
+            <svg viewBox="0 0 18 15" width="18px" height="15px">
+              <path d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.032C17.335,0,18,0.665,18,1.484L18,1.484z M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.032C17.335,6.031,18,6.696,18,7.516L18,7.516z M18,13.516C18,14.335,17.335,15,16.516,15H1.484 C0.665,15,0,14.335,0,13.516l0,0c0-0.82,0.665-1.483,1.484-1.483h15.032C17.335,12.031,18,12.695,18,13.516L18,13.516z"/>
+            </svg>
+          </span>
+        </label>
+
+        <div class="trigger">
+          
+            <a class="page-link" href="/language/how-to-write/">Language Home</a>
+          
+            <a class="page-link" href="/language/how-to-compile/">Compiler Home</a>
+          
+            <a class="page-link" href="/language/reference/">Tech Reference</a>
+          
+            <a class="page-link" href="/language/">About Describe</a>
+          
+            <a class="page-link" href="/listiary/">About Listiary</a>
+          
+            <a class="page-link" href="https://library.listiary.com/">Describe Library</a>
+          
+            <a class="page-link" href="/language/site-map/">Site Map</a>
+          
+        </div>
+      </nav></div>
+</header>
+<main class="page-content" aria-label="Content">
+      <div class="wrapper">
+        <article class="post">
+
+  <header class="post-header">
+    <h1 class="post-title">AWS - Tech Overview</h1>
+  </header>
+
+  <div class="post-content">
+    <p><br /></p>
+<h3 id="1-functioncs">1. Function.cs</h3>
+
+<p><code class="language-plaintext highlighter-rouge">Function.cs</code> Contains the <code class="language-plaintext highlighter-rouge">Function</code> class, which contains our lambda functions. The <code class="language-plaintext highlighter-rouge">APIGatewayProxyRequest</code> class that goes in those functions is a standard way to get information in the lambda function in C#, for the request used to invoke the function. The <code class="language-plaintext highlighter-rouge">APIGatewayProxyResponse</code> we output is also standard.<br /><br /></p>
+
+<h3 id="11-lambda-functions">1.1. Lambda functions</h3>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>public APIGatewayProxyResponse HTranspile_SingleDmlToSingleJson(APIGatewayProxyRequest request, ILambdaContext context)
+public APIGatewayProxyResponse HTranspile_SingleDmlToSingleJsonListiary(APIGatewayProxyRequest request, ILambdaContext context)
+public APIGatewayProxyResponse HTranspile_SingleDmlToSingleXml(APIGatewayProxyRequest request, ILambdaContext context)
+public APIGatewayProxyResponse HTranspile_SingleDmlToSingleHtml(APIGatewayProxyRequest request, ILambdaContext context)
+public APIGatewayProxyResponse HTranspile_SingleDmlToSingleHtmlPlain(APIGatewayProxyRequest request, ILambdaContext context)
+</code></pre></div></div>
+<p><br /></p>
+
+<h3 id="12-apigatewayproxyresponse-generation">1.2. APIGatewayProxyResponse generation</h3>
+<p>StatusCode is 200 here. The headers we include indicate that we are sending JSON. 
+The Body is our JSON - the data we output from the lambda function. 
+We get it by converting an <code class="language-plaintext highlighter-rouge">OutputJson</code> class to JSON, as shown below.</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>var response = new APIGatewayProxyResponse
+{
+	StatusCode = (int)HttpStatusCode.OK,
+	Body = JsonConvert.SerializeObject(outputJson),
+	Headers = new Dictionary&lt;string, string&gt; { { "Content-Type", "application/json" }, { "Access-Control-Allow-Origin", "*" } }
+};
+return response;
+</code></pre></div></div>
+<p><br /></p>
+
+<h3 id="13-outputjson">1.3. OutputJson</h3>
+<p>This class represents the result of the execution of one of our lambda functions.
+Command - The command we ran - like “parse-file”
+Result - A string like “Success”
+Logs - the generated log entries from the Transpiler
+Output - The transpiled result in a base64 encoded string - we decode it to get our JSON, HTML, XML etc.</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>public class OutputJson
+{
+	public string? Command { get; set; }
+
+	public string? Result { get; set; }
+	public string? Logs { get; set; }
+	public string? Output { get; set; }
+}
+</code></pre></div></div>
+<p><br /></p>
+
+<h3 id="2-folder-aws-configs">2. Folder aws-configs</h3>
+
+<p>The <code class="language-plaintext highlighter-rouge">aws-configs</code> folder contains configuration files for all the different lambda functions in the project, for the AWS toolbox.
+The thing is that the AWS tools for Visual Studio offer us a way to publish only one lambda at a time, from within Visual Studio. Within the project containing the lambda function we have a file named <code class="language-plaintext highlighter-rouge">aws-lambda-tools-defaults.json</code>, (which file has its build action set to none) so when we right click on the project and select <code class="language-plaintext highlighter-rouge">Publish to AWS Lambda...</code>, the AWS tools extension uses this configuration file to determine what to upload to where. This is why we have a folder full of those configs - when we want to upload a specific function, we simply copy that specific config under the main project and rename it accordingly by removing the prefix (like removing “HTML_PLAIN “).<br /><br /></p>
+
+<h3 id="3-functionsmaincs">3. FunctionsMain.cs</h3>
+
+<p>Those are the functions that do the transpilation. 
+We currently don’t have lambda functions that utilize <code class="language-plaintext highlighter-rouge">CompileMulty</code> though.</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>internal static string? Compile(string code)
+internal static string? CompileMulty(List&lt;KeyValuePair&lt;string, string&gt;&gt; codes)
+</code></pre></div></div>
+<p><br /></p>
+
+<h3 id="4-datnikcs">4. Datnik.cs</h3>
+
+<p>This static class contains all the data for the current parse job.<br /><br /></p>
+
+<h3 id="5-functionsargumentscs">5. FunctionsArguments.cs</h3>
+
+<p>This static class contains methods for reading data into the Datnik.<br /><br /></p>
+
+<h3 id="6-functionsmessagescs">6. FunctionsMessages.cs</h3>
+
+<p>This static class contains all the methods that has to do with logging messages.</p>
+
+<p><br /></p>
+<h3 id="links">Links</h3>
+<p><a href="/language/how-to-compile/aws/api-gateway/">Configuring the API Gateway</a><br /> 
+<a href="/language/how-to-compile/aws/">Back</a></p>
+
+  </div>
+
+</article>
+
+      </div>
+    </main><footer class="site-footer h-card">
+  <data class="u-url" href="/"></data>
+
+  <div class="wrapper">
+  
+	github: <a href="https://github.com/viktorchernev/DescribeCompiler">viktorchernev</a><br>email: <a class="u-email" href="mailto:vchernev91@abv.bg">vchernev91@abv.bg</a><!-- <h2 class="footer-heading">Documentation</h2> 
+
+    <div class="footer-col-wrapper">
+      <div class="footer-col footer-col-1">
+        <ul class="contact-list">
+          <li class="p-name">Documentation</li><li><a class="u-email" href="mailto:vchernev91@abv.bg">vchernev91@abv.bg</a></li></ul>
+      </div>
+
+      <div class="footer-col footer-col-2"><ul class="social-media-list"><li><a href="https://github.com/viktorchernev"><svg class="svg-icon"><use xlink:href="/assets/minima-social-icons.svg#github"></use></svg> <span class="username">viktorchernev</span></a></li></ul>
+</div>
+
+      <div class="footer-col footer-col-3">
+        <p>Describe Compiler Documentation</p>
+      </div>
+    </div>-->
+
+  </div>
+
+</footer>
+</body>
+
+</html>

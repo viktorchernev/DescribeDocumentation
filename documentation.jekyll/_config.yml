@@ -35,6 +35,22 @@ plugins:
 # Include the content folder
 include:
   - content
+  
+menu:
+  - title: "Language Home"
+    url: "/language/how-to-write/"
+  - title: "Compiler Home"
+    url: "/language/how-to-compile/"
+  - title: "Tech Reference"
+    url: "/language/reference/"
+  - title: "About Describe"
+    url: "/language/"
+  - title: "About Listiary"
+    url: "/listiary/"
+  - title: "Describe Library"
+    url: "https://library.listiary.com/"
+  - title: "Site Map"
+    url: "/language/site-map/"
 
 # Exclude from processing.
 # The following items will not be processed, by default.

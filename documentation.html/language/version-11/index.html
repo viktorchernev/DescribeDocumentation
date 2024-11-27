@@ -31,7 +31,23 @@
           </span>
         </label>
 
-        <div class="trigger"></div>
+        <div class="trigger">
+          
+            <a class="page-link" href="/language/how-to-write/">Language Home</a>
+          
+            <a class="page-link" href="/language/how-to-compile/">Compiler Home</a>
+          
+            <a class="page-link" href="/language/reference/">Tech Reference</a>
+          
+            <a class="page-link" href="/language/">About Describe</a>
+          
+            <a class="page-link" href="/listiary/">About Listiary</a>
+          
+            <a class="page-link" href="https://library.listiary.com/">Describe Library</a>
+          
+            <a class="page-link" href="/language/site-map/">Site Map</a>
+          
+        </div>
       </nav></div>
 </header>
 <main class="page-content" aria-label="Content">
@@ -51,7 +67,7 @@
 <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>/* Describe Markup Language
  * version 1.1 (Doubles)
  * Created by DemonOfReason and ChatGPT
- * Finished on 20 June 2024 */
+ * Finished on 03 Aug 2024 */
 
 grammar Describe11;
 
@@ -79,7 +95,8 @@ fragment LINESPACE			: [ \r\n\t\u000B\u000C\u0085\u00A0\u1680\u2000-\u200A\u2028
 
 
 // Define lexer rules for comments
-LINE_COMMENT       			: '// ' .*? ('\r'? '\n' LINESPACE* | EOF) -&gt; skip ;
+PROTO_SLASHES				: '://' ;
+LINE_COMMENT       			: '//' .*? ('\r'? '\n' LINESPACE* | EOF) -&gt; skip ;
 BLOCK_COMMENT       			: '/*' .*? ('*/' LINESPACE* | EOF) -&gt; skip ;
 TAG					: '&lt;&lt;' .+? '&gt;&gt;' LINESPACE* ;
 LINK					: '[[' .*? ']]' LINESPACE* ;
@@ -90,7 +107,7 @@ DECORATOR				: ' .*? ' LINESPACE* ;
 HYPHEN					: '-' ;
 TILDE					: '~' ;
 
-PRODUCTION_ARROW			: '&gt;' WHITESPACE* BLOCK_COMMENT* '\n' LINESPACE*
+PRODUCTION_ARROW            		: '&gt;' WHITESPACE* BLOCK_COMMENT* '\n' LINESPACE*
 					| '&gt;' WHITESPACE* BLOCK_COMMENT* LINE_COMMENT
 					| '&gt;&gt;' LINESPACE* ;
 
@@ -102,10 +119,10 @@ TERMINATOR           			: ';' WHITESPACE* BLOCK_COMMENT* ('\n' | EOF) LINESPACE*
 					| ';' WHITESPACE* BLOCK_COMMENT* LINE_COMMENT
 					| ';;' LINESPACE* ;
 
-FORWARD_SLASHES				: '//' LINESPACE* ;
-FORWARD_SLASH				: '/' LINESPACE* ;
+FORWARD_SLASH               		: '/' LINESPACE* ;
 COMMA					: ',' LINESPACE* ;
 SEMICOLON				: ';' LINESPACE* ;
+COLON             			: ':' LINESPACE* ;
 RIGHT_ARROW             		: '&gt;' LINESPACE* ;
 LEFT_ARROW             			: '&lt;' LINESPACE* ;
 RIGHT_SQUARE      			: ']' LINESPACE* ;
@@ -116,14 +133,16 @@ STAR					: '*' LINESPACE* ;
 
 ESCAPE_ESCAPE        			: '\\\\' LINESPACE* ;
 ESCAPE_HYPHEN      			: '\\-' LINESPACE* ;
+ESCAPE_TILDE				: '\\~' LINESPACE* ;
 ESCAPE_RIGHT_ARROW      		: '\\&gt;' LINESPACE* ;
 ESCAPE_LEFT_ARROW      			: '\\&lt;' LINESPACE* ;
-ESCAPE_RIGHT_SQUARE     	 	: '\\]' LINESPACE* ;
+ESCAPE_RIGHT_SQUARE      		: '\\]' LINESPACE* ;
 ESCAPE_LEFT_SQUARE      		: '\\[' LINESPACE* ;
 ESCAPE_RIGHT_CURL      			: '\\}' LINESPACE* ;
 ESCAPE_LEFT_CURL     	 		: '\\{' LINESPACE* ;
 ESCAPE_SEPARATOR     			: '\\,' LINESPACE* ;
 ESCAPE_TERMINATOR    			: '\\;' LINESPACE* ;
+ESCAPE_COLON    			: '\\:' LINESPACE* ;
 ESCAPE_LCOMMENT      			: '\\//' LINESPACE* ;
 ESCAPE_BCOMMENT      			: '\\/*' LINESPACE* ;
 ESCAPE               			: '\\' LINESPACE* ;
@@ -132,7 +151,7 @@ ESCAPE               			: '\\' LINESPACE* ;
 // Define lexer rule for data
 // Note: For some reason we don't need to escape '[' and '|'
 // and ANTLR does not like when we try to escape them
-fragment DATA_CHAR			: ~[{}[\]\-&lt;&gt;,;*~/\\] ;
+fragment DATA_CHAR			: ~[{}[\]\-&lt;&gt;,:;*~/\\] ;
 DATA                			: DATA_CHAR+ ;
 
 
@@ -142,6 +161,7 @@ producer				: HYPHEN PRODUCTION_ARROW ;
 
 text_chunk				: ESCAPE_ESCAPE
 					| ESCAPE_HYPHEN
+					| ESCAPE_TILDE
 					| ESCAPE_RIGHT_ARROW
 					| ESCAPE_LEFT_ARROW
 					| ESCAPE_RIGHT_SQUARE
@@ -150,6 +170,7 @@ text_chunk				: ESCAPE_ESCAPE
 					| ESCAPE_LEFT_CURL
 					| ESCAPE_SEPARATOR
 					| ESCAPE_TERMINATOR
+					| ESCAPE_COLON
 					| ESCAPE_LCOMMENT
 					| ESCAPE_BCOMMENT
 					| ESCAPE
@@ -166,8 +187,9 @@ text_chunk				: ESCAPE_ESCAPE
 					| RIGHT_CURL
 					| LEFT_CURL
 							
-					| FORWARD_SLASHES
 					| FORWARD_SLASH
+					| PROTO_SLASHES
+					| COLON
 					| STAR
 					| DATA ;
 
@@ -208,7 +230,6 @@ expression_list				: (expression)+ expression ;
 
 scripture 				: expression_list EOF
 					| expression EOF ;
-
 </code></pre></div></div>
 
 <p><br /></p>

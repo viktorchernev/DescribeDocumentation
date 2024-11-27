@@ -31,7 +31,23 @@
           </span>
         </label>
 
-        <div class="trigger"></div>
+        <div class="trigger">
+          
+            <a class="page-link" href="/language/how-to-write/">Language Home</a>
+          
+            <a class="page-link" href="/language/how-to-compile/">Compiler Home</a>
+          
+            <a class="page-link" href="/language/reference/">Tech Reference</a>
+          
+            <a class="page-link" href="/language/">About Describe</a>
+          
+            <a class="page-link" href="/listiary/">About Listiary</a>
+          
+            <a class="page-link" href="https://library.listiary.com/">Describe Library</a>
+          
+            <a class="page-link" href="/language/site-map/">Site Map</a>
+          
+        </div>
       </nav></div>
 </header>
 <main class="page-content" aria-label="Content">
@@ -43,12 +59,15 @@
   </header>
 
   <div class="post-content">
-    <p><br />Links in describe are enclosed in square brackets. A link consists of an URL, or an URL and a title that follows the URL, with a pipe <code class="language-plaintext highlighter-rouge">|</code> symbol between the title and the URL. One entry can have zero, one or more links, and each of those links must be enclosed in square brackets of its own.</p>
+    <p><br />Links in describe are enclosed in square brackets. A link consists of an URL, or an URL and a title that follows the URL, with a pipe <code class="language-plaintext highlighter-rouge">|</code> symbol between the title and the URL, or an URL and a title that follows the URL and a letter that follows the title, with a pipe <code class="language-plaintext highlighter-rouge">|</code> symbol as a delimiter. However, for now the title and letter are largely being ignored in the pre-existing inbuilt translators</p>
 
-<p>It is advisable to use URLs that start with a protocol name - <code class="language-plaintext highlighter-rouge">http://</code> or <code class="language-plaintext highlighter-rouge">https://</code>.
+<p>One entry can have zero, one or more links, and each of those links must be enclosed in square brackets of its own. All the links need to follow one another though (aka link-train) - we cannot have links decorators then more links, as this breaks the grammar rules. This is mostly done for the sake of grammar simplicity, but also in favor of writing cleaner, more robust Describe code.</p>
+
+<p>It is advisable to use URLs that start with a protocol name - <code class="language-plaintext highlighter-rouge">http://</code> or <code class="language-plaintext highlighter-rouge">https://</code>.<br />
 Some examples follow:</p>
 
-<p><span style="color:blue"><em>Simple links:</em></span></p>
+<p><br /><br />
+<span style="color:blue"><em>Simple links:</em></span></p>
 <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>famous websites -&gt;
 
     wikipedia [https://www.wikipedia.org/],

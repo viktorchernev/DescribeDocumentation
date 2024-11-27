@@ -31,7 +31,23 @@
           </span>
         </label>
 
-        <div class="trigger"></div>
+        <div class="trigger">
+          
+            <a class="page-link" href="/language/how-to-write/">Language Home</a>
+          
+            <a class="page-link" href="/language/how-to-compile/">Compiler Home</a>
+          
+            <a class="page-link" href="/language/reference/">Tech Reference</a>
+          
+            <a class="page-link" href="/language/">About Describe</a>
+          
+            <a class="page-link" href="/listiary/">About Listiary</a>
+          
+            <a class="page-link" href="https://library.listiary.com/">Describe Library</a>
+          
+            <a class="page-link" href="/language/site-map/">Site Map</a>
+          
+        </div>
       </nav></div>
 </header>
 <main class="page-content" aria-label="Content">
@@ -43,9 +59,10 @@
   </header>
 
   <div class="post-content">
-    <p><br />Decorators are basically some text enclosed in curly brackets - <code class="language-plaintext highlighter-rouge">{</code> and <code class="language-plaintext highlighter-rouge">}</code>. Decorators are used to add different kinds of data to items - weather it is an instruction to change the color of the item, add particular icon image or transform the decorated item in some other fashion. Decorators can either be simple ones, consisting of just a key, or complex ones, consisting of a key and a value, delimited by a pipe symbol <code class="language-plaintext highlighter-rouge">|</code>.</p>
+    <p><br />Decorators are basically some text enclosed in curly brackets - <code class="language-plaintext highlighter-rouge">{</code> and <code class="language-plaintext highlighter-rouge">}</code>. Decorators are used to add different kinds of data to items - whether it is additional text or an instruction to change the color or the style of the item or even more <!--or add a particular icon image-->. Decorators can either be simple ones, consisting of just a key, or complex ones, consisting of a key and a value, delimited by a pipe symbol <code class="language-plaintext highlighter-rouge">|</code>. 
+(Decorators can even be ternary ones consisting of a name, key and value, again delimited by a pipe symbol, although those have not been implemented yet).</p>
 
-<p>A list of decorators and instructions for their use follows. However, in the Describe language grammar, a decorator is just some text in curly brackets. What a particular decorator will do is implemented in the particular translator, and if users are developing their own translators, they are free to implement their own decorators.</p>
+<p>A list of decorators and instructions for their use follows. However, in the Describe language grammar, a decorator is just some text in curly brackets. What a particular decorator will do is implemented per translator, and if users are developing their own translators, they are free to implement their own decorators.<br /><br /></p>
 
 <ul>
   <li>
@@ -85,24 +102,35 @@ The underline decorator is a simple decorator used to make an entry underlined.<
 The striked decorator is a simple decorator used to add the strike-through CSS effect to an entry.</p>
   </li>
   <li>
-    <p><span style="color:blue"><strong><em>style</em></strong> <code class="language-plaintext highlighter-rouge">{style|VALUE}</code></span><br />
-The style decorator is a complex decorator used with HTML translators to provide CSS for an entry. Value is a valid CSS string that goes in the style attribute of some item like <code class="language-plaintext highlighter-rouge">&lt;li&gt;</code> or <code class="language-plaintext highlighter-rouge">&lt;span&gt;</code>.</p>
+    <p><span style="color:blue"><strong><em>sensitive</em></strong> <code class="language-plaintext highlighter-rouge">{sensitive}</code></span><br />
+Entries can be marked as sensitive and productions can as well. When marked as such, nothing happens until we use the cmd switch <code class="language-plaintext highlighter-rouge">censor</code>. 
+If we do, marked entries are obscured with ‘?’ instead. That is, if the translator supports the feature. Our inbuilt HTML translators do.</p>
   </li>
   <li>
-    <p><span style="color:blue"><strong><em>custom</em></strong> <code class="language-plaintext highlighter-rouge">{custom|NAME}</code></span><br />
-The custom decorator is a way to add a user defined decorator. How this is handled depends on the translator implementing it.</p>
+    <p><span style="color:blue"><strong><em>secret</em></strong> <code class="language-plaintext highlighter-rouge">{secret}</code></span><br />
+Entries can be marked as secret and productions can as well. When marked as such, nothing happens until we use the cmd switch <code class="language-plaintext highlighter-rouge">censor</code>. 
+If we do, marked entries are replaced with random number of black squares. That is, if the translator supports the feature. Our inbuilt HTML translators do.</p>
   </li>
   <li>
-    <p><span style="color:blue"><strong><em>custom</em></strong> <code class="language-plaintext highlighter-rouge">{custom|NAME|VALUE}</code></span><br />
-The custom decorator is a way to add a user defined decorator with a value. How this is handled depends on the translator implementing it.</p>
-  </li>
-  <li>
-    <p><span style="color:orange"><strong><em>*enlist</em></strong> <code class="language-plaintext highlighter-rouge">{enlist|VALUE}</code> *EXPERIMENTAL</span><br />
-The enlist decorator is the list-creating aka placement decorator. It puts an entry in a sibling list. For example <code class="language-plaintext highlighter-rouge">entry {enlist | refs}</code> will create a sibling list <code class="language-plaintext highlighter-rouge">refs</code> and put the entry in it. <code class="language-plaintext highlighter-rouge">entry {enlist | legend}</code> will create a sibling list <code class="language-plaintext highlighter-rouge">legend</code> and put the entry in it.</p>
+    <p><span style="color:blue"><strong><em>hidden</em></strong> <code class="language-plaintext highlighter-rouge">{hidden}</code></span><br />
+Entries can be marked as hidden and productions can as well. When marked as such, nothing happens until we use the cmd switch <code class="language-plaintext highlighter-rouge">censor</code>. 
+If we do, marked entries are replaced with random gibberish text. That is, if the translator supports the feature. Our inbuilt HTML translators do.</p>
   </li>
 </ul>
 
-<p><span style="color:blue"><em>Using decorators:</em></span></p>
+<!--
+* <span style="color:blue">**_style_** ```{style|VALUE}```</span><br>
+The style decorator is a complex decorator used with HTML translators to provide CSS for an entry. Value is a valid CSS string that goes in the style attribute of some item like ```<li>``` or ```<span>```.
+
+* <span style="color:blue">**_custom_** ```{custom|NAME}```</span><br>
+The custom decorator is a way to add a user defined decorator. How this is handled depends on the translator implementing it.
+
+* <span style="color:blue">**_custom_** ```{custom|NAME|VALUE}```</span><br>
+The custom decorator is a way to add a user defined decorator with a value. How this is handled depends on the translator implementing it.
+-->
+
+<p><br /><br />
+<span style="color:blue"><em>Using decorators:</em></span></p>
 <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>types of documentaries -&gt;
 
 	history {comment},

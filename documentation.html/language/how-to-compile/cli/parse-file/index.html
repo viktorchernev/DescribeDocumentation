@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1"><!-- Begin Jekyll SEO tag v2.8.0 -->
+<title>Describe Compilation - CLI - parse-file | Documentation</title>
+<meta name="generator" content="Jekyll v4.3.3" />
+<meta property="og:title" content="Describe Compilation - CLI - parse-file" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="Describe Compiler Documentation" />
+<meta property="og:description" content="Describe Compiler Documentation" />
+<link rel="canonical" href="http://localhost:4000/language/how-to-compile/cli/parse-file/" />
+<meta property="og:url" content="http://localhost:4000/language/how-to-compile/cli/parse-file/" />
+<meta property="og:site_name" content="Documentation" />
+<meta property="og:type" content="website" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="Describe Compilation - CLI - parse-file" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"WebPage","description":"Describe Compiler Documentation","headline":"Describe Compilation - CLI - parse-file","url":"http://localhost:4000/language/how-to-compile/cli/parse-file/"}</script>
+<!-- End Jekyll SEO tag -->
+<link rel="stylesheet" href="/assets/main.css"><link type="application/atom+xml" rel="alternate" href="http://localhost:4000/feed.xml" title="Documentation" /></head>
+<body><header class="site-header" role="banner">
+
+  <div class="wrapper"><a class="site-title" rel="author" href="/">Documentation</a><nav class="site-nav">
+        <input type="checkbox" id="nav-trigger" class="nav-trigger" />
+        <label for="nav-trigger">
+          <span class="menu-icon">
+            <svg viewBox="0 0 18 15" width="18px" height="15px">
+              <path d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.032C17.335,0,18,0.665,18,1.484L18,1.484z M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.032C17.335,6.031,18,6.696,18,7.516L18,7.516z M18,13.516C18,14.335,17.335,15,16.516,15H1.484 C0.665,15,0,14.335,0,13.516l0,0c0-0.82,0.665-1.483,1.484-1.483h15.032C17.335,12.031,18,12.695,18,13.516L18,13.516z"/>
+            </svg>
+          </span>
+        </label>
+
+        <div class="trigger">
+          
+            <a class="page-link" href="/language/how-to-write/">Language Home</a>
+          
+            <a class="page-link" href="/language/how-to-compile/">Compiler Home</a>
+          
+            <a class="page-link" href="/language/reference/">Tech Reference</a>
+          
+            <a class="page-link" href="/language/">About Describe</a>
+          
+            <a class="page-link" href="/listiary/">About Listiary</a>
+          
+            <a class="page-link" href="https://library.listiary.com/">Describe Library</a>
+          
+            <a class="page-link" href="/language/site-map/">Site Map</a>
+          
+        </div>
+      </nav></div>
+</header>
+<main class="page-content" aria-label="Content">
+      <div class="wrapper">
+        <article class="post">
+
+  <header class="post-header">
+    <h1 class="post-title">Describe Compilation - CLI - parse-file</h1>
+  </header>
+
+  <div class="post-content">
+    <p><br />
+<code class="language-plaintext highlighter-rouge">DescribeCompilerCLI parse-file "C:\parse\path\input.ds" "C:\result\path\output.json"</code><br />
+<code class="language-plaintext highlighter-rouge">input-password="qwertyi" output-password="qwertyo" log-password="qwertyl"</code><br />
+<code class="language-plaintext highlighter-rouge">language-version=1.0 translator=JSON verbosity=low beautify=true logfile="C:\parse\path\log.txt"</code><br />
+<code class="language-plaintext highlighter-rouge">censor auto theme=DBLUE</code><br /></p>
+
+<p><em>parse-file PARSE_PATH RESULT_PATH
+[ input-password=INPUT_PASSWORD ][ output-password=OUTPUT_PASSWORD ][ log-password=LOG_PASSWORD ]
+[ language-version=&lt;verb&gt; | lang-ver=&lt;verb&gt; ][ translator=(TARGET_LANGUAGE|TRANSLATOR_NAME) ]
+[ beautify=&lt;verb&gt; ][ verbosity=&lt;verb&gt; | log-verbosity=&lt;verb&gt; ][ logfile=LOG_PATH | log-file=LOG_PATH ][ theme=&lt;verb&gt; ][ censor ][ auto ]</em></p>
+
+<p><br />
+The parse-file command is used to parse a single file. First we specify the command - <code class="language-plaintext highlighter-rouge">parse-file</code>, followed by the path of the source file to be parsed and the output file path. Any arguments after these are optional. If the output file path we have specified is a path to an existing file, that file will be overwritten.<br /><br /></p>
+
+<ul>
+  <li>
+    <p><span style="color:blue"><strong><em>input-password</em></strong></span><br />
+The Describe Transpiler Cli v1.0 now supports working with encrypted files. The <code class="language-plaintext highlighter-rouge">input-password</code> argument is used to provide a password that will be used to decrypt an encrypted source file (‘.denc’) before trying to parse it (Which will fail if the password is incorrect or if the file has been encrypted with a different tool that uses incompatible encryption algorithm/implementation).</p>
+  </li>
+  <li>
+    <p><span style="color:blue"><strong><em>output-password</em></strong></span><br />
+The Describe Transpiler Cli v1.0 now supports working with encrypted files. The <code class="language-plaintext highlighter-rouge">output-password</code> is used to provide a password that will be used to encrypt the output file (the transpilation result).</p>
+  </li>
+  <li>
+    <p><span style="color:blue"><strong><em>log-password</em></strong></span><br />
+The Describe Transpiler Cli v1.0 now supports working with encrypted files. The <code class="language-plaintext highlighter-rouge">log-password</code> is used to provide a password that will be used to encrypt the log file, as to prevent leaking secret information in the logs, in cases where working with encrypted data and utilizing log files.</p>
+  </li>
+  <li>
+    <p><span style="color:blue"><strong><em>language-version</em></strong></span><br />
+Can also be written as <code class="language-plaintext highlighter-rouge">lang-ver</code>. The <code class="language-plaintext highlighter-rouge">language-version</code> specifies what Describe version to be used as a default. However, if the file to be parsed contains a <code class="language-plaintext highlighter-rouge">language-version</code> directive, this argument will be overwritten in favor of the directive. Expected values are - <code class="language-plaintext highlighter-rouge">0.6</code> or the shorthand version  - <code class="language-plaintext highlighter-rouge">06</code>, <code class="language-plaintext highlighter-rouge">0.7</code> or the shorthand version - <code class="language-plaintext highlighter-rouge">07</code>, <code class="language-plaintext highlighter-rouge">0.8</code> or the shorthand version - <code class="language-plaintext highlighter-rouge">08</code>, <code class="language-plaintext highlighter-rouge">0.9</code> or the shorthand version - <code class="language-plaintext highlighter-rouge">09</code>, <code class="language-plaintext highlighter-rouge">1.0</code> or the shorthand version - <code class="language-plaintext highlighter-rouge">10</code>, <code class="language-plaintext highlighter-rouge">1.1</code> or the shorthand version - <code class="language-plaintext highlighter-rouge">11</code>. If not specified, the default is Describe v1.0.</p>
+  </li>
+  <li>
+    <p><span style="color:blue"><strong><em>translator</em></strong></span><br />
+Either the desired output language or the name of the translator to be used. The logic here is simple - each language has a default inbuilt translator for it, and that translator will be used if only the desired output language is specified. Expected values are: for languages - <code class="language-plaintext highlighter-rouge">JSON</code>, <code class="language-plaintext highlighter-rouge">HTML</code>, <code class="language-plaintext highlighter-rouge">XML</code>, <code class="language-plaintext highlighter-rouge">SQL</code>; for translator names - <code class="language-plaintext highlighter-rouge">HTML_PLAIN</code>, <code class="language-plaintext highlighter-rouge">HTML_PAGE</code>, <code class="language-plaintext highlighter-rouge">XML_PLAIN</code>, <code class="language-plaintext highlighter-rouge">SQL_FILEFILL</code>, <code class="language-plaintext highlighter-rouge">JSON_BASIC</code>, <code class="language-plaintext highlighter-rouge">JSON_LISTIARY</code>. If not specified, the default is <code class="language-plaintext highlighter-rouge">HTML_PAGE</code>.</p>
+  </li>
+  <li>
+    <p><span style="color:blue"><strong><em>beautify</em></strong></span><br />
+Whether the output should be beautified/formatted with new lines and indentation. The logic behind this is that if you are going to manually work with the transpiled output, you would probably want it in an appropriate format, but if not, the extra whitespace is undesirable as it only bulks up the data. This is supported on per-translator basis, although most translators support this. Expected values are: <code class="language-plaintext highlighter-rouge">true</code> and <code class="language-plaintext highlighter-rouge">false</code>. Default is false.</p>
+  </li>
+  <li>
+    <p><span style="color:blue"><strong><em>verbosity</em></strong></span><br />
+The log verbosity of the CLI app. Same as <code class="language-plaintext highlighter-rouge">log-verbosity</code>. <code class="language-plaintext highlighter-rouge">l</code> or <code class="language-plaintext highlighter-rouge">low</code> for low verbosity, <code class="language-plaintext highlighter-rouge">m</code> or <code class="language-plaintext highlighter-rouge">medium</code> for medium verbosity or <code class="language-plaintext highlighter-rouge">h</code> or <code class="language-plaintext highlighter-rouge">high</code> for high verbosity. Low is default.</p>
+  </li>
+  <li>
+    <p><span style="color:blue"><strong><em>logfile</em></strong></span><br />
+Specifies path of directory or file to output logs to. If not specified, logs will be outputted only to the console, which is the default. If the specified path is a path to an existing file, that file will be overwritten.</p>
+  </li>
+  <li>
+    <p><span style="color:blue"><strong><em>censor</em></strong></span><br />
+The censor flag provides a way to cover up some sensitive data. For example, I might have a personal list that is absolutely fine for my personal use. However, if I need to share it publicly, I might want to edit out some of my private or sensitive information. The censor flag is a convenient way to do just that. The way it works is that users use the <code class="language-plaintext highlighter-rouge">{sensitive}</code>, <code class="language-plaintext highlighter-rouge">{secret}</code> and <code class="language-plaintext highlighter-rouge">{hidden}</code> decorators in their describe source code, and when they need to get a censored output, they use the <code class="language-plaintext highlighter-rouge">censor</code> flag. <code class="language-plaintext highlighter-rouge">{sensitive}</code> entries will have every character that is not a whitespace replaced with a question mark. <code class="language-plaintext highlighter-rouge">{secret}</code> and <code class="language-plaintext highlighter-rouge">{hidden}</code> will completely hide the data - <code class="language-plaintext highlighter-rouge">{secret}</code> will produce a random number of black squares and <code class="language-plaintext highlighter-rouge">{hidden}</code> will produce some random-length gibberish text. This is implemented per translator, and not every translator might support this argument. Currently it is supported only in the inbuilt HTML translators.</p>
+  </li>
+  <li>
+    <p><span style="color:blue"><strong><em>auto</em></strong></span><br />
+The auto flag specifies that the tool is being invoked from a script or a tool. Essentially, it removes stuff like changing console colors and prompts like <code class="language-plaintext highlighter-rouge">Press any key to exit.</code>, as those can break or complicate automated scripts and tools.</p>
+  </li>
+  <li>
+    <p><span style="color:blue"><strong><em>theme</em></strong></span><br />
+The CLI Transpiler now supports different color themes, via this argument. Expected values are: <code class="language-plaintext highlighter-rouge">DBLUE</code>, <code class="language-plaintext highlighter-rouge">LBLUE</code>, <code class="language-plaintext highlighter-rouge">GREEN</code>, <code class="language-plaintext highlighter-rouge">PASTEL</code>, <code class="language-plaintext highlighter-rouge">EARTH</code>, <code class="language-plaintext highlighter-rouge">CONTRAST</code>, <code class="language-plaintext highlighter-rouge">DEFAULT</code>, <code class="language-plaintext highlighter-rouge">VIOLET</code> and <code class="language-plaintext highlighter-rouge">CYAN</code>. You can see those themes demonstrated <a href="https://github.com/viktorchernev/DescribeCompiler/wiki/output-themes">here</a>.</p>
+  </li>
+</ul>
+
+<p><br /></p>
+<h3 id="links">Links</h3>
+<p><a href="/language/how-to-compile/cli/help/">help</a><br />
+<a href="/language/how-to-compile/cli/parse-folder/">parse-folder</a><br />
+<a href="/language/how-to-compile/cli/encrypt-file/">encrypt-file</a><br />
+<a href="/language/how-to-compile/cli/decrypt-file/">decrypt-file</a><br />
+<a href="/language/how-to-compile/cli/recrypt-file/">recrypt-file</a><br />
+<a href="/language/how-to-compile/cli/encrypt-folder/">encrypt-folder</a><br />
+<a href="/language/how-to-compile/cli/decrypt-folder/">decrypt-folder</a><br />
+<a href="/language/how-to-compile/cli/recrypt-folder/">recrypt-folder</a><br />
+<a href="/language/how-to-compile/cli/">Back</a></p>
+
+  </div>
+
+</article>
+
+      </div>
+    </main><footer class="site-footer h-card">
+  <data class="u-url" href="/"></data>
+
+  <div class="wrapper">
+  
+	github: <a href="https://github.com/viktorchernev/DescribeCompiler">viktorchernev</a><br>email: <a class="u-email" href="mailto:vchernev91@abv.bg">vchernev91@abv.bg</a><!-- <h2 class="footer-heading">Documentation</h2> 
+
+    <div class="footer-col-wrapper">
+      <div class="footer-col footer-col-1">
+        <ul class="contact-list">
+          <li class="p-name">Documentation</li><li><a class="u-email" href="mailto:vchernev91@abv.bg">vchernev91@abv.bg</a></li></ul>
+      </div>
+
+      <div class="footer-col footer-col-2"><ul class="social-media-list"><li><a href="https://github.com/viktorchernev"><svg class="svg-icon"><use xlink:href="/assets/minima-social-icons.svg#github"></use></svg> <span class="username">viktorchernev</span></a></li></ul>
+</div>
+
+      <div class="footer-col footer-col-3">
+        <p>Describe Compiler Documentation</p>
+      </div>
+    </div>-->
+
+  </div>
+
+</footer>
+</body>
+
+</html>

@@ -31,7 +31,23 @@
           </span>
         </label>
 
-        <div class="trigger"></div>
+        <div class="trigger">
+          
+            <a class="page-link" href="/language/how-to-write/">Language Home</a>
+          
+            <a class="page-link" href="/language/how-to-compile/">Compiler Home</a>
+          
+            <a class="page-link" href="/language/reference/">Tech Reference</a>
+          
+            <a class="page-link" href="/language/">About Describe</a>
+          
+            <a class="page-link" href="/listiary/">About Listiary</a>
+          
+            <a class="page-link" href="https://library.listiary.com/">Describe Library</a>
+          
+            <a class="page-link" href="/language/site-map/">Site Map</a>
+          
+        </div>
       </nav></div>
 </header>
 <main class="page-content" aria-label="Content">
@@ -43,31 +59,38 @@
   </header>
 
   <div class="post-content">
-    <p><br /></p>
-<h2 id="grammars">Grammars</h2>
+    <p><br />We test the different projects and components - parser, compiler, etc. both via unit tests and integration tests. This page goes over some aspects of the integration testing we do. However, this section of the documentation is not complete. For the complete documentation you can directly browse the testing directory on <a href="https://github.com/viktorchernev/DescribeDocumentation/tree/main/documentation.testing">github</a>
+<br /><br /></p>
 
-<ol>
-  <li>
-    <p>We have devised (and are devising) describe source code test files (.ds) that aim to test various different scenarios for each version of the Describe grammar.</p>
-  </li>
-  <li>
-    <p>We parse those test files using the GOLD parser engine with the specific grammar tables version being tested and make sure that they are all parsed successfully. We are also running all the tests for all the previous versions, as grammars need to be backward compatible. The log output is documented.</p>
-  </li>
-  <li>
-    <p>We parse those test files using the GOLD Builder, making sure they are all parsed successfully. We are also running all the tests for all the previous versions, as grammars need to be backward compatible. The log output is documented.</p>
-  </li>
-  <li>
-    <p>The log outputs from the two different methods are compared, making sure the parsing process produced the same result in all the test cases.</p>
-  </li>
-</ol>
+<h2 id="files">Files</h2>
+
+<p>We have devised (and are devising) describe source code test files (.ds) that aim to test various different scenarios for each version of the Describe grammar, in order to run integration tests. These test files are grouped in folders by categories - <code class="language-plaintext highlighter-rouge">encrypted_files</code>, <code class="language-plaintext highlighter-rouge">decrypted_files</code>, <code class="language-plaintext highlighter-rouge">recrypted_files</code>, <code class="language-plaintext highlighter-rouge">TestFilesFor06</code>, <code class="language-plaintext highlighter-rouge">TestFilesFor07</code>, <code class="language-plaintext highlighter-rouge">TestFilesFor08</code>, <code class="language-plaintext highlighter-rouge">TestFilesFor09</code>, <code class="language-plaintext highlighter-rouge">TestFilesFor10</code>, <code class="language-plaintext highlighter-rouge">TestFilesFor11</code>, <code class="language-plaintext highlighter-rouge">live_Radio</code>.<br /></p>
+
+<p>The <code class="language-plaintext highlighter-rouge">encrypted_files</code>, <code class="language-plaintext highlighter-rouge">decrypted_files</code>, and <code class="language-plaintext highlighter-rouge">recrypted_files</code> are source code files used to test encryption, decryption, and recryption functionality with the CLI app. These files are identical to those found in the live_Radio folder, which is a test project focused on Bulgarian radio playlists.<br /></p>
+
+<p>All other folders contain test files designed for specific scenarios and features corresponding to different language versions. The goal is to ensure that each parser can successfully handle tests from previous language versions, thereby maintaining backward compatibility.<br /></p>
+
+<!--
+## Grammars
+
+Unlike previous versions powered by GOLD parser engine, with ANTLR it has been easier to test a grammar by testing the produced parser directly in C#, so this is what we do. This is due to the lack of good tools, to a significant extent. (There is a useful online test editor for grammars - the [ANTLR Lab](http://lab.antlr.org/), and a dedicated Java-based editorIDE named [ANTLRWorks](https://www.antlr3.org/works/) that I haven't be able to run successfully with ANTLR4 - as it is ANTLR3 based.)<br>
+
+
+2. We parse those test files using the GOLD parser engine with the specific grammar tables version being tested and make sure that they are all parsed successfully. We are also running all the tests for all the previous versions, as grammars need to be backward compatible. The log output is documented.
+
+3. We parse those test files using the GOLD Builder, making sure they are all parsed successfully. We are also running all the tests for all the previous versions, as grammars need to be backward compatible. The log output is documented.
+
+4. The log outputs from the two different methods are compared, making sure the parsing process produced the same result in all the test cases.
+-->
 
 <p><br /></p>
 <h3 id="links">Links</h3>
-<p><a href="/language/reference/testing/grammar-v06">Testing - Grammar v0.6</a><br />
-<a href="/language/reference/testing/grammar-v07">Testing - Grammar v0.7</a><br />
-<a href="/language/reference/testing/grammar-v08">Testing - Grammar v0.8</a><br />
-<a href="/language/reference/testing/grammar-v09">Testing - Grammar v0.9</a><br />
-<a href="/language/reference/testing/grammar-v10">Testing - Grammar v1.0</a><br />
+<p><a href="/language/reference/testing/test-files-grammar-v06">Testing - Grammar v0.6</a><br />
+<a href="/language/reference/testing/test-files-grammar-v07">Testing - Grammar v0.7</a><br />
+<a href="/language/reference/testing/test-files-grammar-v08">Testing - Grammar v0.8</a><br />
+<a href="/language/reference/testing/test-files-grammar-v09">Testing - Grammar v0.9</a><br />
+<a href="/language/reference/testing/test-files-grammar-v10">Testing - Grammar v1.0</a><br />
+<a href="/language/reference/testing/test-files-grammar-v11">Testing - Grammar v1.1</a><br />
 <a href="/language/reference">Back</a></p>
 
   </div>
