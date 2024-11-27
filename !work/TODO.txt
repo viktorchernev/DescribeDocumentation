@@ -1,0 +1,2 @@
+WEBSITE: add HTML personal files as demos of the html compiler
+WEBSITE: add FAQ section
