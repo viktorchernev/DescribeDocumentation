@@ -1,0 +1,7 @@
+How do we use radio waves?
+
+We use antennas to convert electric current into radio waves, and radio waves back into electric current. They’re two-way translators between the world of wires and the invisible ocean of electromagnetic radiation around us. When transmitting, antennas take electrical signals (currents) and fling them out as radio waves. When receiving, they catch bits of passing radio waves and turn them into tiny currents that your radio or device can decode.
+
+Antennas resonate with specific frequencies of radio waves, depending on their size and shape — much like a tuning fork vibrates with a certain pitch. A receiving antenna will respond most strongly to radio waves near its resonant frequency, making it relatively "deaf" to others. This makes the antenna highly selective, allowing it to ignore most of the noise and focus on one signal. Similarly, a transmitting antenna naturally emits radio waves at its resonant frequency, which is incredibly useful—we don’t need to waste energy broadcasting across the whole spectrum just to reach one station.
+
+When we tune in a radio to a specific frequency, we’re essentially adjusting the receiving circuit to resonate with that frequency — so the antenna and electronics become highly sensitive to just that one slice of the electromagnetic world.

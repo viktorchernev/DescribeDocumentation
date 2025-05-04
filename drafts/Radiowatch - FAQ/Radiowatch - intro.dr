@@ -1,0 +1,5 @@
+The Radiowatch Project
+
+The Radiowatch project, hosted at [radiowatch.listiary.net], aims to create the first-ever wiki in the Listiary wiki farm, dedicated to playlists—tracking that’s played on public FM radio stations, online streams, and more, while also letting users edit, personalize, and create their own playlists. More than just a database, Radiowatch is an interactive platform where you can listen to music, curate your own playlists, and explore what’s playing worldwide. Currently under development, the project is slated for release in 2026.
+
+In this article, we’ll explore the structure of the project, the behind-the-scenes work, and what’s planned for the future. While we won’t be diving deep into the Listiary wiki software, the Describe markup language compiler, or other shared components, we will focus on the automated ‘watch’ system—who’s watching, what’s being tracked, how it all works, and why it matters.

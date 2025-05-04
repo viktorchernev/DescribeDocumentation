@@ -1,0 +1,82 @@
+"Listiary documentation, "Describe documentation", or simply the "Documentation" is a project (that needs a better name, for one), but other than that, is a collective knowledge base for anything pertaining to the Describe markup language and Listiary - the wiki farm powered by the markup.
+
+for creating and maintaining few things - The documentation for the "Describe" markup language, the documentation for the Describe compiler, 
+
+We have choosen a website building strategy - a static site builder - jekyll - in an attempt to have text files to responsive static website with decent look and feel with as few steps as possible, and requiring no maintanance if possible. At that, jekyll looked as a straight-forward and reversible solution. Other options - Hugo, Eleventy, Astro, Netlify CMS, Webflow / Notion.
+
+
+"Describe documentation", (also reffered to as "Listiary documentation",  or simply "the Documentation", is a project that needs a better name, for one), but other than that, 
+
+... is a collective knowledge base for anything that has to do with the Describe markup language and Listiary - the wiki farm powered by the markup.
+
+It consists of articles on various topics in a markdown format,  ...
+-----------------------------------------------------------------------
+
+
+
+In this article we explain the structure of the Documentation repository in Listiary - Describe. 
+
+
+1. Redundant
+
+`/!redundant`  
+
+The redundant directory here, as well as in other repositories in the Listiary - Describe project, serves to keep archived back-up copies of all the other public repositories for the sake of redundancy and convenience. For example, you might be offline and only have that one repository, or you might have an archive of just one repository, but the `!redundant` directory got you covered. 
+
+Basically, we could've made the decision to go with one repository for the whole project, but made the choice to have many repositories, but still have copies of the other repositories with each one.
+
+
+2. Work
+
+`/!work`
+
+The work folder contains old work files, and sometimes current work files. In this repository, where the work is done in the repository folders directly, the work folder serves more as a backup than anything else - back up of work in progress, without the need for a github commit, backup of work that could be needed later on. etc.
+
+
+3. Git
+
+`/.git`
+
+As expected, this is the git folder for the repository. Git uses it, and we don't really touch it.
+
+
+4. Drafts
+
+`/drafts`  
+
+Content is being created firstly here, and we have few folders here with different content.
+
+
+5. Markdown
+
+`/documentation.markdown`  
+
+Next, we turn our content to markdown - by adding proper lightweight formatting and front-matter. We can also skip the drafts and write markdown directly, if we wish. But while the drafts folder is a work folder, the markdown folder is one of a put-together website.
+
+
+6. Jekyll
+
+`/documentation.jekyll`  
+
+This is where we build our jekyll website. It contains config files, and folders part of our modified 'Minima' theme. We get the latest markdown version and put it in the 'content' sub-folder, and we use jekyll commands on the command line to build and test-serve the website.
+
+
+7. Html
+
+`/documentation.html`  
+
+This is the ready built static site. We get it from the jekyll folder `documentation.jekyll\_site` after we build the site and are happy with the result. We need to host it in order for the site to work properly, though.
+
+
+8. Github
+
+`/documentation.github`  
+
+This has nothing to do with the main website. Instead, it is the wiki in our git repositories - for now just the describe compiler has one.
+
+
+9. FILES
+
+README.md - The readme of the repository.
+LICENSE.md - The AGPL-3.0 license wavier for the repository.
+MAP.md - This article. 

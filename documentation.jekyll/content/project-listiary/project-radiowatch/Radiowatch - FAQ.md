@@ -1,0 +1,146 @@
+---
+# Feel free to add content and custom Front Matter to this file.
+# To modify the layout, see https://jekyllrb.com/docs/themes/#overriding-theme-defaults
+
+layout: page
+title: Radiowatch - FAQ
+permalink: /listiary/radiowatch/faq/
+exclude: true
+---
+<br>
+The Radiowatch project, hosted at [radiowatch.listiary.net](radiowatch.listiary.net), aims to create the first-ever wiki in the Listiary wiki farm, dedicated to playlists — tracking what is being played on public FM radio stations, online streams, and more, while also letting users edit, personalize, and create their own playlists. More than just a database, Radiowatch is an interactive platform where you can listen to music, curate your own playlists, and explore what’s playing worldwide. Currently under development, the project is slated for release in 2026.
+
+In this article, we’ll explore some frequently asked questions about the project.
+We will also delve a bit into some basic radio broadcasting concepts.
+<br>
+<br>
+
+
+## What is Radiowatch?
+
+Radiowatch is a wiki of lists, and is a project in the Listiary wiki farm. It is about tracking playlists on different radio stations and web streams, and is largely automated - bots create some of the content, rather than human users alone.
+
+Radiowatch is the first wiki of the listiary project to be made available online, and serves as a kind of a test platform, as well, especially with showcasing bot accounts and bots ability to write lists/articles in a scheduled fashion.
+
+[radiowatch.listiary.net](radiowatch.listiary.net)<br>
+[listiary.net](listiary.net)
+<br>
+<br>
+
+
+## How Radiowatch works?
+
+Radiowatch is a listiary wiki dedicated to creating and curating information about various FM and web-based radio stations - mostly where to listen and a historic record of the songs played. There are also numerous playlists users create and share, radio websites and apps, artist and song directories, etc.
+
+Radiowatch works as any normal listiary wiki - users can read the content freely and registered users can contribute data.
+Users can also create their personal content, that others can browse, and paid users can also create private content, that only they can access.
+This wiki also relies on bots to automate some of the article creation process.
+
+Radiowatch offers a radio player for direct audio streaming in the website. When users play content on it, they have the options to opt in and act as observers - sending back to our database the titles of the songs they are listening to as they appear in the metadata of the stream they are listening to. We run that information through our bots that consult our knowledge database of songs and construct the historic record articles for the station, adding as much additional knowledge as available. 
+
+Users can also create and run their own bots.
+<br>
+<br>
+
+
+## Is Radiowatch free?
+
+Short answer:
+Kind of. You can use the service for free, but we might ask for donations or show advertisements in a pop-up when you are opening the site.
+
+Long answer: 
+We feel that ads are annoying at best, and evil, subversive and exploitative at worst. We also feel that locking out users who are not able to pay - and often those are the people who need access to knowledge the most, is evil and wrong. But we need to pay for the servers to survive, and pay ourselves some wages so that we can keep developing the wiki farm and the open source markup language "Describe" that powers it. We hope to be able to do that via donations and from offering premium-tier user accounts. But while we can't do it smoothly, we will sometimes ask you to donate money in a pop-up message, or rely on our blend of limited advertising. 
+
+However, even if we must rely partially on ad revenue to survive for some time, there are some rules. We will not use targeted ads or share user data with advertisers. We will not allow sponsored content, or include ads in the regular user experience in any way shape or form, and we will not allow ads for questionable products or services - like gambling, payday loans or over-priced low quality trendy items. 
+
+Basically, you will get a pop-up to watch one or two anonymous ads when opening the website tab, rarely during the day. You will have the option to donate as low as 1$ to remove the ads for a month. There will also be a section where you can go and watch ads as a form of donation to us in advance, when you have time, so that ads don't bother you for some time. We regret that, but if it must be done for some time, we will rather do it than fail the platform.
+<br>
+<br>
+
+
+## What are the perks of paid accounts?
+
+Radiowatch will offer paid accounts in the future.
+
+For a subscription fee of around $4/month, users will get the right to host their own private content on the platform that they choose if and how to share with others.
+The ability to lock personal content for a period of time and sell early access to it. 
+Removal of messages asking for donations (and ads, if we are currently using any on a given wiki).
+A mention in the listiary [hall of fame].
+Possible future perks we implement.
+Our gratitude.
+<br>
+<br>
+
+
+## Why do different FM radio stations have different frequencies in different cities?
+
+It’s not strictly about towns or cities themselves - it's about how radio towers are arranged and how they broadcast. Each radio tower covers a certain area, and to avoid interference, nearby towers must broadcast on different frequencies. If two towers were broadcasting on the same frequency and you were in range of both, your radio could pick up both signals at once, causing overlapping audio or an echo-like effect - basically, a mess. So, different frequencies help ensure you’re only picking up one clean signal at a time.
+<br>
+<br>
+
+
+## What are radio waves?
+
+Radio waves are a type of electromagnetic wave—like microwaves, x-rays, gamma rays, and visible light. They're essentially photons flying through space. And yes, we can absolutely think of the light we see as light-waves. That’s because photons are both particles and waves at the same time. Weird, right? Welcome to quantum mechanics.
+
+You can think of radio waves as a kind of invisible light — just with much longer wavelengths.
+
+Interestingly, materials interact differently with radio waves than with visible light. Most things block, reflect, or scatter visible light, but are largely transparent to radio waves. So in a way, radio waves are like strange, ghostly lights that pass through walls, furniture — even our bodies — like shining light through a single-celled organism under a microscope.
+
+Once upon a time, Earth’s radio background was quiet and dim. But now, with humanity lighting up the spectrum, it hums and flashes with signals beaming in all directions, all the time.
+<br>
+<br>
+
+
+## How do we use radio waves?
+
+We use antennas to convert electric current into radio waves, and radio waves back into electric current. They’re two-way translators between the world of wires and the invisible ocean of electromagnetic radiation around us. When transmitting, antennas take electrical signals (currents) and fling them out as radio waves. When receiving, they catch bits of passing radio waves and turn them into tiny currents that your radio or device can decode.
+
+Antennas resonate with specific frequencies of radio waves, depending on their size and shape — much like a tuning fork vibrates with a certain pitch. A receiving antenna will respond most strongly to radio waves near its resonant frequency, making it relatively "deaf" to others. This makes the antenna highly selective, allowing it to ignore most of the noise and focus on one signal. Similarly, a transmitting antenna naturally emits radio waves at its resonant frequency, which is incredibly useful—we don’t need to waste energy broadcasting across the whole spectrum just to reach one station.
+
+When we tune in a radio to a specific frequency, we’re essentially adjusting the receiving circuit to resonate with that frequency — so the antenna and electronics become highly sensitive to just that one slice of the electromagnetic world.
+<br>
+<br>
+
+
+## How to transmit data over radio waves?
+
+So, we can use antennas to flood the world around us with radio waves of a particular frequency, and we can use antennas to observe the flood of radio waves shining around us in a particular frequency, but how do we use that fact to transmit data? 
+
+We can send data by creating a stream of radio waves of a particular frequency and fluctuating it a bit, introducing some changes. And we can receive data by observing the flood of radio waves of a particular frequency around us and figuring out what changes and fluctuations have been introduced, and interpreting what they mean. We only need to be in range and know what frequency to observe. 
+
+The act of blasting radio waves around, especially with some encoded information in it, is called "broadcasting". The process of fluctuating the stream of radio waves we are blasting around is called "modulation", and the stream of radio waves we started with, before encoding the fluctuations, is called 'a carrier wave' (which is a collective term - like we would call the lights of many light bulbs "the light of the bulbs", we call the waves of many transponders "the wave of the broadcast")
+
+Two methods of modulation have became widespread with radio stations - amplitude modulation, and frequency modulation - thus, frequency modulated radio, or "FM radio" and amplitude modulated radio, or "AM radio".
+
+If we imagine the radio frequency we are tuned in as a kind of light, which it actually is, amplitude modulation will be alternating the brightness, while frequency modulation will be alternating the color of the light. But wait - you might ask - we are tuning in on a frequency, and then changing it by doing frequency modulation - won't that tune us out? Not quite — the frequency changes are small and stay centered around the original carrier frequency, and our radios are designed to follow these subtle shifts.
+<br>
+<br>
+
+
+## What types of radio stations there are?
+
+There are 5 major types of broadcast stations, according to the frequency band and method of transmission they use - FM, AM, Satellite, Shortwave and Internet based. FM and AM here refer to the frequency bands traditionally used for frequency and amplitude modulation, rather than the modulation techniques themselves. 
+
+FM radio is the most commonly used for music and is the most listened to overall, with a typical range of a few hundred kilometers or less. AM has a wider range but lower audio quality, and is less popular today. There’s also HD Radio / DAB / DAB+ — digital audio transmitted over traditional AM/FM bands. Satellite radio requires a subscription and a special receiver (often built into cars), and gets its signal directly from orbiting satellites. Shortwave radio is often used for international broadcasts, including state-run news, cultural programming, and sometimes mysterious transmissions like propaganda or numbers stations. Internet radio is — well — a stream of audio over the internet. So, while it’s technically not radio in the electromagnetic sense, it works just like traditional radio for the listener, but with global reach.
+<br>
+<br>
+
+Type         | Reach              | Quality   | Best For                          | Influence Type
+-------------|--------------------|-----------|-----------------------------------|----------------------------
+FM           | Local              | High      | Music, local news                 | Cultural / regional
+AM           | Regional / national| Low       | Talk radio, politics, religion    | Ideological / political
+Satellite    | Continental        | High      | Niche, subscription content       | National / celebrity-driven
+Shortwave    | Global             | Low–Medium| Government / global communications| International propaganda
+Internet     | Global             | High      | Everything                        | Modern digital influence
+
+<br>
+<br>
+
+### Links
+[Radiowatch - FAQ](/listiary/radiowatch/faq/)<br>
+[Radiowatch - Pipeline K](/listiary/radiowatch/pipeline-k/)<br>
+[Radiowatch - Pipeline W](/listiary/radiowatch/pipeline-w/)<br>
+<br>
+[Project Listiary](/listiary/)<br>
+[Project Describe](/language/)

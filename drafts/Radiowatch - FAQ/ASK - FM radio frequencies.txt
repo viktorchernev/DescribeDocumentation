@@ -1,0 +1,3 @@
+Why do different FM radio stations have different frequencies in different cities?
+
+It’s not strictly about towns or cities themselves - it's about how radio towers are arranged and how they broadcast. Each radio tower covers a certain area, and to avoid interference, nearby towers must broadcast on different frequencies. If two towers were broadcasting on the same frequency and you were in range of both, your radio could pick up both signals at once, causing overlapping audio or an echo-like effect - basically, a mess. So, different frequencies help ensure you’re only picking up one clean signal at a time.

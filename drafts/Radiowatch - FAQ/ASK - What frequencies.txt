@@ -1,0 +1,30 @@
+What types of radio stations there are?
+
+There are 5 major types of broadcast stations, according to the frequency band and method of transmission they use - FM, AM, Satellite, Shortwave and Internet based. FM and AM here refer to the frequency bands traditionally used for frequency and amplitude modulation, rather than the modulation techniques themselves. 
+
+FM radio is the most commonly used for music and is the most listened to overall, with a typical range of a few hundred kilometers or less. AM has a wider range but lower audio quality, and is less popular today. There’s also HD Radio / DAB / DAB+ — digital audio transmitted over traditional AM/FM bands. Satellite radio requires a subscription and a special receiver (often built into cars), and gets its signal directly from orbiting satellites. Shortwave radio is often used for international broadcasts, including state-run news, cultural programming, and sometimes mysterious transmissions like propaganda or numbers stations. Internet radio is — well — a stream of audio over the internet. So, while it’s technically not radio in the electromagnetic sense, it works just like traditional radio for the listener, but with global reach.
+
+_______________________________________________________________________________________________________________
+Type         | Reach              | Quality   | Best For                          | Influence Type
+-------------|--------------------|-----------|-----------------------------------|----------------------------
+FM           | Local              | High      | Music, local news                 | Cultural / regional
+AM           | Regional / national| Low       | Talk radio, politics, religion    | Ideological / political
+Satellite    | Continental        | High      | Niche, subscription content       | National / celebrity-driven
+Shortwave    | Global             | Low–Medium| Government / global communications| International propaganda
+Internet     | Global             | High      | Everything                        | Modern digital influence
+_______________________________________________________________________________________________________________
+
+
+
+Tier			Channels							Visibility		Influence Type
+Mainstream		FM, AM, Satellite					High			Pop culture, news, talk, politics
+Digital			Internet, HD, DAB/DAB+				Medium-High		Modern/mobile audiences
+Fringe 			Shortwave, LPFM, Pirate, HAM		Low				Niche, activist, gov propaganda
+Secretive 		Numbers stations, encrypted			Very low		Military, intel, coded messaging
+
+
+Also:
+HD Radio - digital audio over traditional AM/FM frequencies and DAB / DAB+ (Digital Audio Broadcasting)
+LPFM (Low Power FM) & Pirate Stations
+Two-Way Radio & Walkie-Talkie Bands - CB radio, GMRS, FRS, HAM radio operators
+Military / Utility / Numbers Stations

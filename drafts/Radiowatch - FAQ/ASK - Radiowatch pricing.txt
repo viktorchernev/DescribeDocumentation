@@ -1,0 +1,11 @@
+Is Radiowatch free?
+
+Short answer:
+Kind of. You can use the service for free, but we might ask for donations or show advertisements in a pop-up when you are opening the site.
+
+Long answer: 
+We feel that ads are annoying at best, and evil, subversive and exploitative at worst. We also feel that locking out users who are not able to pay - and often those are the people who need access to knowledge the most, is evil and wrong. But we need to pay for the servers to survive, and pay ourselves some wages so that we can keep developing the wiki farm and the open source markup language "Describe" that powers it. We hope to be able to do that via donations and from offering premium-tier user accounts. But while we can't do it smoothly, we will sometimes ask you to donate money in a pop-up message, or rely on our blend of limited advertising. 
+
+However, even if we must rely partially on ad revenue to survive for some time, there are some rules. We will not use targeted ads or share user data with advertisers. We will not allow sponsored content, or include ads in the regular user experience in any way shape or form, and we will not allow ads for questionable products or services - like gambling, payday loans or over-priced low quality trendy items. 
+
+Basically, you will get a pop-up to watch one or two anonymous ads when opening the website tab, rarely during the day. You will have the option to donate as low as 1$ to remove the ads for a month. There will also be a section where you can go and watch ads as a form of donation to us in advance, when you have time, so that ads don't bother you for some time. We regret that, but if it must be done for some time, we will rather do it than fail the platform.

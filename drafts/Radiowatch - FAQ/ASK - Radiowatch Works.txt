@@ -1,0 +1,11 @@
+How Radiowatch works?
+
+Radiowatch is a listiary wiki dedicated to creating and curating information about various FM and web-based radio stations - mostly where to listen and a historic record of the songs played. There are also numerous playlists users create and share, radio websites and apps, artist and song directories, etc.
+
+Radiowatch works as any normal listiary wiki - users can read the content freely and registered users can contribute data.
+Users can also create their personal content, that others can browse, and paid users can also create private content, that only they can access.
+This wiki also relies on bots to automate some of the article creation process.
+
+Radiowatch offers a radio player for direct audio streaming in the website. When users play content on it, they have the options to opt in and act as observers - sending back to our database the titles of the songs they are listening to as they appear in the metadata of the stream they are listening to. We run that information through our bots that consult our knowledge database of songs and construct the historic record articles for the station, adding as much additional knowledge as available. 
+
+Users can also create and run their own bots.

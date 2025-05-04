@@ -1,0 +1,8 @@
+What is Radiowatch?
+
+Radiowatch is a wiki of lists, and is a project in the Listiary wiki farm. It is about tracking playlists on different radio stations and web streams, and is largely automated - bots create some of the content, rather than human users alone.
+
+Radiowatch is the first wiki of the listiary project to be made available online, and serves as a kind of a test platform, as well, especially with showcasing bot accounts and bots ability to write lists/articles in a scheduled fashion.
+
+[radiowatch.listiary.net]
+[listiary.net]

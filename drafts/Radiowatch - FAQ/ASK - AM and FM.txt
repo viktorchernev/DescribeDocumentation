@@ -1,0 +1,12 @@
+How to transmit data over radio waves?
+
+
+So, we can use antennas to flood the world around us with radio waves of a particular frequency, and we can use antennas to observe the flood of radio waves shining around us in a particular frequency, but how do we use that fact to transmit data? 
+
+We can send data by creating a stream of radio waves of a particular frequency and fluctuating it a bit, introducing some changes. And we can receive data by observing the flood of radio waves of a particular frequency around us and figuring out what changes and fluctuations have been introduced, and interpreting what they mean. We only need to be in range and know what frequency to observe. 
+
+The act of blasting radio waves around, especially with some encoded information in it, is called "broadcasting". The process of fluctuating the stream of radio waves we are blasting around is called "modulation", and the stream of radio waves we started with, before encoding the fluctuations, is called 'a carrier wave' (which is a collective term - like we would call the lights of many light bulbs "the light of the bulbs", we call the waves of many transponders "the wave of the broadcast")
+
+Two methods of modulation have became widespread with radio stations - amplitude modulation, and frequency modulation - thus, frequency modulated radio, or "FM radio" and amplitude modulated radio, or "AM radio".
+
+If we imagine the radio frequency we are tuned in as a kind of light, which it actually is, amplitude modulation will be alterating the brightness, while friquency modulation will be alterating the color of the light. But wait - you might ask - we are tuning in on a frequency, and then changing it by doing frequency modulation - won't that tune us out? Not quite — the frequency changes are small and stay centered around the original carrier frequency, and our radios are designed to follow these subtle shifts.
