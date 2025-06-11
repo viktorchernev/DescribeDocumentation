@@ -1,0 +1,5 @@
+So, imagine we have same file for input and output. Or for output and log.
+We should analyze what files we are starting an operation on before starting an operation.
+
+Original text:
+"CLI - what if the log file and the output file are the same? Handle that"

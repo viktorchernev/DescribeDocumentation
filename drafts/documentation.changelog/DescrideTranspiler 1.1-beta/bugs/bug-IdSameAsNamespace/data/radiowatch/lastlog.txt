@@ -1,0 +1,43 @@
+   /\\\\     /\\\\     /\\\\     /\\\\     /\\\\     /\\\\     /\\\\     /\\\\  
+  /  \\\\   /  \\\\   /  \\\\   /  \\\\   /  \\\\   _\ \\\\   /  \\\\   /  \\\\ 
+ / /\ \\\\ /  \ \\\\ /\ \ \\\\ / /\ \\\\ /  \ \\\\ /\/  \\\\ /  \ \\\\ /  \ \\\\
+ \ \/ //// \ \ \//// \ \ \//// \ \\\//// \|   //// \  /\//// \ \  //// \ \ \////
+  \  ////   \ \////   \  ////   \ \\\\    | \////   \ \\\\    \  ////   \ \//// 
+   \////     \////     \////     \////     \||||     \////     \////     \////  
+
+> parse-folder "C:\Users\vikto\Desktop\radiowatch\radiowatch" "C:\Users\vikto\Desktop\radiowatch\radiowatch\page.html" translator=html_page beautify=true verbosity=low logfile="C:\Users\vikto\Desktop\radiowatch\radiowatch" dsonly=false toponly=false onerror=ignore censor theme=GREEN
+--------------------------------------------------
+Initializing Describe Transpiler v1.0
+Verbosity set to: Low
+Language version set to: Describe Lines - v1.0
+Describe Transpiler initialized.
+Translator initialized - "HTML_PAGE"
+Starting a 'Directory -> Unfold' operation...
+"C:\Users\vikto\Desktop\radiowatch\radiowatch"
+STOP_ON_ERROR - False
+PARSE_DS_ONLY - False
+PARSE_TOP_DIRECTORY_ONLY - False
+"C:\Users\vikto\Desktop\radiowatch\radiowatch\.energy.ds" - parsed successfully
+Parser red 346 characters, into 24 tokens.
+Those were translated to 1 productions, containing 7 entries.
+"C:\Users\vikto\Desktop\radiowatch\radiowatch\241202.ds" - parsed successfully
+Parser red 11078 characters, into 1326 tokens.
+Those were translated to 2 productions, containing 330 entries.
+"C:\Users\vikto\Desktop\radiowatch\radiowatch\241203.ds" - parsed successfully
+Parser red 10270 characters, into 1276 tokens.
+Those were translated to 2 productions, containing 315 entries.
+"C:\Users\vikto\Desktop\radiowatch\radiowatch\241204.ds" - parsed successfully
+Parser red 10230 characters, into 1286 tokens.
+Those were translated to 2 productions, containing 319 entries.
+"C:\Users\vikto\Desktop\radiowatch\radiowatch\241205.ds" - parsed successfully
+Parser red 10826 characters, into 1342 tokens.
+Those were translated to 2 productions, containing 329 entries.
+"C:\Users\vikto\Desktop\radiowatch\radiowatch\241206.ds" - parsed successfully
+Parser red 9541 characters, into 1198 tokens.
+Those were translated to 2 productions, containing 300 entries.
+"C:\Users\vikto\Desktop\radiowatch\radiowatch\241207.ds" - parsed successfully
+Parser red 11359 characters, into 1436 tokens.
+Those were translated to 2 productions, containing 357 entries.
+"C:\Users\vikto\Desktop\radiowatch\radiowatch\page.html" - failed to parse: Exception of type 'Antlr4.Runtime.InputMismatchException' was thrown.
+All Files: 8, Succeeded: 7, Failed: 1, Errors: 1
+Task completed successfully. Press any key to exit.

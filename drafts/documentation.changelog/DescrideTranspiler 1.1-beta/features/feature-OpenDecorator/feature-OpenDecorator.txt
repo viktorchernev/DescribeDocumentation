@@ -1,0 +1,3 @@
+The {open} decorator, or {opened} will add a sublist - making a list expanded - adding a second layer
+In expand view it will just be an auto-expanded list.
+In standsrd view - if we implement it, we need to implement something.

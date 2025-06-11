@@ -1,0 +1,76 @@
+1. Backup
+
+`/.backup`  
+
+The backup folder contains archived backup copies of the project, as well as a local copy of the Github repository that we host our tools for the project in - `/.backup/.github`.
+Most of the archives are password-protected, as their contents are not open-source (at least yet). The archives are partial, containing the most important and easy to backup data - the software we have created and some of the tooling.
+
+But the project is large - both in size, especially our spectrograms database, and in terms of the number of files some of the third party tools contain - making it hard to archive and cumbersome to upload. So, we are backing the project on local storage media, and uploading to GitHub only our tools.
+
+
+
+2. Compiler
+
+`/.compiler`
+
+This folder contains a copy of the Describe compiler CLI, that is used for compiling describe files for the project.
+
+
+
+3. Tools
+
+`/.tools`
+
+Here we have most of the tooling for our project, along with some batch scripts we have developed.
+
+`cmdStagePoolUploader` - Cmd App to upload data to our staging pool.
+`cmdWaveGazer` - Our StreamGazer bot that collects data (need to rename the folder).
+`DontSleep` - A useful portable GUI utility that prevents Windows from sleeping. (Download)[https://dont-sleep.en.softonic.com/]
+`ffmpeg` - A suite of utilities for audio manipulation we use to create spectrograms. (Download from Github)[https://github.com/FFmpeg/FFmpeg]
+`image-magick` - A command line image manipulation utility, we use to crop our spectrograms. (Download) [https://imagemagick.org/script/download.php]
+`py-spectrograms` - Few scripts we developed for doing what we do with ffmpeg, but in python.
+`StagingPool` - Our php/html staging pool software.
+`Streamripper` - A command line tool for recording songs off radio streams. (Download fr Github) [https://github.com/streamripper/streamripper]
+Also, a number of batch files that automate the tasks we perform with these tools.
+
+
+4. Tools - Visual Studio
+
+`/.tools-vs`
+
+Here we have the rest of the tooling for our project - those are the tools we have developed ourselves.
+
+`_cmdFileRename` - Rename files to fix mistakes in the names.
+`_cmdJsonToDs` - Get Audd.io JSON responses and turn them to a Describe source codes data base.
+`_cmdMusicIdentifier` - Use Audd.io to identify music tracks.
+`_cmdSongCurator` - Curate downloaded tracks with Streamripper.
+`cmdStagePoolUploader` - The stage pool uploader utility.
+`cmdStreamGazer` - Our song title collecting agent.
+`guiPOC1` - An old app, but containing useful classes.
+`guiPOC2` - Useless old app.
+
+
+5. Work
+
+`/.work`
+
+The work folder contains old work files, and sometimes current work files. In this repository, where the work is done in the repository folders directly, the work folder serves more as a backup than anything else - back up of work in progress, without the need for a github commit, backup of work that could be needed later on. etc.
+
+
+6. The K pipeline (See (the pipeline-k article)[/listiary/radiowatch/pipeline-k/] for more details) - Serves for acquiring knowledge about various songs.
+
+`K1. Stream dumps` - The raw content we get from Streamripper.
+`K2. Curated stream dumps` - Same dumps, but renamed properly, and sorted into folders.
+`K3. Spectrograms` - The spectrograms made from those curated dumps.
+`K4. Canon` - Manually identified song best samples - we find the best sample we have, and put it here.
+`K5. Recognized songs Json` - Songs we have recognized with AI. Contains JSON response files.
+`K6. Confirmed songs Json` - Manually confirmed AI recognitions.
+
+
+7. The W pipeline (See (the pipeline-w article)[/listiary/radiowatch/pipeline-w/] for more details) - Serves for tracking various song titles that are being played.
+
+`W1. Stream Sources` - Files containing different stream URLs - of big stations.
+`W2. Playlist dumps` - The now-playing songs data title we are after - that we get with StreamGazer.
+`W3. Describe sources` - All the Describe source files for our Listiary Wiki - Radiowatch.
+`W4. Compiled Json files` - The compiled Describe sources.
+`W5. Website` - The Radiowatch wiki website we are building - a local copy.

@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1"><!-- Begin Jekyll SEO tag v2.8.0 -->
+<title>Radiowatch - Repo map | Documentation</title>
+<meta name="generator" content="Jekyll v4.3.3" />
+<meta property="og:title" content="Radiowatch - Repo map" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="Describe Compiler Documentation" />
+<meta property="og:description" content="Describe Compiler Documentation" />
+<link rel="canonical" href="http://localhost:4000/listiary/radiowatch/repo-map/" />
+<meta property="og:url" content="http://localhost:4000/listiary/radiowatch/repo-map/" />
+<meta property="og:site_name" content="Documentation" />
+<meta property="og:type" content="website" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="Radiowatch - Repo map" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"WebPage","description":"Describe Compiler Documentation","headline":"Radiowatch - Repo map","url":"http://localhost:4000/listiary/radiowatch/repo-map/"}</script>
+<!-- End Jekyll SEO tag -->
+<link rel="stylesheet" href="/assets/main.css"><link type="application/atom+xml" rel="alternate" href="http://localhost:4000/feed.xml" title="Documentation" /></head>
+<body><header style="background-color: #ccc;" class="site-header" role="banner">
+
+  <div class="wrapper"><a class="site-title" rel="author" href="/">Documentation</a><nav style="background-color: #ccc;" class="site-nav">
+        <input type="checkbox" id="nav-trigger" class="nav-trigger" />
+        <label for="nav-trigger">
+          <span class="menu-icon">
+            <svg viewBox="0 0 18 15" width="18px" height="15px">
+              <path d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.032C17.335,0,18,0.665,18,1.484L18,1.484z M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.032C17.335,6.031,18,6.696,18,7.516L18,7.516z M18,13.516C18,14.335,17.335,15,16.516,15H1.484 C0.665,15,0,14.335,0,13.516l0,0c0-0.82,0.665-1.483,1.484-1.483h15.032C17.335,12.031,18,12.695,18,13.516L18,13.516z"/>
+            </svg>
+          </span>
+        </label>
+
+        <div class="trigger">
+				<a class="page-link" href="/language/how-to-write/">Language Home</a>
+				<a class="page-link" href="/language/how-to-compile/">Compiler Home</a>
+				<a class="page-link" href="/language/reference/">Tech Reference</a>
+				<a class="page-link" href="/language/">About Describe</a>
+				<a class="page-link" href="/listiary/">About Listiary</a>
+				<a class="page-link" href="https://library.listiary.com/">Describe Library</a>
+				<a class="page-link" href="/language/site-map/">Site Map</a></div>
+      </nav></div>
+</header>
+<main class="page-content" aria-label="Content">
+      <div class="wrapper">
+        <article class="post">
+
+  <header class="post-header">
+    <h1 class="post-title">Radiowatch - Repo map</h1>
+  </header>
+
+  <div class="post-content">
+    <p><br /><br /></p>
+<h3 id="1-backup">1. Backup</h3>
+
+<p><code class="language-plaintext highlighter-rouge">/.backup</code></p>
+
+<p>The backup folder contains archived backup copies of the project, as well as a local copy of the Github repository that we host our tools for the project in - <code class="language-plaintext highlighter-rouge">/.backup/.github</code>.
+Most of the archives are password-protected, as their contents are not open-source (at least yet). The archives are partial, containing the most important and easy to backup data - the software we have created and some of the tooling.</p>
+
+<p>But the project is large - both in size, especially our spectrograms database, and in terms of the number of files some of the third party tools contain - making it hard to archive and cumbersome to upload. So, we are backing the project on local storage media, and uploading to GitHub only our tools.
+<br />
+<br /></p>
+
+<h3 id="2-compiler">2. Compiler</h3>
+
+<p><code class="language-plaintext highlighter-rouge">/.compiler</code></p>
+
+<p>This folder contains a copy of the Describe compiler CLI, that is used for compiling describe files for the project.
+<br />
+<br /></p>
+
+<h3 id="3-tools">3. Tools</h3>
+
+<p><code class="language-plaintext highlighter-rouge">/.tools</code></p>
+
+<p>Here we have most of the tooling for our project, along with some batch scripts we have developed.</p>
+
+<p><code class="language-plaintext highlighter-rouge">cmdStagePoolUploader</code> - Cmd App to upload data to our staging pool.
+<code class="language-plaintext highlighter-rouge">cmdWaveGazer</code> - Our StreamGazer bot that collects data (need to rename the folder).
+<code class="language-plaintext highlighter-rouge">DontSleep</code> - A useful portable GUI utility that prevents Windows from sleeping. <a href="https://dont-sleep.en.softonic.com/">Download</a>
+<code class="language-plaintext highlighter-rouge">ffmpeg</code> - A suite of utilities for audio manipulation we use to create spectrograms. <a href="https://github.com/FFmpeg/FFmpeg">Download from Github</a>
+<code class="language-plaintext highlighter-rouge">image-magick</code> - A command line image manipulation utility, we use to crop our spectrograms. <a href="https://imagemagick.org/script/download.php">Download</a>
+<code class="language-plaintext highlighter-rouge">py-spectrograms</code> - Few scripts we developed for doing what we do with ffmpeg, but in python.
+<code class="language-plaintext highlighter-rouge">StagingPool</code> - Our php/html staging pool software.
+<code class="language-plaintext highlighter-rouge">Streamripper</code> - A command line tool for recording songs off radio streams. <a href="https://github.com/streamripper/streamripper">Download fr Github</a>
+Also, a number of batch files that automate the tasks we perform with these tools.
+<br />
+<br /></p>
+
+<h3 id="4-tools---visual-studio">4. Tools - Visual Studio</h3>
+
+<p><code class="language-plaintext highlighter-rouge">/.tools-vs</code></p>
+
+<p>Here we have the rest of the tooling for our project - those are the tools we have developed ourselves.</p>
+
+<p><code class="language-plaintext highlighter-rouge">_cmdFileRename</code> - Rename files to fix mistakes in the names.
+<code class="language-plaintext highlighter-rouge">_cmdJsonToDs</code> - Get Audd.io JSON responses and turn them to a Describe source codes data base.
+<code class="language-plaintext highlighter-rouge">_cmdMusicIdentifier</code> - Use Audd.io to identify music tracks.
+<code class="language-plaintext highlighter-rouge">_cmdSongCurator</code> - Curate downloaded tracks with Streamripper.
+<code class="language-plaintext highlighter-rouge">cmdStagePoolUploader</code> - The stage pool uploader utility.
+<code class="language-plaintext highlighter-rouge">cmdStreamGazer</code> - Our song title collecting agent.
+<code class="language-plaintext highlighter-rouge">guiPOC1</code> - An old app, but containing useful classes.
+<code class="language-plaintext highlighter-rouge">guiPOC2</code> - Useless old app.
+<br />
+<br /></p>
+
+<h3 id="5-work">5. Work</h3>
+
+<p><code class="language-plaintext highlighter-rouge">/.work</code></p>
+
+<p>The work folder contains old work files, and sometimes current work files. In this repository, where the work is done in the repository folders directly, the work folder serves more as a backup than anything else - back up of work in progress, without the need for a github commit, backup of work that could be needed later on. etc.
+<br />
+<br /></p>
+
+<h3 id="6-the-k-pipeline">6. The K pipeline</h3>
+
+<p>See <a href="/listiary/radiowatch/pipeline-k/">pipeline-k article</a> for more details - Serves for acquiring knowledge about various songs.</p>
+
+<p><code class="language-plaintext highlighter-rouge">K1. Stream dumps</code> - The raw content we get from Streamripper.
+<code class="language-plaintext highlighter-rouge">K2. Curated stream dumps</code> - Same dumps, but renamed properly, and sorted into folders.
+<code class="language-plaintext highlighter-rouge">K3. Spectrograms</code> - The spectrograms made from those curated dumps.
+<code class="language-plaintext highlighter-rouge">K4. Canon</code> - Manually identified song best samples - we find the best sample we have, and put it here.
+<code class="language-plaintext highlighter-rouge">K5. Recognized songs Json</code> - Songs we have recognized with AI. Contains JSON response files.
+<code class="language-plaintext highlighter-rouge">K6. Confirmed songs Json</code> - Manually confirmed AI recognitions.
+<br />
+<br /></p>
+
+<h3 id="7-the-w-pipeline">7. The W pipeline</h3>
+<p>See <a href="/listiary/radiowatch/pipeline-w/">pipeline-w article</a> for more details - Serves for tracking various song titles that are being played.</p>
+
+<p><code class="language-plaintext highlighter-rouge">W1. Stream Sources</code> - Files containing different stream URLs - of big stations.
+<code class="language-plaintext highlighter-rouge">W2. Playlist dumps</code> - The now-playing songs data title we are after - that we get with StreamGazer.
+<code class="language-plaintext highlighter-rouge">W3. Describe sources</code> - All the Describe source files for our Listiary Wiki - Radiowatch.
+<code class="language-plaintext highlighter-rouge">W4. Compiled Json files</code> - The compiled Describe sources.
+<code class="language-plaintext highlighter-rouge">W5. Website</code> - The Radiowatch wiki website we are building - a local copy.
+<br />
+<br /></p>
+
+<h3 id="links">Links</h3>
+<p><a href="/listiary/radiowatch/">Radiowatch</a><br />
+<a href="/listiary/radiowatch/ifaq/">Radiowatch - FAQ</a><br />
+<a href="/listiary/radiowatch/rfaq/">Radiowatch - FAQ (Radio)</a><br />
+<a href="/listiary/radiowatch/pipeline-k/">Radiowatch - Pipeline K</a><br />
+<a href="/listiary/radiowatch/pipeline-w/">Radiowatch - Pipeline W</a><br />
+<br />
+<a href="/listiary/">Project Listiary</a><br />
+<a href="/language/">Project Describe</a></p>
+
+  </div>
+
+</article>
+
+      </div>
+    </main><footer style="background-color: #ccc;" class="site-footer h-card">
+  <data class="u-url" href="/"></data>
+
+  <div class="wrapper">
+  
+	github: <a href="https://github.com/viktorchernev/DescribeCompiler">viktorchernev</a><br>email: <a class="u-email" href="mailto:vchernev91@abv.bg">vchernev91@abv.bg</a><!-- <h2 class="footer-heading">Documentation</h2> 
+
+    <div class="footer-col-wrapper">
+      <div class="footer-col footer-col-1">
+        <ul class="contact-list">
+          <li class="p-name">Documentation</li><li><a class="u-email" href="mailto:vchernev91@abv.bg">vchernev91@abv.bg</a></li></ul>
+      </div>
+
+      <div class="footer-col footer-col-2"><ul class="social-media-list"><li><a href="https://github.com/viktorchernev"><svg class="svg-icon"><use xlink:href="/assets/minima-social-icons.svg#github"></use></svg> <span class="username">viktorchernev</span></a></li></ul>
+</div>
+
+      <div class="footer-col footer-col-3">
+        <p>Describe Compiler Documentation</p>
+      </div>
+    </div>-->
+
+  </div>
+
+</footer>
+</body>
+
+</html>

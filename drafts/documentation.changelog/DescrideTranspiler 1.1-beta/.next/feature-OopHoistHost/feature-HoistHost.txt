@@ -1,0 +1,24 @@
+List to be of items of another list directly unloaded in this list as well
+
+List items to be hoisted to another list 
+
+a <aaa> :<bbb> -> a, b, c;
+a -> :<aaa> b, c, :<ddd>
+
+
+
+
+
+
+
+
+
+
+
+So, the idea here is to be able to get the items from another list added to this
+
+a -> (list CCC items here), b, c;
+
+And to be able to hoist 
+
+a (all items go to list CCC's end/start) -> b, c, d;

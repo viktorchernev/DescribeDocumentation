@@ -1,0 +1,3 @@
+View self link - a link that is to viewing an item as a list.
+
+This is a special kind of link that expands the item it is on, like a list - with all the properties.

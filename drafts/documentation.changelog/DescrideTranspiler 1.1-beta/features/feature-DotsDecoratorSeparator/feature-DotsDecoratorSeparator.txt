@@ -1,0 +1,2 @@
+two dots for decorator separator - "{color: gray}", make more sense than pipe separators - "{color | gray}"
+: instead of | inside decorators

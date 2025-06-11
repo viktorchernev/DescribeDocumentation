@@ -1,0 +1,13 @@
+Tilde lists. Actually tilde in such lists might inverse it - the tilded item is the normal one.
+
+```
+	some ->
+		~ akaka <a>,
+		~ hdhdd <b>,
+		~ djdjd <c>;
+		
+	~ same as ->
+		akaka <a>,
+		hdhdd <b>,
+		djdjd <c>;
+```

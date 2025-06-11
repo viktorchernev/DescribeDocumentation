@@ -1,0 +1,1 @@
+It will be good to output the time the compilation took in the CLI.

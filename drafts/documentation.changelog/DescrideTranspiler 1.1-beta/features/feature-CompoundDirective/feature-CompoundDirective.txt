@@ -1,0 +1,21 @@
+This is the idea of having a directive that represents other directives.
+For example, the admin of a project might add a compound directive so that authors don't need to add all the directives themselves - they just need to add the compound directive.
+
+```
+directives ->
+
+	compound <mydrective>,
+	directive 1,
+	directive 2,
+	directive 3,
+	directive 4,
+	directive 5;
+```
+
+becomes
+
+```
+directives ->
+
+	mydrective;
+```

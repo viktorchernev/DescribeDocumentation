@@ -1,1 +1,0 @@
-The project to create public song spectrogram DB - Sepia KnowledgeBase or Sepia KB

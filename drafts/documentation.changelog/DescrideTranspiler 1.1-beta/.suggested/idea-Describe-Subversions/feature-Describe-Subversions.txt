@@ -1,0 +1,5 @@
+we might create even-more feature restricted versions of Describe - like Describe v0.5 and 0.4. it can be a subset for simple reporting back to a staging pool - a simplest format if you would - no lists - the name of the list is the file name. we just have entries delimited by a comma and a new line in 0.5, and possibly just one liners, separated by new line in v0.4 - Basically Comma-new-line separated values (CNLSV) and new line separated values (NLSV)
+
+
+//Describe 0.5 Syntaxless - a subset of descr..
+//that has only white lines and comments prob

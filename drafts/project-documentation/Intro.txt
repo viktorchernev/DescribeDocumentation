@@ -1,0 +1,13 @@
+"Listiary documentation, "Describe documentation", or simply the "Documentation" is a project (that needs a better name, for one), but other than that, is a collective knowledge base for anything pertaining to the Describe markup language and Listiary - the wiki farm powered by the markup.
+
+for creating and maintaining few things - The documentation for the "Describe" markup language, the documentation for the Describe compiler, 
+
+We have choosen a website building strategy - a static site builder - jekyll - in an attempt to have text files to responsive static website with decent look and feel with as few steps as possible, and requiring no maintanance if possible. At that, jekyll looked as a straight-forward and reversible solution. Other options - Hugo, Eleventy, Astro, Netlify CMS, Webflow / Notion.
+
+
+
+"Describe documentation", (also referred to as "Listiary documentation",  or simply "the Documentation", is a project that needs a better name, for one), but other than that, 
+
+... is a collective knowledge base for anything that has to do with the Describe markup language and Listiary - the wiki farm powered by the markup.
+
+It consists of articles on various topics in a markdown format,  ...

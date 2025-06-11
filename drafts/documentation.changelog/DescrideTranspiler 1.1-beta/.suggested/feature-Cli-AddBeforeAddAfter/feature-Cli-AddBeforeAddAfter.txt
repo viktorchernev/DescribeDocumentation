@@ -1,0 +1,1 @@
+CLI - add before and add after flag that adds given text to the outputted file.

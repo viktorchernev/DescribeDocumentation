@@ -1,0 +1,6 @@
+Lists can have versions that you can switch from the site menu - like '<someid:langbg>'
+
+
+```
+list version <listid:versionid>
+```

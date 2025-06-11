@@ -1,0 +1,1 @@
+Items in template files might describe a format - like a regex that needs to be followed - or a data type - like 'int' - restricting the implementing list to using said format, or 'data type'. This is very much OOP like.

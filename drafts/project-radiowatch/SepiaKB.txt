@@ -1,0 +1,5 @@
+The project to create public song spectrogram DB - Sepia KnowledgeBase or Sepia KB
+
+We can develop a simple web interface, where people can search by song title and metadata for spectrograms, to identify music.
+
+We can have a cool Squid mascot, and N suggests we can name it "Inkdrop".

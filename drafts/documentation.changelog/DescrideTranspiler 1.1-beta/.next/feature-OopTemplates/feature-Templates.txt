@@ -1,0 +1,6 @@
+Templates delve into implementing class-like OOP logic into describe. Basically, you create lists that serve as templates for other items.
+You can then specify a template in the directives, and the editor will assist.
+
+Templates can be suggestive - showing you what you can add,
+Foundational - describing items that are necessary but allowing for other items as well,
+And Restrictive - requiring strict adherence without additional data.

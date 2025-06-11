@@ -1,0 +1,3 @@
+Look at what to do if input and output directories are the same
+Look at clean or accumulate modes for the result directories
+Look at log rotation schemes - auto-applying timestamps etc.

@@ -1,0 +1,3 @@
+Make a JS translator - same as the JSON one, but output a javascript file instead with a variable
+This can be achieved incredibly easy - just add `var JS_VAR =` and `;` to the beginning and the end of the output from the JSON translator.
+The title CLI flag might be used to name this variable, if implemented, as suggested.

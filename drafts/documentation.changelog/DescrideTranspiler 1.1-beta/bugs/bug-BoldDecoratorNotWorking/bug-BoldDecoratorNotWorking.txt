@@ -1,0 +1,2 @@
+{bold} not working in JSON translator. 
+Do italic and such similar decorators work?

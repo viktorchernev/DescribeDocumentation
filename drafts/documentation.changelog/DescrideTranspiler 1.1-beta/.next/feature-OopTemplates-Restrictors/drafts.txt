@@ -1,0 +1,57 @@
+
+dirrectives -> is-compound <mydirective>;
+
+dirrectives ->
+    restricts-namespace <rn>,
+    restrict-decorator <color:"regex">,
+    restrict-decorator <color:NamCol>,
+    restrict-text <"regex">,
+    restrict-tags <"regex">;
+    
+ compound dirrectives
+ and project directive
+    
+dirrectives ->
+    restricts-namespace <rn>,
+    restrict-decorator <color:"regex">,
+    restrict-decorator <color:NamCol>,
+    restrict-text <"regex">,
+    restrict-tags <"regex">;
+    
+template restrictors
+in template, value in parentheses or in angle
+brackets means restriction by pattern and
+by tag id - restrictir list, where you can choose
+one of the restrictirs list items as a value
+
+strict templates, literal templates, 
+loose templates.
+Some template <id123456>
+{ color| lime }
+{{ bgcolor }; //optional
+
+
+
+
+
+ 
+dirrectives -> restricts-namespace <rn>;
+Some item <id123456>
+{ color| lime }
+{{ credibility: moderate };
+
+//diffusion
+color <-
+    lime <id123456>,
+    green <id1234oo>,
+    red <idd23456>;
+
+hairstyle <-
+
+    black <-
+        peter <ggg>,
+        kevin <dggd>;
+    
+    blond <-
+        EMINEM <CVVB>,
+        melony <kjfhh>;

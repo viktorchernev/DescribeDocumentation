@@ -1,0 +1,29 @@
+Sticky lists are those list that start with a dollar sign. They are added as a kind of complex decorators to all the normal lists in the file. for example list like '$Sources' or the sorters list shown below - that shows how a list might get custom sortars.
+special lists will start with a dollar sign as well - `$directives ->`
+Special lists start with a dolar sign - '$' - "$references ->> ;"
+
+2Pac - Changes [https://youtube.com/watch?v=eXvBjCO19QY] <.o5piIT7r04X8>
+
+    {streamed-name | 2PAC - Changes }
+    {auddio-url | https://lis.tn/vrUVCN }
+
+    {artist | 2Pac }
+    {title | Changes }
+    {album | The Best of 2Pac - Pt. 1: Thug }
+    {release-date | 2007-01-01 }
+
+    {apple-music-url | https://music.apple.com/us/album/changes-feat-talent/1440763429?app=music&at=1000l33QU&i=1440764593&mt=1 }
+    {spotify-url | https://open.spotify.com/track/1ofhfV90EnYhEr7Un2fWiv }
+    {yt-music-url | https://music.youtube.com/watch?v=eXvBjCO19QY }
+    {yt-url | https://youtube.com/watch?v=eXvBjCO19QY }
+    {sound-cloud-url | https://soundcloud.com/2pac/changes-1998-greatest-hits }
+
+    ->>;
+	
+	
+$Sorters ->
+
+	title~az <sort by title a-z>,
+	artist~az <sort by artist a-z>,
+	artist~by <sort by artist>,
+	release-date~year <sort by release year>,

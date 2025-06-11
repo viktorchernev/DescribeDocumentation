@@ -117,7 +117,9 @@ Canon -> (_cmdMusicIdentifier) ->
 <br>
 
 ### Links
-[Radiowatch - FAQ](/listiary/radiowatch/faq/)<br>
+[Radiowatch](/listiary/radiowatch/)<br>
+[Radiowatch - FAQ](/listiary/radiowatch/ifaq/)<br>
+[Radiowatch - FAQ (Radio)](/listiary/radiowatch/rfaq/)<br>
 [Radiowatch - Pipeline K](/listiary/radiowatch/pipeline-k/)<br>
 [Radiowatch - Pipeline W](/listiary/radiowatch/pipeline-w/)<br>
 <br>

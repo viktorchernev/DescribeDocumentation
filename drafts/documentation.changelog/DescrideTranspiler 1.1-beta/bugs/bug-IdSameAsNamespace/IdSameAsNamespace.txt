@@ -1,0 +1,41 @@
+BUG: When entry has tag id that is the same as an id of namespace in a different file, that item (list title item) is replaced with the text "namespace"
+
+File 1:
+
+`
+directives ->
+
+	namespace <radiowatch>,
+	language-version <1.0>;
+
+
+Energy [https://onlineradiobox.com/bg/energy895/playlist/6] <.energy> ->
+
+	Monday 02 December 2024 <.energy.241202>,
+	Tuesday 03 December 2024 <.energy.241203>,
+	Wednesday 04 December 2024 <.energy.241204>,
+	Thirsday 05 December 2024 <.energy.241205>,
+	Friday 06 December 2024 <.energy.241206>,
+	Saturday 07 December 2024 <.energy.241207>;
+`
+
+File 2:
+
+`
+directives ->
+
+	language-version <1.0>,
+	namespace <radiowatch.energy>;
+
+
+Monday 02 December 2024 <.241202> ->
+
+	BLUE FT. ELTON JOHN - Sorry Seems To Be The Hardest Word,
+	BOMFUNK MC'S - Freestyler,
+	TOMMY RICHMAN - Million Dollar Baby,
+	DJ MATRIX,
+	INNER CIRCLE - Games People Play,
+	JERRY ROPERO,
+	
+	...A
+`

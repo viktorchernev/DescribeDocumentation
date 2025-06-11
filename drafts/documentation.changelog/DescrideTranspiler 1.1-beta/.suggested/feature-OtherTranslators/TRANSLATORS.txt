@@ -1,0 +1,2 @@
+other translators - like log checker CSV
+also, javascript translator - same as the json translator, but added a `var SOURCE =` at the beginning and `;` at the end, to wrap the JSON into a valid javascript variable declaration. We have another entry for this translator.

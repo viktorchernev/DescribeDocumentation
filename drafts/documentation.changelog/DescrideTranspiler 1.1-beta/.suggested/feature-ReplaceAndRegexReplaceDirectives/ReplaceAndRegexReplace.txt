@@ -1,0 +1,9 @@
+Implement directives - like regex-replace or replace
+
+```
+directives ->
+
+	replace <"hello", "good bye">,
+	language-version <1.1>,
+	namespace <books>;
+```

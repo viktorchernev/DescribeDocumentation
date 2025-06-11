@@ -1,0 +1,1 @@
+set template website's title with a cmd flag
